@@ -1,0 +1,4 @@
+#Tue Sep 18 20:19:17 AST 2018
+base.0=C\:\\Users\\123\\Downloads\\Abdullah's program\\Fahad\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex

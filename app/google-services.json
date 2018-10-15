@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "946344457970",
+    "firebase_url": "https://fahad-406d8.firebaseio.com",
+    "project_id": "fahad-406d8",
+    "storage_bucket": "fahad-406d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946344457970:android:2ad0867e206ba449",
+        "android_client_info": {
+          "package_name": "com.example.abodimazen.fahad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946344457970-h94301fq3knlopm3ierfgdoq0phcj2ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abodimazen.fahad",
+            "certificate_hash": "4eb862677803f0c39b6b738f11b6e5414983079c"
+          }
+        },
+        {
+          "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp7zXtqFtsQRvrvWxb34oLsPEKFmaEZZ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
