@@ -17,6 +17,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/imageView_child"
                 android:layout_width="86dp"
                 android:layout_height="68dp"
                 android:layout_gravity="center_horizontal"

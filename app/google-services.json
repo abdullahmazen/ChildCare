@@ -8,6 +8,50 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:946344457970:android:fcd6f602453e6d5d",
+        "android_client_info": {
+          "package_name": "com.example.abodimazen.ChildCare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946344457970-1mt56pi2tl2fpfnutvnndsit6r2p8dcg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abodimazen.ChildCare",
+            "certificate_hash": "4eb862677803f0c39b6b738f11b6e5414983079c"
+          }
+        },
+        {
+          "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp7zXtqFtsQRvrvWxb34oLsPEKFmaEZZ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:946344457970:android:2ad0867e206ba449",
         "android_client_info": {
           "package_name": "com.example.abodimazen.fahad"
@@ -20,6 +64,14 @@
           "android_info": {
             "package_name": "com.example.abodimazen.fahad",
             "certificate_hash": "4eb862677803f0c39b6b738f11b6e5414983079c"
+          }
+        },
+        {
+          "client_id": "946344457970-cvt0utgbuh9dik6uqroj3m3lmnqpme9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abodimazen.fahad",
+            "certificate_hash": "ae16dee32df030e93d760603c73d8f8a05f51a21"
           }
         },
         {

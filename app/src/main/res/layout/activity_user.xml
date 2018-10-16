@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".User"
+    android:background="@drawable/zzz"
    >
 
 
@@ -54,6 +55,7 @@
         android:drawablePadding="10dp"
         android:hint="@string/editTextPhone"
         android:inputType="phone"
+        android:background="@color/white"
         android:maxLength="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

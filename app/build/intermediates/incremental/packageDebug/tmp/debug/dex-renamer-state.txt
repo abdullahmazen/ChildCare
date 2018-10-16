@@ -1,7 +1,7 @@
-#Mon Oct 15 16:06:26 AST 2018
-base.0=/Users/Abodimazen/AndroidStudioProjects/Fahad1/app/build/intermediates/transforms/dexMerger/debug/0
+#Tue Oct 16 21:32:01 AST 2018
+base.0=/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes2.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/Abodimazen/AndroidStudioProjects/Fahad1/app/build/intermediates/transforms/dexMerger/debug/0
+base.1=/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/transforms/dexMerger/debug/0

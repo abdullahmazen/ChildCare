@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VerifyPhoneActivity">
+    tools:context=".VerifyPhoneActivity"
+    android:background="@drawable/zzz">
 
 
     <ImageView
@@ -53,6 +54,7 @@
         android:hint="enter verification code"
         android:inputType="phone"
         android:maxLength="10"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.553"

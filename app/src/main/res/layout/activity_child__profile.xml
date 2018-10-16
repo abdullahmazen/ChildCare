@@ -134,7 +134,6 @@
                 android:id="@+id/Text_Time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-36dp"
                 android:layout_marginTop="50dp"
                 android:text="Time" />
 
@@ -164,15 +163,21 @@
                 android:id="@+id/Text_Plan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="30dp"
                 android:text="Plan" />
+
+            <TextView
+                android:id="@+id/Text_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Price" />
 
             <TextView
                 android:id="@+id/Text_Satus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="-30dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="70dp"
                 android:text="Satus" />
 
 
