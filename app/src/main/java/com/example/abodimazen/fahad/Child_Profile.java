@@ -22,6 +22,7 @@ public class Child_Profile extends AppCompatActivity {
     private TextView Text_hospial;
     private TextView Text_Plan;
     private TextView Text_Satus;
+    private TextView Text_Price;
 
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -42,7 +43,7 @@ public class Child_Profile extends AppCompatActivity {
         Text_Plan = findViewById(R.id.Text_Plan);
         Text_Satus = findViewById(R.id.Text_Satus);
         Button_record = findViewById(R.id.Button_record);
-
+        Text_Price = findViewById(R.id.Text_Price);
 
 
         Intent in = getIntent();
@@ -64,6 +65,8 @@ public class Child_Profile extends AppCompatActivity {
                             String pHospital = documentSnapshot.getString("hospital");
                             String pPlan = documentSnapshot.getString("typeOfPlan");
                             String pSatus = documentSnapshot.getString("satus");
+                            String pPrice = documentSnapshot.getString("price");
+
 
 
                             name.setText(pName);
@@ -75,6 +78,7 @@ public class Child_Profile extends AppCompatActivity {
                             Text_hospial.setText(pHospital);
                             Text_Plan.setText(pPlan);
                             Text_Satus.setText(pSatus);
+                            Text_Price.setText(pPrice);
 
 
                         }

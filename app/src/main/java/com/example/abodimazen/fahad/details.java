@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -69,8 +70,9 @@ public class details extends AppCompatActivity implements
         gender = findViewById(R.id.text_view_Gender);
         birth = findViewById(R.id.text_view_Birth);
         bload = findViewById(R.id.text_view_Blood);
+        make =  findViewById(R.id.make);
 
-        make = (Button) findViewById(R.id.make);
+
 
 
         make.setOnClickListener(new View.OnClickListener() {

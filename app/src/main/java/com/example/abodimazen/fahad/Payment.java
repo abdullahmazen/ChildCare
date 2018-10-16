@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.support.v7.widget.AppCompatButton;
+import android.widget.Toast;
+
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -120,31 +122,45 @@ public class Payment extends AppCompatActivity {
 
                         ASatus.put("satus", "apptoved");
                         db.collection("Child Profile").document(n).update(ASatus);
-                    } else
+                    }
+                }
+                else
+
                         ppt.setText("error in the payment");
 
-                    if (a != null) {
-                        String n = (String) a.get("id");
 
-
-                        Map<String, Object> ESatus = new HashMap<>();
-
-                        ESatus.put("satus", "not apptoved");
-                        db.collection("Child Profile").document(n).update(ESatus);
-                    }
-
-                }
-                Intent b = getIntent();
-                final Bundle c = b.getExtras();
-
-                String n = (String) c.get("id");
-                Intent q = new Intent(Payment.this, Child_Profile.class);
-                q.putExtra("id", n);
-                startActivity(q);
             }
                     else
                         ppt.setText("confirmation is null");
                 }
+
+
+        Intent b = getIntent();
+        final Bundle c = b.getExtras();
+
+        String n = (String) c.get("id");
+        Intent q = new Intent(Payment.this, Child_Profile.class);
+        q.putExtra("id", n);
+        startActivity(q);
+            }
+
+            public void inPerson(View view){
+                Toast.makeText(Payment.this,"your Payment will be inPerson  ",Toast.LENGTH_SHORT).show();
+                Intent P = getIntent();
+                final Bundle a = P.getExtras();
+
+                String n = (String) a.get("id");
+
+
+                Map<String, Object> inPerson = new HashMap<>();
+                inPerson.put("satus", "inPerson Payment ");
+                db.collection("Child Profile").document(n).update(inPerson);
+
+                Intent q = new Intent(Payment.this, Child_Profile.class);
+
+
+                q.putExtra("id", n);
+                startActivity(q);
             }
 
 
