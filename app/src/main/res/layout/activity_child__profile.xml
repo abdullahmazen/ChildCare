@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Child_Profile">
+    tools:context="com.example.abodimazen.ChildCare.Child_Profile">
 
 
 
@@ -16,18 +16,21 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/ImageView_choose_image"
                 android:layout_width="86dp"
                 android:layout_height="68dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="45dp"
-                android:src="@drawable/child" />
+                android:background="@drawable/child"
+                android:onClick="button_choose_image"/>
+
+
 
             <TextView
                 android:id="@+id/text_view_Namee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
                 android:text="Name"
                 android:textColor="@android:color/white"
                 android:textSize="25dp"
@@ -117,25 +120,19 @@
             android:layout_weight="9"
             android:orientation="horizontal">
 
-            <ImageView
+            <Button
+                android:id="@+id/make"
                 android:layout_width="50dp"
                 android:layout_height="65dp"
                 android:background="@drawable/calendar"/>
 
-
             <TextView
+                android:layout_marginTop="-10dp"
                 android:id="@+id/Text_Dates"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:text="Dates" />
 
-            <TextView
-                android:id="@+id/Text_Time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="Time" />
 
         </LinearLayout>
     </LinearLayout>
@@ -153,6 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="9"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="65dp"
@@ -166,18 +164,14 @@
                 android:layout_marginTop="30dp"
                 android:text="Plan" />
 
-            <TextView
-                android:id="@+id/Text_Price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:text="Price" />
+
 
             <TextView
                 android:id="@+id/Text_Satus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="60dp"
                 android:text="Satus" />
 
 
@@ -232,7 +226,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="65dp"
-                android:layout_marginLeft="6dp"
+                android:layout_marginLeft="9dp"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/medical" />
 

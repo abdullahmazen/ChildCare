@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abodimazen.ChildCare.Child_record">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#090a09">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="VISIT"
+                    android:textColor="#030302"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="VACCINE"
+                    android:textColor="#171e0e"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="Status"
+                    android:textColor="#040502"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="Picture"
+                    android:textColor="#040502"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_At_Birth"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="At Birth"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="BCG"
+                        android:textSize="10dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="Hepatitis B"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_At_Birth"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="13dp"
+                    android:background="#fff" />
+
+                <ImageView
+                    android:id="@+id/ImageView_choose_image"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:onClick="button_choose_image" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_Dates_2Month"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_margin="1dp"
+                android:layout_marginBottom="0dp"
+                android:background="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="2 MONTH"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="IPV, DTaP, Hepetitis B"
+                        android:textStyle="italic"
+                        android:textAlignment="center"
+                        android:textSize="9dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="HIP,BCV,ROTA"
+                        android:textSize="9dp"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_Two_Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image1"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_4Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="4 MONTH"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="IPV, DTaP, Hepetitis B"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff"
+                        android:padding="1dp"
+                        android:text="HIP, BCV, ROTA "
+                        android:textSize="10dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView_Four_Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image2"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_6Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="6 MONTH"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="OPV, IPV, DTap"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff"
+                        android:padding="1dp"
+                        android:text="Hipetitis B, Hib, BCV"
+                        android:textSize="10dp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_Six_Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image3"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_9Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="9 MONTH"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="Mecales"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff"
+                        android:padding="1dp"
+                        android:text="MCV4"
+                        android:textSize="10dp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView_Nine_Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image4"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_12Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="12 MONTH"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="OPv, MMR"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff"
+                        android:padding="1dp"
+                        android:text="PCV, MCV4"
+                        android:textSize="10dp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_Twelve_Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image5"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_18Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="18 MONTH"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="OPTV, DTaP, Hib"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff"
+                        android:padding="1dp"
+                        android:text="MMR, Varacella, Hepitatis A"
+                        android:textSize="10dp"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewـEighteen_Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image6"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_24Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="24 MONTH"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="Hepatitis A"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_Twenty_four_Month"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image7"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Dates_First_Primary"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:text="First Primary"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:text="OPTV, DTap"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="#fff"
+                        android:padding="1dp"
+                        android:text="MMR, Varicela"
+                        android:textSize="10dp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_First_Primary"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"
+                    />
+                <ImageView
+                    android:id="@+id/ImageView_choose_image8"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="141dp"
+                    android:layout_height="78dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#fff"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

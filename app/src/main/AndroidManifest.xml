@@ -3,6 +3,7 @@
     package="com.example.abodimazen.fahad">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,24 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.abodimazen.ChildCare.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Hospital" />
-        <activity android:name=".User" />
-        <activity android:name=".VerifyPhoneActivity" />
-        <activity android:name=".Profile" />
-        <activity android:name=".NewChild" />
-        <activity android:name=".details" />
-        <activity android:name=".Pro_hospital" />
-        <activity android:name=".cart" />
-        <activity android:name=".Payment" />
-        <activity android:name=".Plan" />
-        <activity android:name=".Child_Profile"></activity>
+        <activity android:name="com.example.abodimazen.ChildCare.Hospital" />
+        <activity android:name="com.example.abodimazen.ChildCare.User" />
+        <activity android:name="com.example.abodimazen.ChildCare.VerifyPhoneActivity" />
+        <activity android:name="com.example.abodimazen.ChildCare.Profile" />
+        <activity android:name="com.example.abodimazen.ChildCare.NewChild" />
+        <activity android:name="com.example.abodimazen.ChildCare.details" />
+        <activity android:name="com.example.abodimazen.ChildCare.Pro_hospital" />
+        <activity android:name="com.example.abodimazen.ChildCare.Payment" />
+        <activity android:name="com.example.abodimazen.ChildCare.Plan" />
+        <activity android:name="com.example.abodimazen.ChildCare.Child_Profile" />
+        <activity android:name="com.example.abodimazen.ChildCare.Child_record"></activity>
     </application>
 
 </manifest>

@@ -29,4 +29,17 @@
         <item>King Abdullah Hospital</item>
         <item> Suleiman Fakeya Hospital</item>
     </string-array>
+
+    <string-array name="vaccinationlist">
+        <item>At Birth</item>
+        <item>2 Month</item>
+        <item>4 Month</item>
+        <item>6 Month</item>
+        <item>9 Month</item>
+        <item>12 Month</item>
+        <item>18 Month</item>
+        <item>24 Month</item>
+        <item>First Primary</item>
+    </string-array>
+
 </resources>
