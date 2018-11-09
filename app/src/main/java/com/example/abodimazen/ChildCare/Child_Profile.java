@@ -30,6 +30,7 @@ import android.widget.Toast;
 import com.example.abodimazen.fahad.R;
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -60,6 +61,9 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
     private ImageView ImageView_choose_image;
     private  Uri mUri;
     private Button make;
+
+
+    private StorageReference mStorageRef;
 
     private static final int GALLERY_INTENT = 1;
 
@@ -122,7 +126,6 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
         setContentView(R.layout.activity_child__profile);
         mAuth = FirebaseAuth.getInstance();
         make =  findViewById(R.id.make);
-
         name = findViewById(R.id.text_view_Namee);
         gender = findViewById(R.id.text_view_Gender);
         birth = findViewById(R.id.text_view_Birth);
@@ -134,8 +137,10 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
         Text_Satus = findViewById(R.id.Text_Satus);
         Button_record = findViewById(R.id.Button_record);
         ImageView_choose_image = findViewById(R.id.ImageView_choose_image);
-        mStorage = FirebaseStorage.getInstance().getReference("Photo");
-        mData = FirebaseDatabase.getInstance().getReference("Photo");
+        mStorageRef = FirebaseStorage.getInstance().getReference("Child Photo");
+
+
+
 
         Button_record.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -293,6 +298,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
         }
 
 
+
     }
 
 
@@ -358,6 +364,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
             mUri = data.getData();
             Picasso.with(this).load(mUri).into(ImageView_choose_image);
+            //ImageView_choose_image.setImageURI(mUri);
 
 
 
@@ -367,7 +374,51 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
     public void button_choose_image(View view) {
         openFileChooser();
+        uploadFile();
+
 
     }
+
+    private String getFileExtenstion(Uri uri){
+        ContentResolver cR = getContentResolver();
+        MimeTypeMap mime = MimeTypeMap.getSingleton();
+        return mime.getExtensionFromMimeType(cR.getType(uri));
+
+
+    }
+    private void uploadFile() {
+        if (mUri != null){
+            final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
+            + "." + getFileExtenstion(mUri));
+
+            fileReference.putFile(mUri)
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            Toast.makeText(Child_Profile.this, "Upload successful", Toast.LENGTH_LONG).show();
+                            Upload upload = new Upload(fileReference.getDownloadUrl().toString());
+
+
+
+
+
+
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(Child_Profile.this,e.getMessage(),Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }else{
+            Toast.makeText(this,"No file Selected", Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
+
+
+
 }
 

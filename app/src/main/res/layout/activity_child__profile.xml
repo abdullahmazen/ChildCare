@@ -21,8 +21,9 @@
                 android:layout_height="68dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="45dp"
-                android:background="@drawable/child"
+                android:background="@drawable/ic_add_a_photo"
                 android:onClick="button_choose_image"/>
+
 
 
 
