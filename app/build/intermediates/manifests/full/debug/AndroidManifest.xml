@@ -46,7 +46,6 @@
         <activity android:name="com.example.abodimazen.ChildCare.VerifyPhoneActivity" />
         <activity android:name="com.example.abodimazen.ChildCare.Profile" />
         <activity android:name="com.example.abodimazen.ChildCare.NewChild" />
-        <activity android:name="com.example.abodimazen.ChildCare.details" />
         <activity android:name="com.example.abodimazen.ChildCare.Pro_hospital" />
         <activity android:name="com.example.abodimazen.ChildCare.Payment" />
         <activity android:name="com.example.abodimazen.ChildCare.Plan" />

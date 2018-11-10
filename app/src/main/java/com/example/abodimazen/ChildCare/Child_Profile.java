@@ -40,6 +40,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
@@ -61,6 +62,8 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
     private ImageView ImageView_choose_image;
     private  Uri mUri;
     private Button make;
+    private DatabaseReference databaseRef;
+    private StorageTask mUploadTask;
 
 
     private StorageReference mStorageRef;
@@ -71,8 +74,6 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
     int day,month, year, hour,minute;
     int dayFinal, monthFinal, yearFinal, hourFinal, minuteFinal;
 
-    private StorageReference mStorage;
-    private DatabaseReference mData;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
@@ -138,7 +139,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
         Button_record = findViewById(R.id.Button_record);
         ImageView_choose_image = findViewById(R.id.ImageView_choose_image);
         mStorageRef = FirebaseStorage.getInstance().getReference("Child Photo");
-
+        databaseRef = FirebaseDatabase.getInstance().getReference("Child Photo");
 
 
 
@@ -373,6 +374,13 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
 
     public void button_choose_image(View view) {
+        if (mUploadTask != null && mUploadTask.isInProgress()){
+            Toast.makeText(Child_Profile.this, "Upload in progress",Toast.LENGTH_SHORT).show();
+
+        }else{
+
+        }
+
         openFileChooser();
         uploadFile();
 
@@ -391,14 +399,12 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
             final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
             + "." + getFileExtenstion(mUri));
 
-            fileReference.putFile(mUri)
+            mUploadTask = fileReference.putFile(mUri)
                     .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             Toast.makeText(Child_Profile.this, "Upload successful", Toast.LENGTH_LONG).show();
                             Upload upload = new Upload(fileReference.getDownloadUrl().toString());
-
-
 
 
 
