@@ -3,16 +3,23 @@ package com.example.abodimazen.ChildCare;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.abodimazen.fahad.R;
+import com.firebase.ui.auth.AuthUI;
 import com.github.sundeepk.compactcalendarview.domain.Event;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
@@ -46,12 +53,14 @@ public class Child_record extends AppCompatActivity {
     private TextView textView_Dates_18Month;
     private TextView textView_Dates_24Month;
     private TextView textView_Dates_First_Primary;
+    private String checkedMark = "\u2713";
 
 
 
 
 
 
+    private FirebaseAuth mAuth;
 
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -98,27 +107,36 @@ public class Child_record extends AppCompatActivity {
                             String Lastvaccination = documentSnapshot.getString("lastvaccination");
 
                             if (Lastvaccination.equals("At Birth")) {
-                                textView_At_Birth.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
                                 textView_Two_Month.setText("Next vaccination");
+
+                                textView_At_Birth.setTextSize(30);
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GRAY);
                             }
 
                             if (Lastvaccination.equals("2 Month")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
                                 textView_Four_Month.setText("Next vaccination");
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
                                 textView_Four_Month.setTextColor(Color.GRAY);
                             }
                             if (Lastvaccination.equals("4 Month")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
-                                textView_Four_Month.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
+                                textView_Four_Month.setText(checkedMark);
                                 textView_Six_Month.setText("Next vaccination");
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
+                                textView_Four_Month.setTextSize(30);
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -126,11 +144,16 @@ public class Child_record extends AppCompatActivity {
                                 textView_Six_Month.setTextColor(Color.GRAY);
                             }
                             if (Lastvaccination.equals("6 Month")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
-                                textView_Four_Month.setText("Done");
-                                textView_Six_Month.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
+                                textView_Four_Month.setText(checkedMark);
+                                textView_Six_Month.setText(checkedMark);
                                 textView_Nine_Month.setText("Next vaccination");
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
+                                textView_Four_Month.setTextSize(30);
+                                textView_Six_Month.setTextSize(30);
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -139,12 +162,20 @@ public class Child_record extends AppCompatActivity {
                                 textView_Nine_Month.setTextColor(Color.GRAY);
                             }
                             if (Lastvaccination.equals("9 Month")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
-                                textView_Four_Month.setText("Done");
-                                textView_Six_Month.setText("Done");
-                                textView_Nine_Month.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
+                                textView_Four_Month.setText(checkedMark);
+                                textView_Six_Month.setText(checkedMark);
+                                textView_Nine_Month.setText(checkedMark);
                                 textView_Twelve_Month.setText("Next vaccination");
+
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
+                                textView_Four_Month.setTextSize(30);
+                                textView_Six_Month.setTextSize(30);
+                                textView_Nine_Month.setTextSize(30);
+
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -155,13 +186,21 @@ public class Child_record extends AppCompatActivity {
                             }
 
                             if (Lastvaccination.equals("12 Month")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
-                                textView_Four_Month.setText("Done");
-                                textView_Six_Month.setText("Done");
-                                textView_Nine_Month.setText("Done");
-                                textView_Twelve_Month.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
+                                textView_Four_Month.setText(checkedMark);
+                                textView_Six_Month.setText(checkedMark);
+                                textView_Nine_Month.setText(checkedMark);
+                                textView_Twelve_Month.setText(checkedMark);
                                 textViewـEighteen_Month.setText("Next vaccination");
+
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
+                                textView_Four_Month.setTextSize(30);
+                                textView_Six_Month.setTextSize(30);
+                                textView_Nine_Month.setTextSize(30);
+                                textView_Twelve_Month.setTextSize(30);
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -172,14 +211,23 @@ public class Child_record extends AppCompatActivity {
                                 textViewـEighteen_Month.setTextColor(Color.GRAY);
                             }
                             if (Lastvaccination.equals("18 Month")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
-                                textView_Four_Month.setText("Done");
-                                textView_Six_Month.setText("Done");
-                                textView_Nine_Month.setText("Done");
-                                textView_Twelve_Month.setText("Done");
-                                textViewـEighteen_Month.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
+                                textView_Four_Month.setText(checkedMark);
+                                textView_Six_Month.setText(checkedMark);
+                                textView_Nine_Month.setText(checkedMark);
+                                textView_Twelve_Month.setText(checkedMark);
+                                textViewـEighteen_Month.setText(checkedMark);
                                 textView_Twenty_four_Month.setText("Next vaccination");
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
+                                textView_Four_Month.setTextSize(30);
+                                textView_Six_Month.setTextSize(30);
+                                textView_Nine_Month.setTextSize(30);
+                                textView_Twelve_Month.setTextSize(30);
+                                textViewـEighteen_Month.setTextSize(30);
+
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -191,15 +239,25 @@ public class Child_record extends AppCompatActivity {
                                 textView_Twenty_four_Month.setTextColor(Color.GRAY);
                             }
                             if (Lastvaccination.equals("24 Month")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
-                                textView_Four_Month.setText("Done");
-                                textView_Six_Month.setText("Done");
-                                textView_Nine_Month.setText("Done");
-                                textView_Twelve_Month.setText("Done");
-                                textViewـEighteen_Month.setText("Done");
-                                textView_Twenty_four_Month.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
+                                textView_Four_Month.setText(checkedMark);
+                                textView_Six_Month.setText(checkedMark);
+                                textView_Nine_Month.setText(checkedMark);
+                                textView_Twelve_Month.setText(checkedMark);
+                                textViewـEighteen_Month.setText(checkedMark);
+                                textView_Twenty_four_Month.setText(checkedMark);
                                 textView_First_Primary.setText("Next vaccination");
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
+                                textView_Four_Month.setTextSize(30);
+                                textView_Six_Month.setTextSize(30);
+                                textView_Nine_Month.setTextSize(30);
+                                textView_Twelve_Month.setTextSize(30);
+                                textViewـEighteen_Month.setTextSize(30);
+                                textView_Twenty_four_Month.setTextSize(30);
+
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -212,15 +270,25 @@ public class Child_record extends AppCompatActivity {
                                 textView_First_Primary.setTextColor(Color.GRAY);
                             }
                             if (Lastvaccination.equals("First Primary")) {
-                                textView_At_Birth.setText("Done");
-                                textView_Two_Month.setText("Done");
-                                textView_Four_Month.setText("Done");
-                                textView_Six_Month.setText("Done");
-                                textView_Nine_Month.setText("Done");
-                                textView_Twelve_Month.setText("Done");
-                                textViewـEighteen_Month.setText("Done");
-                                textView_Twenty_four_Month.setText("Done");
-                                textView_First_Primary.setText("Done");
+                                textView_At_Birth.setText(checkedMark);
+                                textView_Two_Month.setText(checkedMark);
+                                textView_Four_Month.setText(checkedMark);
+                                textView_Six_Month.setText(checkedMark);
+                                textView_Nine_Month.setText(checkedMark);
+                                textView_Twelve_Month.setText(checkedMark);
+                                textViewـEighteen_Month.setText(checkedMark);
+                                textView_Twenty_four_Month.setText(checkedMark);
+                                textView_First_Primary.setText(checkedMark);
+
+                                textView_At_Birth.setTextSize(30);
+                                textView_Two_Month.setTextSize(30);
+                                textView_Four_Month.setTextSize(30);
+                                textView_Six_Month.setTextSize(30);
+                                textView_Nine_Month.setTextSize(30);
+                                textView_Twelve_Month.setTextSize(30);
+                                textViewـEighteen_Month.setTextSize(30);
+                                textView_Twenty_four_Month.setTextSize(30);
+                                textView_First_Primary.setTextSize(30);
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -373,7 +441,7 @@ public class Child_record extends AppCompatActivity {
                             }
 
 
-                            calendar6.add(Calendar.DATE, 2160);
+                            calendar6.add(Calendar.DATE, 2520);
                             FirstPrimarysdf = new SimpleDateFormat("dd/MM/yyyy");
                             Date nFirstPrimary = new Date(calendar6.getTimeInMillis());
                             FirstPrimary = FirstPrimarysdf.format(nFirstPrimary);
@@ -382,6 +450,7 @@ public class Child_record extends AppCompatActivity {
 
                         }
                     });
+
         }
 
 
@@ -421,4 +490,40 @@ public class Child_record extends AppCompatActivity {
 
         }
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+
+        return true;
+    }
+
+    private void signOut() {
+        AuthUI.getInstance().signOut(this)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        startActivity(new Intent(Child_record.this,MainActivity.class));
+                        finish();
+                    }
+                });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.action_sign_out:
+                signOut();
+
+            case R.id.action_Profile:
+                startActivity(new Intent(Child_record.this,Profile.class));
+                finish();
+
+        }
+
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

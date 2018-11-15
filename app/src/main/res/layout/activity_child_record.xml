@@ -122,7 +122,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="BCG"
+                        android:text="BCG,"
                         android:textSize="10dp"
                         android:textStyle="italic" />
 
@@ -131,7 +131,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="Hepatitis B"
+                        android:text="Hepatitis B."
                         android:textSize="10dp" />
                 </LinearLayout>
 
@@ -201,8 +201,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="IPV, DTaP, Hepetitis B"
-                        android:textStyle="italic"
+                        android:text="IPV, DTaP, Hepatitis B,"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textSize="9dp"
                         />
@@ -211,8 +211,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="HIP,BCV,ROTA"
+                        android:text="HIB,PCV,ROTA."
                         android:textSize="9dp"
+                        android:textStyle="bold"
+
                         />
 
 
@@ -286,9 +288,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="IPV, DTaP, Hepetitis B"
-                        android:textStyle="italic"
+                        android:text="IPV, DTaP, Hepatitis B,"
+                        android:textStyle="bold"
                         android:textSize="10dp"
+                        android:textAlignment="center"
 
                         />
 
@@ -298,8 +301,10 @@
                         android:layout_margin="1dp"
                         android:background="#fff"
                         android:padding="1dp"
-                        android:text="HIP, BCV, ROTA "
+                        android:textStyle="bold"
+                        android:text="HIB, PCV, ROTA."
                         android:textSize="10dp"
+                        android:textAlignment="center"
                         />
                 </LinearLayout>
                 <TextView
@@ -369,9 +374,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="OPV, IPV, DTap"
-                        android:textStyle="italic"
+                        android:text="OPV, IPV, DTaP,"
+                        android:textStyle="bold"
                         android:textSize="10dp"
+                        android:textAlignment="center"
 
                         />
 
@@ -381,8 +387,10 @@
                         android:layout_margin="1dp"
                         android:background="#fff"
                         android:padding="1dp"
-                        android:text="Hipetitis B, Hib, BCV"
+                        android:text="Hepatitis B, Hib, BCV."
+                        android:textStyle="bold"
                         android:textSize="10dp"
+                        android:textAlignment="center"
                         />
                 </LinearLayout>
 
@@ -453,10 +461,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="Mecales"
-                        android:textStyle="italic"
+                        android:text="Measles,"
+                        android:textStyle="bold"
                         android:textSize="10dp"
-
                         />
 
                     <TextView
@@ -464,8 +471,8 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
                         android:background="#fff"
-                        android:padding="1dp"
-                        android:text="MCV4"
+                        android:textStyle="bold"
+                        android:text="MCV4."
                         android:textSize="10dp"
                         />
                 </LinearLayout>
@@ -536,10 +543,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="OPv, MMR"
-                        android:textStyle="italic"
+                        android:text="OPV, MMR,"
+                        android:textStyle="bold"
                         android:textSize="10dp"
-
                         />
 
                     <TextView
@@ -548,7 +554,8 @@
                         android:layout_margin="1dp"
                         android:background="#fff"
                         android:padding="1dp"
-                        android:text="PCV, MCV4"
+                        android:textStyle="bold"
+                        android:text="PCV, MCV4."
                         android:textSize="10dp"
                         />
                 </LinearLayout>
@@ -620,9 +627,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="OPTV, DTaP, Hib"
-                        android:textStyle="italic"
+                        android:text="OPV, DTaP, Hib,"
+                        android:textStyle="bold"
                         android:textSize="10dp"
+                        android:textAlignment="center"
 
                         />
 
@@ -632,7 +640,9 @@
                         android:layout_margin="1dp"
                         android:background="#fff"
                         android:padding="1dp"
-                        android:text="MMR, Varacella, Hepitatis A"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="MMR, Varicella, Hepatitis A."
                         android:textSize="10dp"
                         />
                 </LinearLayout>
@@ -705,9 +715,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="Hepatitis A"
-                        android:textStyle="italic"
+                        android:text="Hepatitis A."
+                        android:textStyle="bold"
                         android:textSize="10dp"
+
 
                         />
 
@@ -781,9 +792,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="#fff"
-                        android:text="OPTV, DTap"
-                        android:textStyle="italic"
+                        android:text="OPV, DTaP (Td),"
+                        android:textStyle="bold"
                         android:textSize="10dp"
+                        android:textAlignment="center"
 
                         />
 
@@ -793,8 +805,10 @@
                         android:layout_margin="1dp"
                         android:background="#fff"
                         android:padding="1dp"
-                        android:text="MMR, Varicela"
+                        android:textStyle="bold"
+                        android:text="MMR, Varicella."
                         android:textSize="10dp"
+                        android:textAlignment="center"
                         />
                 </LinearLayout>
 

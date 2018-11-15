@@ -76,40 +76,6 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu,menu);
-
-        return true;
-    }
-
-    private void signOut() {
-        AuthUI.getInstance().signOut(this)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        startActivity(new Intent(Child_Profile.this,User.class));
-                        finish();
-                    }
-                });
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId())
-        {
-            case R.id.action_sign_out:
-                signOut();
-
-                case R.id.action_Profile:
-                    startActivity(new Intent(Child_Profile.this,Profile.class));
-                    finish();
-
-        }
-
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
 
     @Override
@@ -423,7 +389,41 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
         }
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
 
+        return true;
+    }
+
+    private void signOut() {
+        AuthUI.getInstance().signOut(this)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        startActivity(new Intent(Child_Profile.this,MainActivity.class));
+                        finish();
+                    }
+                });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.action_sign_out:
+                signOut();
+
+            case R.id.action_Profile:
+                startActivity(new Intent(Child_Profile.this,Profile.class));
+                finish();
+
+        }
+
+
+
+        return super.onOptionsItemSelected(item);
+    }
 
 
 }
