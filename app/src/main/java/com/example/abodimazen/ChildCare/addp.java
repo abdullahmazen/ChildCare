@@ -1,5 +1,7 @@
 package com.example.abodimazen.ChildCare;
 
+import android.widget.ImageView;
+
 public class addp {
 
     private String Name;
@@ -13,7 +15,6 @@ public class addp {
     private String PlanSatus;
     private String Place_Birth;
     private String Lastvaccination;
-    private String NextVisit;
 
 
 
@@ -21,7 +22,7 @@ public class addp {
 
     }
 
-    public addp(String name, String birth, String gender, String bload, String user_id, String hospital, String TypeOfPlan, String appounment, String PlanSatus, String Place_Birth, String Lastvaccination, String nextVisit) {
+    public addp(String name, String birth, String gender, String bload, String user_id, String hospital, String TypeOfPlan, String appounment, String PlanSatus, String Place_Birth, String Lastvaccination) {
         this.Name = name;
         this.Birth = birth;
         this.gender = gender;
@@ -33,7 +34,6 @@ public class addp {
         this.PlanSatus = PlanSatus;
         this.Place_Birth = Place_Birth;
         this.Lastvaccination = Lastvaccination;
-        this.NextVisit = nextVisit;
 
 
 
@@ -129,12 +129,5 @@ public class addp {
         Lastvaccination = lastvaccination;
     }
 
-    public String getNextVisit() {
-        return NextVisit;
-    }
-
-    public void setNextVisit(String nextVisit) {
-        NextVisit = nextVisit;
-    }
 
 }

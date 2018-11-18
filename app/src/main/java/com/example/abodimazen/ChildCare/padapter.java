@@ -5,16 +5,20 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.abodimazen.fahad.R;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.DocumentSnapshot;
 
+
 public class padapter extends FirestoreRecyclerAdapter<addp, padapter.profileHolder> {
 
 
-private  OnItemClickListener listener;
+
+
+    private  OnItemClickListener listener;
 
 
     public padapter(@NonNull FirestoreRecyclerOptions<addp> options) {
@@ -24,6 +28,7 @@ private  OnItemClickListener listener;
     @Override
     protected void onBindViewHolder(@NonNull profileHolder holder, int position, @NonNull addp model) {
         holder.textViewName.setText(model.getName());
+
 
     }
 
@@ -41,7 +46,7 @@ private  OnItemClickListener listener;
 
     class profileHolder extends RecyclerView.ViewHolder {
         TextView textViewName;
-
+        ImageView profile_img;
 
 
 
@@ -50,7 +55,7 @@ private  OnItemClickListener listener;
             super(itemView);
 
             textViewName = itemView.findViewById(R.id.Text_view_name);
-
+            profile_img = itemView.findViewById(R.id.profile_img);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {

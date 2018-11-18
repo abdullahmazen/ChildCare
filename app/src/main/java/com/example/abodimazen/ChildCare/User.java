@@ -1,6 +1,7 @@
 package com.example.abodimazen.ChildCare;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -28,8 +29,10 @@ public class User extends AppCompatActivity {
         spinner = findViewById(R.id.spinnerCountries);
         spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, CountryData.countryNames));
 
+
         editText = findViewById(R.id.editTextPhone);
 
+        editText.setTextColor(Color.WHITE);
         findViewById(R.id.buttonContinue).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

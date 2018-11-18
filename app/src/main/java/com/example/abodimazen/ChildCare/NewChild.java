@@ -103,7 +103,6 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
         String TypeOfPlan ="";
         String appounment = "";
         String PlanSatus = "";
-        String NextVisit ="";
 
 
 
@@ -115,7 +114,7 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
 
 
 
-        addp addd = new addp( Name,  Birth,  gender,  Bload, user_id, hospital, TypeOfPlan,appounment, PlanSatus, Place_Birth, Lastvaccination, NextVisit);
+        addp addd = new addp( Name,  Birth,  gender,  Bload, user_id, hospital, TypeOfPlan,appounment, PlanSatus, Place_Birth, Lastvaccination);
 
         addd.setName(Name);
         addd.setBirth(Birth);
@@ -128,7 +127,6 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
         addd.setPlanSatus(PlanSatus);
         addd.setPlace_Birth(Place_Birth);
         addd.setLastvaccination(Lastvaccination);
-        addd.setNextVisit(NextVisit);
 
 
 
