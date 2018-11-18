@@ -48,12 +48,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/color-v23/abc_btn_colored_borderless_text_material.xml"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -64,20 +64,20 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.1.aar/54818555a2f855dc0ec81b028b841cd9/res/drawable-xhdpi-v4/cio_ic_paypal_monogram.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_cio_paypal_logo.png.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.1.aar/54818555a2f855dc0ec81b028b841cd9/res/drawable-hdpi-v4/cio_paypal_logo.png"
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/color-v23/abc_tint_default.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/82f08a35cc46c4ac71d9cc3f98119afc/res/drawable-mdpi-v4/design_ic_visibility_off.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/color-v23/abc_tint_default.xml"
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_cio_paypal_logo.png.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.1.aar/54818555a2f855dc0ec81b028b841cd9/res/drawable-hdpi-v4/cio_paypal_logo.png"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -104,12 +104,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/anim/abc_tooltip_exit.xml"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-v21_fui_idp_button_background_google.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/drawable-v21/fui_idp_button_background_google.xml"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -318,6 +318,10 @@
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_app.png.flat",
         "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/mipmap-hdpi/ic_launcher_app.png"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_whitecoatdoctor.png.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/drawable/whitecoatdoctor.png"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
