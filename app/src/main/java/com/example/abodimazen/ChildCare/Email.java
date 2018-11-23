@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class Hospital extends AppCompatActivity implements View.OnClickListener {
+public class Email extends AppCompatActivity implements View.OnClickListener {
     private FirebaseFirestore db;
     private FirebaseAuth mAuth;
     private EditText email,password;
@@ -53,7 +53,7 @@ public class Hospital extends AppCompatActivity implements View.OnClickListener 
         });
     }
 
-    private  void hospital(){
+    private  void userLogin(){
         String Email = email.getText().toString().trim();
         String Password = password.getText().toString().trim();
 
@@ -101,24 +101,24 @@ public class Hospital extends AppCompatActivity implements View.OnClickListener 
 
                                     if (typeOfUser.equals("User")) {
 
-                                        Intent i = new Intent(Hospital.this, Profile.class);
+                                        Intent i = new Intent(com.example.abodimazen.ChildCare.Email.this, Profile.class);
                                         startActivity(i);
                                         finish();
 
                                     } else if (typeOfUser.equals("Hospital Employee") && id.equals("tQBLz8a26df6CNk9J0xZd41i2nG3")) {
 
-                                        Intent i = new Intent(Hospital.this, Pro_hospital.class);
+                                        Intent i = new Intent(com.example.abodimazen.ChildCare.Email.this, Pro_hospital.class);
                                         startActivity(i);
                                         finish();
                                     }else if (typeOfUser.equals("Hospital Employee") && id.equals("6ZxdX0wOS7fWSLhQCKb9zt7EQdy2")) {
 
-                                        Intent i = new Intent(Hospital.this, HospitalAct1F.class);
+                                        Intent i = new Intent(com.example.abodimazen.ChildCare.Email.this, HospitalAct1F.class);
                                         startActivity(i);
                                         finish();
                                     }
                                 }else {
 
-                                    Toast.makeText(Hospital.this, "Please verify your Account! ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(com.example.abodimazen.ChildCare.Email.this, "Please verify your Account! ", Toast.LENGTH_SHORT).show();
                                     mAuth.signOut();
                                 }
                             }
@@ -141,9 +141,13 @@ public class Hospital extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View view) {
 
-                hospital();
+        switch (view.getId()){
+            case R.id.sign_in:
+                userLogin();
+                break;
 
         }
 
+    }
     }
 

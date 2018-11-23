@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@mipmap/background"
     android:layout_height="match_parent"
-    tools:context="com.example.abodimazen.ChildCare.Hospital"
+    tools:context="com.example.abodimazen.ChildCare.Email"
     >
     <EditText
         android:id="@+id/email"

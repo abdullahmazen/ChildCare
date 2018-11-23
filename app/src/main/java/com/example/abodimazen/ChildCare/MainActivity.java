@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         mEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Hospital.class);
+                Intent intent = new Intent(MainActivity.this,Email.class);
                 startActivity(intent);
             }
         });

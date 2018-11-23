@@ -135,7 +135,7 @@ public class Child_Profile extends AppCompatActivity{
 
                                 Map<String, Object> Ahospital = new HashMap<>();
 
-                                Ahospital.put("hospital", "King Abdullah hospital");
+                                Ahospital.put("hospitalName", "King Abdullah hospital");
                                 db.collection("Child").document(n).update(Ahospital);
                             }
 
@@ -151,7 +151,7 @@ public class Child_Profile extends AppCompatActivity{
 
 
                                 Map<String, Object> Shospital = new HashMap<>();
-                                Shospital.put("hospital", "Suliman Fakeh Hospital");
+                                Shospital.put("hospitalName", "Suliman Fakeh Hospital");
                                 db.collection("Child").document(n).update(Shospital);
                             }
                         }
@@ -229,7 +229,7 @@ public class Child_Profile extends AppCompatActivity{
                             String pbirth = documentSnapshot.getString("birth");
                             String pbload = documentSnapshot.getString("bload");
                             String pDates = documentSnapshot.getString("appounment");
-                            String pHospital = documentSnapshot.getString("hospital");
+                            String pHospital = documentSnapshot.getString("hospitalName");
                             String pPlan = documentSnapshot.getString("typeOfPlan");
                             String pSatus = documentSnapshot.getString("planSatus");
                             String Lastvaccination = documentSnapshot.getString("lastvaccination");
@@ -251,7 +251,7 @@ public class Child_Profile extends AppCompatActivity{
                             Text_Plan.setText(pPlan);
                             Text_Satus.setText(pSatus);
                             Text_record.setText(Lastvaccination);
-                            Text_Dates.setText(Appointment);
+                            Text_Dates.setText( "Your Appointment" + "\n" + Appointment);
 
 
 

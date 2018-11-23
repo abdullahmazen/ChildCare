@@ -5,6 +5,7 @@ INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/And
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
 MERGED from [com.github.sundeepk:compact-calendar-view:1.9.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/compact-calendar-view-1.9.1.aar/32f8858d2700c8ebede645486d203b5e/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:2:1-17:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/AndroidManifest.xml:2:1-114:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/4430f15dbaf29ca94f999d55c74df418/AndroidManifest.xml:6:1-16:12
 MERGED from [com.android.support:design:28.0.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/82f08a35cc46c4ac71d9cc3f98119afc/AndroidManifest.xml:17:1-24:12
@@ -124,6 +125,8 @@ ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/Androi
 		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:6:22-77
 application
 ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:8:5-44:19
+MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:11:5-15:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/AndroidManifest.xml:15:5-112:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/AndroidManifest.xml:15:5-112:19
 MERGED from [com.android.support:design:28.0.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/82f08a35cc46c4ac71d9cc3f98119afc/AndroidManifest.xml:22:5-20
@@ -212,10 +215,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:19:27-74
-activity#com.example.abodimazen.ChildCare.Hospital
-ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:22:9-78
+activity#com.example.abodimazen.ChildCare.Email
+ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:22:9-75
 	android:name
-		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:22:19-75
+		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:22:19-72
 activity#com.example.abodimazen.ChildCare.User
 ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:23:9-74
 	android:name
@@ -306,6 +309,8 @@ INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/And
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
 MERGED from [com.github.sundeepk:compact-calendar-view:1.9.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/compact-calendar-view-1.9.1.aar/32f8858d2700c8ebede645486d203b5e/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.sundeepk:compact-calendar-view:1.9.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/compact-calendar-view-1.9.1.aar/32f8858d2700c8ebede645486d203b5e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:7:5-9:41
 MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/AndroidManifest.xml:8:5-10:41
 MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/AndroidManifest.xml:8:5-10:41
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/4430f15dbaf29ca94f999d55c74df418/AndroidManifest.xml:12:5-14:41

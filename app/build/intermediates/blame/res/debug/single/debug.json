@@ -48,12 +48,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -84,16 +84,16 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ed73a64c2b834b028e22d66a42a2e8f0/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_hospital_blood1_f.xml.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_hospital_blood1_f.xml"
+    },
+    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_disabled.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/4ba018df35d4eb63956d54b7bf35b913/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_fui_ic_twitter_bird_white_24dp.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/drawable/fui_ic_twitter_bird_white_24dp.xml"
-    },
-    {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_hospital_blood1_f.xml.flat",
-        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_hospital_blood1_f.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_checked_black.xml.flat",
@@ -108,12 +108,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/anim/abc_tooltip_exit.xml"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-v21_fui_idp_button_background_google.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/drawable-v21/fui_idp_button_background_google.xml"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -436,20 +436,20 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ed73a64c2b834b028e22d66a42a2e8f0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_fui_welcome_back_idp_prompt_layout.xml.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/layout/fui_welcome_back_idp_prompt_layout.xml"
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ed73a64c2b834b028e22d66a42a2e8f0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-mdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_fui_welcome_back_idp_prompt_layout.xml.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/layout/fui_welcome_back_idp_prompt_layout.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -780,12 +780,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/167600f87d1d412bef80f213bf57f3ee/res/color/common_google_signin_btn_text_light.xml"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_hospital_blood.xml.flat",
         "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_hospital_blood.xml"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/167600f87d1d412bef80f213bf57f3ee/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -1020,6 +1020,10 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-mdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_gradient.xml.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/drawable/gradient.xml"
+    },
+    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/color_mtrl_bottom_nav_item_tint.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/82f08a35cc46c4ac71d9cc3f98119afc/res/color/mtrl_bottom_nav_item_tint.xml"
     },
@@ -1030,6 +1034,10 @@
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_location_timeline.png.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/drawable/location_timeline.png"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -1172,12 +1180,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/layout/fui_activity_register_email.xml"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_user.xml.flat",
-        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_user.xml"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/167600f87d1d412bef80f213bf57f3ee/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_user.xml.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_user.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -1292,6 +1300,10 @@
         "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/drawable/standred.png"
     },
     {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_marker.xml.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/res/drawable/marker.xml"
+    },
+    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
@@ -1396,6 +1408,10 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_kaah.jpg.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/drawable/kaah.jpg"
+    },
+    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable/abc_list_selector_holo_light.xml"
     },
@@ -1484,12 +1500,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/drawable-v21/fui_idp_button_background_github.xml"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_app.png.flat",
@@ -1668,12 +1684,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/layout/fui_dgts_country_row.xml"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
-        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/82f08a35cc46c4ac71d9cc3f98119afc/res/layout/design_navigation_item_separator.xml"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/c32395a4c6a3933a744c167b3ab04595/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
+        "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/82f08a35cc46c4ac71d9cc3f98119afc/res/layout/design_navigation_item_separator.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_background.png.flat",
@@ -2040,6 +2056,10 @@
         "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/mipmap-xhdpi/ic_launcher_app_round.png"
     },
     {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable_ic_account_circle.xml.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/drawable/ic_account_circle.xml"
+    },
+    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/anim_fui_slide_in_right.xml.flat",
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/res/anim/fui_slide_in_right.xml"
     },
@@ -2316,12 +2336,12 @@
         "source": "/Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ed73a64c2b834b028e22d66a42a2e8f0/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_new_child.xml.flat",
-        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_new_child.xml"
-    },
-    {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_hospital_appointments.xml.flat",
         "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_hospital_appointments.xml"
+    },
+    {
+        "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/layout_activity_new_child.xml.flat",
+        "source": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/res/layout/activity_new_child.xml"
     },
     {
         "merged": "/Users/Abodimazen/AndroidStudioProjects/ChildCare/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",

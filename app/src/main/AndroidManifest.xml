@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.abodimazen.ChildCare.Hospital" />
+        <activity android:name="com.example.abodimazen.ChildCare.Email" />
         <activity android:name="com.example.abodimazen.ChildCare.User" />
         <activity android:name="com.example.abodimazen.ChildCare.VerifyPhoneActivity" />
         <activity android:name="com.example.abodimazen.ChildCare.Profile" />

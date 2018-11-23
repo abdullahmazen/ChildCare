@@ -181,7 +181,7 @@ public class RegisterationAct extends AppCompatActivity implements AdapterView.O
                                     });
 
 
-                            Intent i =new Intent(RegisterationAct.this, Hospital.class);
+                            Intent i =new Intent(RegisterationAct.this, com.example.abodimazen.ChildCare.Email.class);
                             startActivity(i);
 
                         } else {
