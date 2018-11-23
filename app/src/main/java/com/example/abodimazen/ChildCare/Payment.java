@@ -70,7 +70,7 @@ public class Payment extends AppCompatActivity {
 
             String n = (String) b.get("id");
 
-            db.collection("Child Profile").document(n).get()
+            db.collection("Child").document(n).get()
                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -122,7 +122,7 @@ public class Payment extends AppCompatActivity {
                         Map<String, Object> ASatus = new HashMap<>();
 
                         ASatus.put("planSatus", "apptoved");
-                        db.collection("Child Profile").document(n).update(ASatus);
+                        db.collection("Child").document(n).update(ASatus);
                     }
                 }
                 else
@@ -155,7 +155,7 @@ public class Payment extends AppCompatActivity {
 
                 Map<String, Object> inPerson = new HashMap<>();
                 inPerson.put("planSatus", "inPerson Payment ");
-                db.collection("Child Profile").document(n).update(inPerson);
+                db.collection("Child").document(n).update(inPerson);
 
                 Intent q = new Intent(Payment.this, Child_Profile.class);
 

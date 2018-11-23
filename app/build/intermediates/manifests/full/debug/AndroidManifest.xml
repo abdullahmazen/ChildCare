@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.abodimazen.fahad"
+    package="com.example.abodimazen.ChildCare"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -32,6 +32,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.abodimazen.ChildCare.MainActivity" >
             <intent-filter>
@@ -50,6 +51,18 @@
         <activity android:name="com.example.abodimazen.ChildCare.Plan" />
         <activity android:name="com.example.abodimazen.ChildCare.Child_Profile" />
         <activity android:name="com.example.abodimazen.ChildCare.Child_record" />
+        <activity android:name="com.example.abodimazen.ChildCare.RegisterationAct" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalBlood" />
+        <activity android:name="com.example.abodimazen.ChildCare.BloodResults" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalAppointments" />
+        <activity android:name="com.example.abodimazen.ChildCare.AppointmentDetails" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalAct1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalBlood1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.BloodResults1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalAppointments1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.AppointmentDetails1F" />
+        <activity android:name="com.example.abodimazen.fahad.BookingDates" />
+        <activity android:name="com.example.abodimazen.ChildCare.BookingDates" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -139,7 +152,7 @@
 
         <provider
             android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"
-            android:authorities="com.example.abodimazen.fahad.authuiinitprovider"
+            android:authorities="com.example.abodimazen.ChildCare.authuiinitprovider"
             android:exported="false"
             android:initOrder="90" />
 
@@ -181,7 +194,7 @@
 
         <provider
             android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.example.abodimazen.fahad.lifecycle-trojan"
+            android:authorities="com.example.abodimazen.ChildCare.lifecycle-trojan"
             android:exported="false"
             android:multiprocess="true" />
 
@@ -232,7 +245,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.abodimazen.fahad.firebaseinitprovider"
+            android:authorities="com.example.abodimazen.ChildCare.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 

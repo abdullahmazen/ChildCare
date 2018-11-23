@@ -28,7 +28,19 @@
         <activity android:name="com.example.abodimazen.ChildCare.Payment" />
         <activity android:name="com.example.abodimazen.ChildCare.Plan" />
         <activity android:name="com.example.abodimazen.ChildCare.Child_Profile" />
-        <activity android:name="com.example.abodimazen.ChildCare.Child_record"></activity>
+        <activity android:name="com.example.abodimazen.ChildCare.Child_record" />
+        <activity android:name="com.example.abodimazen.ChildCare.RegisterationAct" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalBlood" />
+        <activity android:name="com.example.abodimazen.ChildCare.BloodResults" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalAppointments" />
+        <activity android:name="com.example.abodimazen.ChildCare.AppointmentDetails" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalAct1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalBlood1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.BloodResults1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.HospitalAppointments1F" />
+        <activity android:name="com.example.abodimazen.ChildCare.AppointmentDetails1F" />
+        <activity android:name=".BookingDates" />
+        <activity android:name="com.example.abodimazen.ChildCare.BookingDates"></activity>
     </application>
 
 </manifest>

@@ -103,6 +103,7 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
         String TypeOfPlan ="";
         String appounment = "";
         String PlanSatus = "";
+        String PhotoURL = "";
 
 
 
@@ -114,7 +115,7 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
 
 
 
-        addp addd = new addp( Name,  Birth,  gender,  Bload, user_id, hospital, TypeOfPlan,appounment, PlanSatus, Place_Birth, Lastvaccination);
+        addp addd = new addp( Name,  Birth,  gender,  Bload, user_id, hospital, TypeOfPlan,appounment, PlanSatus, Place_Birth, Lastvaccination, PhotoURL);
 
         addd.setName(Name);
         addd.setBirth(Birth);
@@ -127,6 +128,7 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
         addd.setPlanSatus(PlanSatus);
         addd.setPlace_Birth(Place_Birth);
         addd.setLastvaccination(Lastvaccination);
+        addd.setPhotoURL(PhotoURL);
 
 
 
@@ -138,7 +140,7 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
 
 
 
-        db.collection("Child Profile").document().set(addd)
+        db.collection("Child").document().set(addd)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {

@@ -30,6 +30,7 @@ public class padapter extends FirestoreRecyclerAdapter<addp, padapter.profileHol
         holder.textViewName.setText(model.getName());
 
 
+
     }
 
 
@@ -46,7 +47,6 @@ public class padapter extends FirestoreRecyclerAdapter<addp, padapter.profileHol
 
     class profileHolder extends RecyclerView.ViewHolder {
         TextView textViewName;
-        ImageView profile_img;
 
 
 
@@ -55,7 +55,6 @@ public class padapter extends FirestoreRecyclerAdapter<addp, padapter.profileHol
             super(itemView);
 
             textViewName = itemView.findViewById(R.id.Text_view_name);
-            profile_img = itemView.findViewById(R.id.profile_img);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {

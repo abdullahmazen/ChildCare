@@ -39,7 +39,7 @@ public class Plan extends AppCompatActivity {
 
                     Map<String, Object> Standred = new HashMap<>();
                     Standred.put("typeOfPlan", Standrd);
-                    db.collection("Child Profile").document(n).update(Standred);
+                    db.collection("Child").document(n).update(Standred);
 
 
 
@@ -69,7 +69,7 @@ public class Plan extends AppCompatActivity {
                     String pPlus = plus.getText().toString();
                     Map<String, Object> Plus = new HashMap<>();
                     Plus.put("typeOfPlan", ppPlus);
-                    db.collection("Child Profile").document(n).update(Plus);
+                    db.collection("Child").document(n).update(Plus);
 
                     Intent q = new Intent(Plan.this, Payment.class);
 

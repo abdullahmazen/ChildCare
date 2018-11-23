@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "946344457970",
-    "firebase_url": "https://fahad-406d8.firebaseio.com",
-    "project_id": "fahad-406d8",
-    "storage_bucket": "fahad-406d8.appspot.com"
+    "project_number": "158792718229",
+    "firebase_url": "https://childcare-73003.firebaseio.com",
+    "project_id": "childcare-73003",
+    "storage_bucket": "childcare-73003.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:946344457970:android:fcd6f602453e6d5d",
+        "mobilesdk_app_id": "1:158792718229:android:fcd6f602453e6d5d",
         "android_client_info": {
           "package_name": "com.example.abodimazen.ChildCare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "946344457970-1mt56pi2tl2fpfnutvnndsit6r2p8dcg.apps.googleusercontent.com",
+          "client_id": "158792718229-hv5a8i3sb0aaa6mc09snne9bs2cj9ar8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.abodimazen.ChildCare",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+          "client_id": "158792718229-88s4flr1qvbgslngh52nmeea6cihn72u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDp7zXtqFtsQRvrvWxb34oLsPEKFmaEZZ4"
+          "current_key": "AIzaSyDkaW6WIn4nbSG3e8ZWrDlA01qKCQQI5_k"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+              "client_id": "158792718229-88s4flr1qvbgslngh52nmeea6cihn72u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -52,36 +52,36 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:946344457970:android:2ad0867e206ba449",
+        "mobilesdk_app_id": "1:158792718229:android:ddb4610a6956686c",
         "android_client_info": {
-          "package_name": "com.example.abodimazen.fahad"
+          "package_name": "com.example.childcare123123.childcare"
         }
       },
       "oauth_client": [
         {
-          "client_id": "946344457970-h94301fq3knlopm3ierfgdoq0phcj2ft.apps.googleusercontent.com",
+          "client_id": "158792718229-jt36thuikicv844ftedab4fe9a72hu18.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.abodimazen.fahad",
-            "certificate_hash": "4eb862677803f0c39b6b738f11b6e5414983079c"
+            "package_name": "com.example.childcare123123.childcare",
+            "certificate_hash": "7097cf1b6f09b3410c32748eeda5b9eb2f5f5275"
           }
         },
         {
-          "client_id": "946344457970-cvt0utgbuh9dik6uqroj3m3lmnqpme9h.apps.googleusercontent.com",
+          "client_id": "158792718229-g74bf91jc91c9e6f6u5v9s9a97jqugh3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.abodimazen.fahad",
-            "certificate_hash": "ae16dee32df030e93d760603c73d8f8a05f51a21"
+            "package_name": "com.example.childcare123123.childcare",
+            "certificate_hash": "7bd899469370dad520a6e36717a79f64ae5c2134"
           }
         },
         {
-          "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+          "client_id": "158792718229-88s4flr1qvbgslngh52nmeea6cihn72u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDp7zXtqFtsQRvrvWxb34oLsPEKFmaEZZ4"
+          "current_key": "AIzaSyDkaW6WIn4nbSG3e8ZWrDlA01qKCQQI5_k"
         }
       ],
       "services": {
@@ -92,7 +92,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "946344457970-pft8jphpepahd3d6l86fhnmko4mni55k.apps.googleusercontent.com",
+              "client_id": "158792718229-88s4flr1qvbgslngh52nmeea6cihn72u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

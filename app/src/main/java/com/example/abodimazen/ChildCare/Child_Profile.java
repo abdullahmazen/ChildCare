@@ -1,8 +1,7 @@
 package com.example.abodimazen.ChildCare;
 
 import android.app.AlertDialog;
-import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
+
 import android.content.ContentResolver;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,7 +10,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,23 +17,17 @@ import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TimePicker;
 import android.widget.Toast;
-
 import com.example.abodimazen.fahad.R;
 import com.firebase.ui.auth.AuthUI;
+import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -43,12 +35,10 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
-
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Child_Profile extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
+public class Child_Profile extends AppCompatActivity{
     private TextView name;
     private TextView gender;
     private TextView birth;
@@ -61,8 +51,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
     private TextView Text_Satus;
     private ImageView ImageView_choose_image;
     private  Uri mUri;
-    private Button make;
-    private DatabaseReference databaseRef;
+    private Button make,upload;
     private StorageTask mUploadTask;
 
 
@@ -71,8 +60,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
     private static final int GALLERY_INTENT = 1;
 
     private FirebaseAuth mAuth;
-    int day,month, year, hour,minute;
-    int dayFinal, monthFinal, yearFinal, hourFinal, minuteFinal;
+
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -104,8 +92,8 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
         Text_Satus = findViewById(R.id.Text_Satus);
         Button_record = findViewById(R.id.Button_record);
         ImageView_choose_image = findViewById(R.id.ImageView_choose_image);
-        mStorageRef = FirebaseStorage.getInstance().getReference("Child Photo");
-        databaseRef = FirebaseDatabase.getInstance().getReference("Child Photo");
+        mStorageRef = FirebaseStorage.getInstance().getReference("Photo");
+        upload = findViewById(R.id.buttonUpload);
 
 
 
@@ -148,7 +136,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
                                 Map<String, Object> Ahospital = new HashMap<>();
 
                                 Ahospital.put("hospital", "King Abdullah hospital");
-                                db.collection("Child Profile").document(n).update(Ahospital);
+                                db.collection("Child").document(n).update(Ahospital);
                             }
 
 
@@ -164,7 +152,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
                                 Map<String, Object> Shospital = new HashMap<>();
                                 Shospital.put("hospital", "Suliman Fakeh Hospital");
-                                db.collection("Child Profile").document(n).update(Shospital);
+                                db.collection("Child").document(n).update(Shospital);
                             }
                         }
                     }
@@ -177,19 +165,22 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
 
 
+
+
                 mBuilder.setPositiveButton("Next", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                        Calendar calendar = Calendar.getInstance();
-                        year = calendar.get(Calendar.YEAR);
-                        month = calendar.get(Calendar.MONTH);
-                        day = calendar.get(Calendar.DAY_OF_MONTH);
+                        Intent in = getIntent();
+                        Bundle b = in.getExtras();
 
-                        DatePickerDialog datePickerDialog = new DatePickerDialog(Child_Profile.this, Child_Profile.this,
-                                year, month, day);
+                        if(b != null) {
 
-                        datePickerDialog.show();
+                            String n = (String) b.get("id");
+                            Intent intent = new Intent(Child_Profile.this, BookingDates.class);
+                            intent.putExtra("id", n);
+                            startActivity(intent);
+                        }
 
 
                     }
@@ -229,7 +220,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
             String n = (String) b.get("id");
 
-            db.collection("Child Profile").document(n).get()
+            db.collection("Child").document(n).get()
                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -242,8 +233,14 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
                             String pPlan = documentSnapshot.getString("typeOfPlan");
                             String pSatus = documentSnapshot.getString("planSatus");
                             String Lastvaccination = documentSnapshot.getString("lastvaccination");
+                            String photo = documentSnapshot.getString("photoURL");
+                            String Appointment = documentSnapshot.getString("date");
 
 
+
+                            if(!photo.isEmpty()){
+                                setImageUrl(photo);
+                            }
 
                             name.setText(pName);
                             gender.setText(pgender);
@@ -254,6 +251,7 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
                             Text_Plan.setText(pPlan);
                             Text_Satus.setText(pSatus);
                             Text_record.setText(Lastvaccination);
+                            Text_Dates.setText(Appointment);
 
 
 
@@ -263,56 +261,22 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
 
         }
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (mUploadTask != null && mUploadTask.isInProgress()){
+                    Toast.makeText(Child_Profile.this, "Upload in progress",Toast.LENGTH_SHORT).show();
+
+                }else{
+                    uploadFile();
+                }
 
 
-
-    }
-
-
-    @Override
-    public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-        yearFinal = i;
-        monthFinal = i1 + 1;
-        dayFinal = i2;
-
-        Calendar calendar = Calendar.getInstance();
-        hour = calendar.get(Calendar.HOUR_OF_DAY);
-        minute = calendar.get(Calendar.MINUTE);
-
-        TimePickerDialog timePickerDialog = new TimePickerDialog(Child_Profile.this, Child_Profile.this,
-                hour, minute, DateFormat.is24HourFormat(this));
-
-        timePickerDialog.show();
-
-    }
-
-    @Override
-    public void onTimeSet(TimePicker timePicker, int i, int i1) {
-
-        hourFinal = i;
-        minuteFinal = i1;
+            }
+        });
 
 
-        Intent P = getIntent();
-        final Bundle a = P.getExtras();
-        if (a != null) {
-            String n = (String) a.get("id");
-
-            String appounment = "Your Appounment" + "\n" + "date: " + dayFinal + "/" + monthFinal  +"/" +  yearFinal + "\n" + "Time: " + hourFinal + " : "+ minuteFinal;
-
-
-            Map<String, Object> Appointments = new HashMap<>();
-            Appointments.put("appounment",  appounment );
-            db.collection("Child Profile").document(n).update(Appointments);
-
-        }
-        Intent b = getIntent();
-        final Bundle c = b.getExtras();
-
-        String n = (String) c.get("id");
-        Intent q = new Intent(Child_Profile.this, Plan.class);
-        q.putExtra("id", n);
-        startActivity(q);
 
     }
 
@@ -331,25 +295,14 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
 
             mUri = data.getData();
             Picasso.with(this).load(mUri).into(ImageView_choose_image);
-            //ImageView_choose_image.setImageURI(mUri);
-
-
 
         }
     }
 
 
     public void button_choose_image(View view) {
-        if (mUploadTask != null && mUploadTask.isInProgress()){
-            Toast.makeText(Child_Profile.this, "Upload in progress",Toast.LENGTH_SHORT).show();
-
-        }else{
-
-        }
 
         openFileChooser();
-        uploadFile();
-
 
     }
 
@@ -363,31 +316,66 @@ public class Child_Profile extends AppCompatActivity implements DatePickerDialog
     private void uploadFile() {
         if (mUri != null){
             final StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
-            + "." + getFileExtenstion(mUri));
+                    + "." + getFileExtenstion(mUri));
 
-            mUploadTask = fileReference.putFile(mUri)
-                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            Toast.makeText(Child_Profile.this, "Upload successful", Toast.LENGTH_LONG).show();
-                            Upload upload = new Upload(fileReference.getDownloadUrl().toString());
+            mUploadTask = fileReference.putFile(mUri);
+
+            Task<Uri> urlTask = mUploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                @Override
+                public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                    if (!task.isSuccessful()) {
+                        throw task.getException();
+                    }
+
+                    // Continue with the task to get the download URL
+                    return fileReference.getDownloadUrl();
+                }
+            }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                @Override
+                public void onComplete(@NonNull Task<Uri> task) {
+                    if (task.isSuccessful()) {
+                        Uri downloadUri = task.getResult();
+
+                        Intent in = getIntent();
+                        Bundle b = in.getExtras();
+
+                        if(b != null) {
 
 
 
+                            String file = downloadUri.toString();
+
+                            String n = (String) b.get("id");
+
+                            Map<String, Object> photo = new HashMap<>();
+
+                            photo.put("photoURL", file);
+
+                            db.collection("Child").document(n).update(photo);
+
+                            Toast.makeText(Child_Profile.this, "Uploaded!", Toast.LENGTH_SHORT).show();
 
                         }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(Child_Profile.this,e.getMessage(),Toast.LENGTH_SHORT).show();
-                        }
-                    });
+
+                    } else {
+                        Toast.makeText(Child_Profile.this, "Error!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+
         }else{
             Toast.makeText(this,"No file Selected", Toast.LENGTH_SHORT).show();
 
         }
 
+    }
+    public void setImageUrl(String imageUrl) {
+        ImageView_choose_image = findViewById(R.id.ImageView_choose_image);
+
+        Picasso.with(this)
+                .load(imageUrl)
+                .fit()
+                .into(ImageView_choose_image);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

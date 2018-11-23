@@ -100,7 +100,7 @@ public class Child_record extends AppCompatActivity {
 
             String n = (String) b.get("id");
 
-            db.collection("Child Profile").document(n).get()
+            db.collection("Child").document(n).get()
                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {

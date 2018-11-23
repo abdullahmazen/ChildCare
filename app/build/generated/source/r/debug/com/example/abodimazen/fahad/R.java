@@ -42,7 +42,8 @@ public final class R {
   }
   public static final class array {
     public static final int hospitalList=0x7f030000;
-    public static final int vaccinationlist=0x7f030001;
+    public static final int type_Of_User=0x7f030001;
+    public static final int vaccinationlist=0x7f030002;
   }
   public static final class attr {
     /**
@@ -2878,7 +2879,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -5130,348 +5131,384 @@ public final class R {
   }
   public static final class id {
     public static final int ALT=0x7f090000;
-    public static final int Button_record=0x7f090001;
-    public static final int CTRL=0x7f090002;
-    public static final int Date=0x7f090003;
-    public static final int Email=0x7f090004;
-    public static final int FUNCTION=0x7f090005;
-    public static final int Full_Name=0x7f090006;
-    public static final int Hospital=0x7f090007;
-    public static final int ImageView_choose_image=0x7f090008;
-    public static final int ImageView_choose_image1=0x7f090009;
-    public static final int ImageView_choose_image2=0x7f09000a;
-    public static final int ImageView_choose_image3=0x7f09000b;
-    public static final int ImageView_choose_image4=0x7f09000c;
-    public static final int ImageView_choose_image5=0x7f09000d;
-    public static final int ImageView_choose_image6=0x7f09000e;
-    public static final int ImageView_choose_image7=0x7f09000f;
-    public static final int ImageView_choose_image8=0x7f090010;
-    public static final int META=0x7f090011;
-    public static final int Next=0x7f090012;
-    public static final int Phone=0x7f090013;
-    public static final int Place_Birth=0x7f090014;
-    public static final int SHIFT=0x7f090015;
-    public static final int SYM=0x7f090016;
-    public static final int Slide_Tile=0x7f090017;
-    public static final int Slide_image=0x7f090018;
-    public static final int Spinner_Vaccination=0x7f090019;
-    public static final int TextViewBirth=0x7f09001a;
-    public static final int Text_Dates=0x7f09001b;
-    public static final int Text_Plan=0x7f09001c;
-    public static final int Text_Satus=0x7f09001d;
-    public static final int Text_hospial=0x7f09001e;
-    public static final int Text_record=0x7f09001f;
-    public static final int Text_view_name=0x7f090020;
-    public static final int TypeB=0x7f090021;
-    public static final int about=0x7f090022;
-    public static final int action0=0x7f090023;
-    public static final int action_Profile=0x7f090024;
-    public static final int action_bar=0x7f090025;
-    public static final int action_bar_activity_content=0x7f090026;
-    public static final int action_bar_container=0x7f090027;
-    public static final int action_bar_root=0x7f090028;
-    public static final int action_bar_spinner=0x7f090029;
-    public static final int action_bar_subtitle=0x7f09002a;
-    public static final int action_bar_title=0x7f09002b;
-    public static final int action_container=0x7f09002c;
-    public static final int action_context_bar=0x7f09002d;
-    public static final int action_divider=0x7f09002e;
-    public static final int action_image=0x7f09002f;
-    public static final int action_menu_divider=0x7f090030;
-    public static final int action_menu_presenter=0x7f090031;
-    public static final int action_mode_bar=0x7f090032;
-    public static final int action_mode_bar_stub=0x7f090033;
-    public static final int action_mode_close_button=0x7f090034;
-    public static final int action_sign_out=0x7f090035;
-    public static final int action_text=0x7f090036;
-    public static final int actions=0x7f090037;
-    public static final int activity_chooser_view_content=0x7f090038;
-    public static final int add=0x7f090039;
-    public static final int adjust_height=0x7f09003a;
-    public static final int adjust_width=0x7f09003b;
-    public static final int alertTitle=0x7f09003c;
-    public static final int all=0x7f09003d;
-    public static final int always=0x7f09003e;
-    public static final int async=0x7f09003f;
-    public static final int auto=0x7f090040;
-    public static final int back=0x7f090041;
-    public static final int barrier=0x7f090042;
-    public static final int beginning=0x7f090043;
-    public static final int blocking=0x7f090044;
-    public static final int bottom=0x7f090045;
-    public static final int browser_actions_header_text=0x7f090046;
-    public static final int browser_actions_menu_item_icon=0x7f090047;
-    public static final int browser_actions_menu_item_text=0x7f090048;
-    public static final int browser_actions_menu_items=0x7f090049;
-    public static final int browser_actions_menu_view=0x7f09004a;
-    public static final int btn_holder=0x7f09004b;
-    public static final int button=0x7f09004c;
-    public static final int buttonContinue=0x7f09004d;
-    public static final int buttonPanel=0x7f09004e;
-    public static final int buttonSignIn=0x7f09004f;
-    public static final int button_add_profile=0x7f090050;
-    public static final int button_create=0x7f090051;
-    public static final int button_done=0x7f090052;
-    public static final int button_next=0x7f090053;
-    public static final int cancel_action=0x7f090054;
-    public static final int center=0x7f090055;
-    public static final int center_horizontal=0x7f090056;
-    public static final int center_vertical=0x7f090057;
-    public static final int chains=0x7f090058;
-    public static final int checkbox=0x7f090059;
-    public static final int chronometer=0x7f09005a;
-    public static final int circular=0x7f09005b;
-    public static final int clip_horizontal=0x7f09005c;
-    public static final int clip_vertical=0x7f09005d;
-    public static final int collapseActionView=0x7f09005e;
-    public static final int confirmation_code=0x7f09005f;
-    public static final int confirmation_code_layout=0x7f090060;
-    public static final int container=0x7f090061;
-    public static final int content=0x7f090062;
-    public static final int contentPanel=0x7f090063;
-    public static final int coordinator=0x7f090064;
-    public static final int country_list=0x7f090065;
-    public static final int credit_card=0x7f090066;
-    public static final int custom=0x7f090067;
-    public static final int customPanel=0x7f090068;
-    public static final int dark=0x7f090069;
-    public static final int decor_content_parent=0x7f09006a;
-    public static final int default_activity_button=0x7f09006b;
-    public static final int design_bottom_sheet=0x7f09006c;
-    public static final int design_menu_item_action_area=0x7f09006d;
-    public static final int design_menu_item_action_area_stub=0x7f09006e;
-    public static final int design_menu_item_text=0x7f09006f;
-    public static final int design_navigation_view=0x7f090070;
-    public static final int dimensions=0x7f090071;
-    public static final int direct=0x7f090072;
-    public static final int disableHome=0x7f090073;
-    public static final int dynamic=0x7f090074;
-    public static final int editTextCode=0x7f090075;
-    public static final int editTextPhone=0x7f090076;
-    public static final int edit_phone_number=0x7f090077;
-    public static final int edit_query=0x7f090078;
-    public static final int email=0x7f090079;
-    public static final int email_button=0x7f09007a;
-    public static final int email_footer_tos_and_pp_text=0x7f09007b;
-    public static final int email_layout=0x7f09007c;
-    public static final int email_tos_and_pp_text=0x7f09007d;
-    public static final int end=0x7f09007e;
-    public static final int end_padder=0x7f09007f;
-    public static final int enterAlways=0x7f090080;
-    public static final int enterAlwaysCollapsed=0x7f090081;
-    public static final int exitUntilCollapsed=0x7f090082;
-    public static final int expand_activities_button=0x7f090083;
-    public static final int expanded_menu=0x7f090084;
-    public static final int fill=0x7f090085;
-    public static final int fill_horizontal=0x7f090086;
-    public static final int fill_large_indicator=0x7f090087;
-    public static final int fill_vertical=0x7f090088;
-    public static final int filled=0x7f090089;
-    public static final int fixed=0x7f09008a;
-    public static final int forever=0x7f09008b;
-    public static final int fragment_phone=0x7f09008c;
-    public static final int fragment_register_email=0x7f09008d;
-    public static final int gender=0x7f09008e;
-    public static final int ghost_view=0x7f09008f;
-    public static final int gone=0x7f090090;
-    public static final int group_divider=0x7f090091;
-    public static final int groups=0x7f090092;
-    public static final int header=0x7f090093;
-    public static final int heading=0x7f090094;
-    public static final int home=0x7f090095;
-    public static final int homeAsUp=0x7f090096;
-    public static final int horizontal=0x7f090097;
-    public static final int icon=0x7f090098;
-    public static final int icon_group=0x7f090099;
-    public static final int icon_only=0x7f09009a;
-    public static final int ifRoom=0x7f09009b;
-    public static final int image=0x7f09009c;
-    public static final int imageView2=0x7f09009d;
-    public static final int imageView3=0x7f09009e;
-    public static final int imageView4=0x7f09009f;
-    public static final int inPerson=0x7f0900a0;
-    public static final int info=0x7f0900a1;
-    public static final int invisible=0x7f0900a2;
-    public static final int invisible_frame=0x7f0900a3;
-    public static final int italic=0x7f0900a4;
-    public static final int item_touch_helper_previous_elevation=0x7f0900a5;
-    public static final int labeled=0x7f0900a6;
-    public static final int largeLabel=0x7f0900a7;
-    public static final int left=0x7f0900a8;
-    public static final int light=0x7f0900a9;
-    public static final int line1=0x7f0900aa;
-    public static final int line3=0x7f0900ab;
-    public static final int listMode=0x7f0900ac;
-    public static final int list_item=0x7f0900ad;
-    public static final int logo=0x7f0900ae;
-    public static final int main_tos_and_pp=0x7f0900af;
-    public static final int make=0x7f0900b0;
-    public static final int masked=0x7f0900b1;
-    public static final int media_actions=0x7f0900b2;
-    public static final int message=0x7f0900b3;
-    public static final int middle=0x7f0900b4;
-    public static final int mini=0x7f0900b5;
-    public static final int mtrl_child_content_container=0x7f0900b6;
-    public static final int mtrl_internal_children_alpha_tag=0x7f0900b7;
-    public static final int multiply=0x7f0900b8;
-    public static final int name=0x7f0900b9;
-    public static final int name_layout=0x7f0900ba;
-    public static final int navigation_header_container=0x7f0900bb;
-    public static final int never=0x7f0900bc;
-    public static final int no_fill_large_indicator=0x7f0900bd;
-    public static final int none=0x7f0900be;
-    public static final int normal=0x7f0900bf;
-    public static final int notification_background=0x7f0900c0;
-    public static final int notification_main_column=0x7f0900c1;
-    public static final int notification_main_column_container=0x7f0900c2;
-    public static final int outline=0x7f0900c3;
-    public static final int packed=0x7f0900c4;
-    public static final int parallax=0x7f0900c5;
-    public static final int parent=0x7f0900c6;
-    public static final int parentPanel=0x7f0900c7;
-    public static final int parent_matrix=0x7f0900c8;
-    public static final int password=0x7f0900c9;
-    public static final int password_layout=0x7f0900ca;
-    public static final int percent=0x7f0900cb;
-    public static final int phone_button=0x7f0900cc;
-    public static final int phone_layout=0x7f0900cd;
-    public static final int phone_number=0x7f0900ce;
-    public static final int pin=0x7f0900cf;
-    public static final int pluss=0x7f0900d0;
-    public static final int ppt=0x7f0900d1;
-    public static final int profile_img=0x7f0900d2;
-    public static final int progress_circular=0x7f0900d3;
-    public static final int progress_horizontal=0x7f0900d4;
-    public static final int radio=0x7f0900d5;
-    public static final int recycler_View=0x7f0900d6;
-    public static final int recycler_view=0x7f0900d7;
-    public static final int resend_barrier=0x7f0900d8;
-    public static final int resend_code=0x7f0900d9;
-    public static final int right=0x7f0900da;
-    public static final int right_icon=0x7f0900db;
-    public static final int right_side=0x7f0900dc;
-    public static final int root=0x7f0900dd;
-    public static final int save_image_matrix=0x7f0900de;
-    public static final int save_non_transition_alpha=0x7f0900df;
-    public static final int save_scale_type=0x7f0900e0;
-    public static final int screen=0x7f0900e1;
-    public static final int scroll=0x7f0900e2;
-    public static final int scrollIndicatorDown=0x7f0900e3;
-    public static final int scrollIndicatorUp=0x7f0900e4;
-    public static final int scrollView=0x7f0900e5;
-    public static final int scrollable=0x7f0900e6;
-    public static final int search_badge=0x7f0900e7;
-    public static final int search_bar=0x7f0900e8;
-    public static final int search_button=0x7f0900e9;
-    public static final int search_close_btn=0x7f0900ea;
-    public static final int search_edit_frame=0x7f0900eb;
-    public static final int search_go_btn=0x7f0900ec;
-    public static final int search_mag_icon=0x7f0900ed;
-    public static final int search_plate=0x7f0900ee;
-    public static final int search_src_text=0x7f0900ef;
-    public static final int search_voice_btn=0x7f0900f0;
-    public static final int select_dialog_listview=0x7f0900f1;
-    public static final int selected=0x7f0900f2;
-    public static final int send_code=0x7f0900f3;
-    public static final int send_sms_tos=0x7f0900f4;
-    public static final int shortcut=0x7f0900f5;
-    public static final int showCustom=0x7f0900f6;
-    public static final int showHome=0x7f0900f7;
-    public static final int showTitle=0x7f0900f8;
-    public static final int sign_in=0x7f0900f9;
-    public static final int slide_linear=0x7f0900fa;
-    public static final int slide_linear1=0x7f0900fb;
-    public static final int smallLabel=0x7f0900fc;
-    public static final int small_indicator=0x7f0900fd;
-    public static final int snackbar_action=0x7f0900fe;
-    public static final int snackbar_text=0x7f0900ff;
-    public static final int snap=0x7f090100;
-    public static final int snapMargins=0x7f090101;
-    public static final int spacer=0x7f090102;
-    public static final int spinnerBlod=0x7f090103;
-    public static final int spinnerCountries=0x7f090104;
-    public static final int spinnerGender=0x7f090105;
-    public static final int spinner_hos=0x7f090106;
-    public static final int split_action_bar=0x7f090107;
-    public static final int spread=0x7f090108;
-    public static final int spread_inside=0x7f090109;
-    public static final int src_atop=0x7f09010a;
-    public static final int src_in=0x7f09010b;
-    public static final int src_over=0x7f09010c;
-    public static final int standard=0x7f09010d;
-    public static final int standerdd=0x7f09010e;
-    public static final int start=0x7f09010f;
-    public static final int status_bar_latest_event_content=0x7f090110;
-    public static final int stretch=0x7f090111;
-    public static final int submenuarrow=0x7f090112;
-    public static final int submit_area=0x7f090113;
-    public static final int submit_confirmation_code=0x7f090114;
-    public static final int tabMode=0x7f090115;
-    public static final int tag_transition_group=0x7f090116;
-    public static final int tag_unhandled_key_event_manager=0x7f090117;
-    public static final int tag_unhandled_key_listeners=0x7f090118;
-    public static final int text=0x7f090119;
-    public static final int text2=0x7f09011a;
-    public static final int textSpacerNoButtons=0x7f09011b;
-    public static final int textSpacerNoTitle=0x7f09011c;
-    public static final int textStart=0x7f09011d;
-    public static final int textView=0x7f09011e;
-    public static final int textView2=0x7f09011f;
-    public static final int textView_At_Birth=0x7f090120;
-    public static final int textView_Dates_12Month=0x7f090121;
-    public static final int textView_Dates_18Month=0x7f090122;
-    public static final int textView_Dates_24Month=0x7f090123;
-    public static final int textView_Dates_2Month=0x7f090124;
-    public static final int textView_Dates_4Month=0x7f090125;
-    public static final int textView_Dates_6Month=0x7f090126;
-    public static final int textView_Dates_9Month=0x7f090127;
-    public static final int textView_Dates_At_Birth=0x7f090128;
-    public static final int textView_Dates_First_Primary=0x7f090129;
-    public static final int textView_First_Primary=0x7f09012a;
-    public static final int textView_Four_Month=0x7f09012b;
-    public static final int textView_Nine_Month=0x7f09012c;
-    public static final int textView_Six_Month=0x7f09012d;
-    public static final int textView_Twelve_Month=0x7f09012e;
-    public static final int textView_Twenty_four_Month=0x7f09012f;
-    public static final int textView_Two_Month=0x7f090130;
-    public static final int textViewـEighteen_Month=0x7f090131;
-    public static final int text_input_password_toggle=0x7f090132;
-    public static final int text_view_Birth=0x7f090133;
-    public static final int text_view_Blood=0x7f090134;
-    public static final int text_view_Gender=0x7f090135;
-    public static final int text_view_Namee=0x7f090136;
-    public static final int textinput_counter=0x7f090137;
-    public static final int textinput_error=0x7f090138;
-    public static final int textinput_helper_text=0x7f090139;
-    public static final int ticker=0x7f09013a;
-    public static final int time=0x7f09013b;
-    public static final int title=0x7f09013c;
-    public static final int titleDividerNoCustom=0x7f09013d;
-    public static final int title_template=0x7f09013e;
-    public static final int top=0x7f09013f;
-    public static final int topPanel=0x7f090140;
-    public static final int top_progress_bar=0x7f090141;
-    public static final int touch_outside=0x7f090142;
-    public static final int transition_current_scene=0x7f090143;
-    public static final int transition_layout_save=0x7f090144;
-    public static final int transition_position=0x7f090145;
-    public static final int transition_scene_layoutid_cache=0x7f090146;
-    public static final int transition_transform=0x7f090147;
-    public static final int trouble_signing_in=0x7f090148;
-    public static final int uniform=0x7f090149;
-    public static final int unlabeled=0x7f09014a;
-    public static final int up=0x7f09014b;
-    public static final int useLogo=0x7f09014c;
-    public static final int viewPager=0x7f09014d;
-    public static final int view_offset_helper=0x7f09014e;
-    public static final int visible=0x7f09014f;
-    public static final int welcome_back_idp_button=0x7f090150;
-    public static final int welcome_back_idp_prompt=0x7f090151;
-    public static final int welcome_back_password_body=0x7f090152;
-    public static final int wide=0x7f090153;
-    public static final int withText=0x7f090154;
-    public static final int wrap=0x7f090155;
-    public static final int wrap_content=0x7f090156;
+    public static final int Address=0x7f090001;
+    public static final int Bloodtype=0x7f090002;
+    public static final int Button_record=0x7f090003;
+    public static final int CTRL=0x7f090004;
+    public static final int ChildName=0x7f090005;
+    public static final int Date=0x7f090006;
+    public static final int DateofBirth=0x7f090007;
+    public static final int Email=0x7f090008;
+    public static final int FUNCTION=0x7f090009;
+    public static final int Full_Name=0x7f09000a;
+    public static final int HosApp=0x7f09000b;
+    public static final int ImageView_choose_image=0x7f09000c;
+    public static final int ImageView_choose_image1=0x7f09000d;
+    public static final int ImageView_choose_image2=0x7f09000e;
+    public static final int ImageView_choose_image3=0x7f09000f;
+    public static final int ImageView_choose_image4=0x7f090010;
+    public static final int ImageView_choose_image5=0x7f090011;
+    public static final int ImageView_choose_image6=0x7f090012;
+    public static final int ImageView_choose_image7=0x7f090013;
+    public static final int ImageView_choose_image8=0x7f090014;
+    public static final int META=0x7f090015;
+    public static final int Next=0x7f090016;
+    public static final int ParentsName=0x7f090017;
+    public static final int Phone=0x7f090018;
+    public static final int PhoneNumber=0x7f090019;
+    public static final int Place_Birth=0x7f09001a;
+    public static final int SHIFT=0x7f09001b;
+    public static final int SYM=0x7f09001c;
+    public static final int Slide_Tile=0x7f09001d;
+    public static final int Slide_image=0x7f09001e;
+    public static final int Spinner_Vaccination=0x7f09001f;
+    public static final int TextViewBirth=0x7f090020;
+    public static final int Text_Dates=0x7f090021;
+    public static final int Text_Plan=0x7f090022;
+    public static final int Text_Satus=0x7f090023;
+    public static final int Text_hospial=0x7f090024;
+    public static final int Text_record=0x7f090025;
+    public static final int Text_view_name=0x7f090026;
+    public static final int TypeB=0x7f090027;
+    public static final int TypeofPlan=0x7f090028;
+    public static final int Vaccination=0x7f090029;
+    public static final int about=0x7f09002a;
+    public static final int action0=0x7f09002b;
+    public static final int action_Profile=0x7f09002c;
+    public static final int action_bar=0x7f09002d;
+    public static final int action_bar_activity_content=0x7f09002e;
+    public static final int action_bar_container=0x7f09002f;
+    public static final int action_bar_root=0x7f090030;
+    public static final int action_bar_spinner=0x7f090031;
+    public static final int action_bar_subtitle=0x7f090032;
+    public static final int action_bar_title=0x7f090033;
+    public static final int action_container=0x7f090034;
+    public static final int action_context_bar=0x7f090035;
+    public static final int action_divider=0x7f090036;
+    public static final int action_image=0x7f090037;
+    public static final int action_menu_divider=0x7f090038;
+    public static final int action_menu_presenter=0x7f090039;
+    public static final int action_mode_bar=0x7f09003a;
+    public static final int action_mode_bar_stub=0x7f09003b;
+    public static final int action_mode_close_button=0x7f09003c;
+    public static final int action_sign_out=0x7f09003d;
+    public static final int action_text=0x7f09003e;
+    public static final int actions=0x7f09003f;
+    public static final int activity_chooser_view_content=0x7f090040;
+    public static final int add=0x7f090041;
+    public static final int address=0x7f090042;
+    public static final int adjust_height=0x7f090043;
+    public static final int adjust_width=0x7f090044;
+    public static final int alertTitle=0x7f090045;
+    public static final int all=0x7f090046;
+    public static final int always=0x7f090047;
+    public static final int async=0x7f090048;
+    public static final int auto=0x7f090049;
+    public static final int bTest=0x7f09004a;
+    public static final int back=0x7f09004b;
+    public static final int barrier=0x7f09004c;
+    public static final int beginning=0x7f09004d;
+    public static final int blocking=0x7f09004e;
+    public static final int bottom=0x7f09004f;
+    public static final int browser_actions_header_text=0x7f090050;
+    public static final int browser_actions_menu_item_icon=0x7f090051;
+    public static final int browser_actions_menu_item_text=0x7f090052;
+    public static final int browser_actions_menu_items=0x7f090053;
+    public static final int browser_actions_menu_view=0x7f090054;
+    public static final int btn_holder=0x7f090055;
+    public static final int button=0x7f090056;
+    public static final int buttonContinue=0x7f090057;
+    public static final int buttonPanel=0x7f090058;
+    public static final int buttonSignIn=0x7f090059;
+    public static final int buttonUpload=0x7f09005a;
+    public static final int button_add_profile=0x7f09005b;
+    public static final int button_create=0x7f09005c;
+    public static final int button_done=0x7f09005d;
+    public static final int button_next=0x7f09005e;
+    public static final int cancel_action=0x7f09005f;
+    public static final int center=0x7f090060;
+    public static final int center_horizontal=0x7f090061;
+    public static final int center_vertical=0x7f090062;
+    public static final int chains=0x7f090063;
+    public static final int checkbox=0x7f090064;
+    public static final int chronometer=0x7f090065;
+    public static final int circular=0x7f090066;
+    public static final int clip_horizontal=0x7f090067;
+    public static final int clip_vertical=0x7f090068;
+    public static final int collapseActionView=0x7f090069;
+    public static final int confirmation_code=0x7f09006a;
+    public static final int confirmation_code_layout=0x7f09006b;
+    public static final int container=0x7f09006c;
+    public static final int content=0x7f09006d;
+    public static final int contentPanel=0x7f09006e;
+    public static final int coordinator=0x7f09006f;
+    public static final int country_list=0x7f090070;
+    public static final int credit_card=0x7f090071;
+    public static final int custom=0x7f090072;
+    public static final int customPanel=0x7f090073;
+    public static final int dark=0x7f090074;
+    public static final int decor_content_parent=0x7f090075;
+    public static final int default_activity_button=0x7f090076;
+    public static final int design_bottom_sheet=0x7f090077;
+    public static final int design_menu_item_action_area=0x7f090078;
+    public static final int design_menu_item_action_area_stub=0x7f090079;
+    public static final int design_menu_item_text=0x7f09007a;
+    public static final int design_navigation_view=0x7f09007b;
+    public static final int dimensions=0x7f09007c;
+    public static final int direct=0x7f09007d;
+    public static final int disableHome=0x7f09007e;
+    public static final int dynamic=0x7f09007f;
+    public static final int editTextCode=0x7f090080;
+    public static final int editTextPhone=0x7f090081;
+    public static final int edit_phone_number=0x7f090082;
+    public static final int edit_query=0x7f090083;
+    public static final int email=0x7f090084;
+    public static final int email_button=0x7f090085;
+    public static final int email_footer_tos_and_pp_text=0x7f090086;
+    public static final int email_layout=0x7f090087;
+    public static final int email_tos_and_pp_text=0x7f090088;
+    public static final int end=0x7f090089;
+    public static final int end_padder=0x7f09008a;
+    public static final int enterAlways=0x7f09008b;
+    public static final int enterAlwaysCollapsed=0x7f09008c;
+    public static final int exitUntilCollapsed=0x7f09008d;
+    public static final int expand_activities_button=0x7f09008e;
+    public static final int expanded_menu=0x7f09008f;
+    public static final int fill=0x7f090090;
+    public static final int fill_horizontal=0x7f090091;
+    public static final int fill_large_indicator=0x7f090092;
+    public static final int fill_vertical=0x7f090093;
+    public static final int filled=0x7f090094;
+    public static final int fixed=0x7f090095;
+    public static final int forever=0x7f090096;
+    public static final int forgot_password=0x7f090097;
+    public static final int fragment_phone=0x7f090098;
+    public static final int fragment_register_email=0x7f090099;
+    public static final int gender=0x7f09009a;
+    public static final int ghost_view=0x7f09009b;
+    public static final int gone=0x7f09009c;
+    public static final int group_divider=0x7f09009d;
+    public static final int groups=0x7f09009e;
+    public static final int hChildren=0x7f09009f;
+    public static final int header=0x7f0900a0;
+    public static final int heading=0x7f0900a1;
+    public static final int home=0x7f0900a2;
+    public static final int homeAsUp=0x7f0900a3;
+    public static final int horizontal=0x7f0900a4;
+    public static final int hospitalListView=0x7f0900a5;
+    public static final int hospitalName=0x7f0900a6;
+    public static final int icon=0x7f0900a7;
+    public static final int icon_group=0x7f0900a8;
+    public static final int icon_only=0x7f0900a9;
+    public static final int ifRoom=0x7f0900aa;
+    public static final int image=0x7f0900ab;
+    public static final int imageView2=0x7f0900ac;
+    public static final int imageView3=0x7f0900ad;
+    public static final int imageView4=0x7f0900ae;
+    public static final int inPerson=0x7f0900af;
+    public static final int info=0x7f0900b0;
+    public static final int invisible=0x7f0900b1;
+    public static final int invisible_frame=0x7f0900b2;
+    public static final int italic=0x7f0900b3;
+    public static final int item_touch_helper_previous_elevation=0x7f0900b4;
+    public static final int labeled=0x7f0900b5;
+    public static final int largeLabel=0x7f0900b6;
+    public static final int left=0x7f0900b7;
+    public static final int light=0x7f0900b8;
+    public static final int line1=0x7f0900b9;
+    public static final int line3=0x7f0900ba;
+    public static final int listMode=0x7f0900bb;
+    public static final int list_item=0x7f0900bc;
+    public static final int logo=0x7f0900bd;
+    public static final int logoutMenu=0x7f0900be;
+    public static final int main_tos_and_pp=0x7f0900bf;
+    public static final int make=0x7f0900c0;
+    public static final int masked=0x7f0900c1;
+    public static final int media_actions=0x7f0900c2;
+    public static final int message=0x7f0900c3;
+    public static final int middle=0x7f0900c4;
+    public static final int mini=0x7f0900c5;
+    public static final int mtrl_child_content_container=0x7f0900c6;
+    public static final int mtrl_internal_children_alpha_tag=0x7f0900c7;
+    public static final int multiply=0x7f0900c8;
+    public static final int name=0x7f0900c9;
+    public static final int name_layout=0x7f0900ca;
+    public static final int navigation_header_container=0x7f0900cb;
+    public static final int never=0x7f0900cc;
+    public static final int no_fill_large_indicator=0x7f0900cd;
+    public static final int none=0x7f0900ce;
+    public static final int normal=0x7f0900cf;
+    public static final int notification_background=0x7f0900d0;
+    public static final int notification_main_column=0x7f0900d1;
+    public static final int notification_main_column_container=0x7f0900d2;
+    public static final int outline=0x7f0900d3;
+    public static final int packed=0x7f0900d4;
+    public static final int parallax=0x7f0900d5;
+    public static final int parent=0x7f0900d6;
+    public static final int parentPanel=0x7f0900d7;
+    public static final int parent_matrix=0x7f0900d8;
+    public static final int password=0x7f0900d9;
+    public static final int password_layout=0x7f0900da;
+    public static final int percent=0x7f0900db;
+    public static final int phoneNumber=0x7f0900dc;
+    public static final int phone_button=0x7f0900dd;
+    public static final int phone_layout=0x7f0900de;
+    public static final int phone_number=0x7f0900df;
+    public static final int pin=0x7f0900e0;
+    public static final int pluss=0x7f0900e1;
+    public static final int ppt=0x7f0900e2;
+    public static final int progress_circular=0x7f0900e3;
+    public static final int progress_horizontal=0x7f0900e4;
+    public static final int progressbar=0x7f0900e5;
+    public static final int radio=0x7f0900e6;
+    public static final int recycler_View=0x7f0900e7;
+    public static final int recycler_view=0x7f0900e8;
+    public static final int remember_me=0x7f0900e9;
+    public static final int repeatPassword=0x7f0900ea;
+    public static final int resend_barrier=0x7f0900eb;
+    public static final int resend_code=0x7f0900ec;
+    public static final int right=0x7f0900ed;
+    public static final int right_icon=0x7f0900ee;
+    public static final int right_side=0x7f0900ef;
+    public static final int root=0x7f0900f0;
+    public static final int saveDate=0x7f0900f1;
+    public static final int save_image_matrix=0x7f0900f2;
+    public static final int save_non_transition_alpha=0x7f0900f3;
+    public static final int save_scale_type=0x7f0900f4;
+    public static final int screen=0x7f0900f5;
+    public static final int scroll=0x7f0900f6;
+    public static final int scrollIndicatorDown=0x7f0900f7;
+    public static final int scrollIndicatorUp=0x7f0900f8;
+    public static final int scrollView=0x7f0900f9;
+    public static final int scrollable=0x7f0900fa;
+    public static final int search_badge=0x7f0900fb;
+    public static final int search_bar=0x7f0900fc;
+    public static final int search_button=0x7f0900fd;
+    public static final int search_close_btn=0x7f0900fe;
+    public static final int search_edit_frame=0x7f0900ff;
+    public static final int search_go_btn=0x7f090100;
+    public static final int search_mag_icon=0x7f090101;
+    public static final int search_plate=0x7f090102;
+    public static final int search_src_text=0x7f090103;
+    public static final int search_voice_btn=0x7f090104;
+    public static final int select_dialog_listview=0x7f090105;
+    public static final int selected=0x7f090106;
+    public static final int send_code=0x7f090107;
+    public static final int send_sms_tos=0x7f090108;
+    public static final int shortcut=0x7f090109;
+    public static final int showCustom=0x7f09010a;
+    public static final int showHome=0x7f09010b;
+    public static final int showTitle=0x7f09010c;
+    public static final int sign_in=0x7f09010d;
+    public static final int sign_up=0x7f09010e;
+    public static final int slide_linear=0x7f09010f;
+    public static final int slide_linear1=0x7f090110;
+    public static final int smallLabel=0x7f090111;
+    public static final int small_indicator=0x7f090112;
+    public static final int snackbar_action=0x7f090113;
+    public static final int snackbar_text=0x7f090114;
+    public static final int snap=0x7f090115;
+    public static final int snapMargins=0x7f090116;
+    public static final int spacer=0x7f090117;
+    public static final int spinner2=0x7f090118;
+    public static final int spinnerBlod=0x7f090119;
+    public static final int spinnerCountries=0x7f09011a;
+    public static final int spinnerGender=0x7f09011b;
+    public static final int spinner_hos=0x7f09011c;
+    public static final int split_action_bar=0x7f09011d;
+    public static final int spread=0x7f09011e;
+    public static final int spread_inside=0x7f09011f;
+    public static final int src_atop=0x7f090120;
+    public static final int src_in=0x7f090121;
+    public static final int src_over=0x7f090122;
+    public static final int standard=0x7f090123;
+    public static final int standerdd=0x7f090124;
+    public static final int start=0x7f090125;
+    public static final int status_bar_latest_event_content=0x7f090126;
+    public static final int stretch=0x7f090127;
+    public static final int submenuarrow=0x7f090128;
+    public static final int submit_area=0x7f090129;
+    public static final int submit_confirmation_code=0x7f09012a;
+    public static final int tabMode=0x7f09012b;
+    public static final int tag_transition_group=0x7f09012c;
+    public static final int tag_unhandled_key_event_manager=0x7f09012d;
+    public static final int tag_unhandled_key_listeners=0x7f09012e;
+    public static final int text=0x7f09012f;
+    public static final int text2=0x7f090130;
+    public static final int textSpacerNoButtons=0x7f090131;
+    public static final int textSpacerNoTitle=0x7f090132;
+    public static final int textStart=0x7f090133;
+    public static final int textView=0x7f090134;
+    public static final int textView13=0x7f090135;
+    public static final int textView14=0x7f090136;
+    public static final int textView15=0x7f090137;
+    public static final int textView16=0x7f090138;
+    public static final int textView17=0x7f090139;
+    public static final int textView18=0x7f09013a;
+    public static final int textView19=0x7f09013b;
+    public static final int textView2=0x7f09013c;
+    public static final int textView20=0x7f09013d;
+    public static final int textView21=0x7f09013e;
+    public static final int textView22=0x7f09013f;
+    public static final int textViewDate=0x7f090140;
+    public static final int textView_At_Birth=0x7f090141;
+    public static final int textView_Dates_12Month=0x7f090142;
+    public static final int textView_Dates_18Month=0x7f090143;
+    public static final int textView_Dates_24Month=0x7f090144;
+    public static final int textView_Dates_2Month=0x7f090145;
+    public static final int textView_Dates_4Month=0x7f090146;
+    public static final int textView_Dates_6Month=0x7f090147;
+    public static final int textView_Dates_9Month=0x7f090148;
+    public static final int textView_Dates_At_Birth=0x7f090149;
+    public static final int textView_Dates_First_Primary=0x7f09014a;
+    public static final int textView_First_Primary=0x7f09014b;
+    public static final int textView_Four_Month=0x7f09014c;
+    public static final int textView_Nine_Month=0x7f09014d;
+    public static final int textView_Six_Month=0x7f09014e;
+    public static final int textView_Twelve_Month=0x7f09014f;
+    public static final int textView_Twenty_four_Month=0x7f090150;
+    public static final int textView_Two_Month=0x7f090151;
+    public static final int textViewـEighteen_Month=0x7f090152;
+    public static final int text_input_password_toggle=0x7f090153;
+    public static final int text_view_Birth=0x7f090154;
+    public static final int text_view_Blood=0x7f090155;
+    public static final int text_view_Gender=0x7f090156;
+    public static final int text_view_Namee=0x7f090157;
+    public static final int text_view_date=0x7f090158;
+    public static final int text_view_name=0x7f090159;
+    public static final int textinput_counter=0x7f09015a;
+    public static final int textinput_error=0x7f09015b;
+    public static final int textinput_helper_text=0x7f09015c;
+    public static final int ticker=0x7f09015d;
+    public static final int time=0x7f09015e;
+    public static final int title=0x7f09015f;
+    public static final int titleDividerNoCustom=0x7f090160;
+    public static final int title_template=0x7f090161;
+    public static final int top=0x7f090162;
+    public static final int topPanel=0x7f090163;
+    public static final int top_progress_bar=0x7f090164;
+    public static final int touch_outside=0x7f090165;
+    public static final int transition_current_scene=0x7f090166;
+    public static final int transition_layout_save=0x7f090167;
+    public static final int transition_position=0x7f090168;
+    public static final int transition_scene_layoutid_cache=0x7f090169;
+    public static final int transition_transform=0x7f09016a;
+    public static final int trouble_signing_in=0x7f09016b;
+    public static final int typeOfUser=0x7f09016c;
+    public static final int uniform=0x7f09016d;
+    public static final int unlabeled=0x7f09016e;
+    public static final int up=0x7f09016f;
+    public static final int useLogo=0x7f090170;
+    public static final int viewPager=0x7f090171;
+    public static final int view_offset_helper=0x7f090172;
+    public static final int visible=0x7f090173;
+    public static final int welcome_back_idp_button=0x7f090174;
+    public static final int welcome_back_idp_prompt=0x7f090175;
+    public static final int welcome_back_password_body=0x7f090176;
+    public static final int wide=0x7f090177;
+    public static final int withText=0x7f090178;
+    public static final int wrap=0x7f090179;
+    public static final int wrap_content=0x7f09017a;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;
@@ -5527,78 +5564,91 @@ public final class R {
     public static final int abc_search_view=0x7f0c0019;
     public static final int abc_select_dialog_material=0x7f0c001a;
     public static final int abc_tooltip=0x7f0c001b;
-    public static final int activity_child__profile=0x7f0c001c;
-    public static final int activity_child_record=0x7f0c001d;
-    public static final int activity_hos_sp=0x7f0c001e;
-    public static final int activity_hospital=0x7f0c001f;
-    public static final int activity_main=0x7f0c0020;
-    public static final int activity_new_child=0x7f0c0021;
-    public static final int activity_payment=0x7f0c0022;
-    public static final int activity_plan2=0x7f0c0023;
-    public static final int activity_pro_hospital=0x7f0c0024;
-    public static final int activity_profile=0x7f0c0025;
-    public static final int activity_user=0x7f0c0026;
-    public static final int activity_verify_phone=0x7f0c0027;
-    public static final int browser_actions_context_menu_page=0x7f0c0028;
-    public static final int browser_actions_context_menu_row=0x7f0c0029;
-    public static final int design_bottom_navigation_item=0x7f0c002a;
-    public static final int design_bottom_sheet_dialog=0x7f0c002b;
-    public static final int design_layout_snackbar=0x7f0c002c;
-    public static final int design_layout_snackbar_include=0x7f0c002d;
-    public static final int design_layout_tab_icon=0x7f0c002e;
-    public static final int design_layout_tab_text=0x7f0c002f;
-    public static final int design_menu_item_action_area=0x7f0c0030;
-    public static final int design_navigation_item=0x7f0c0031;
-    public static final int design_navigation_item_header=0x7f0c0032;
-    public static final int design_navigation_item_separator=0x7f0c0033;
-    public static final int design_navigation_item_subheader=0x7f0c0034;
-    public static final int design_navigation_menu=0x7f0c0035;
-    public static final int design_navigation_menu_item=0x7f0c0036;
-    public static final int design_text_input_password_icon=0x7f0c0037;
-    public static final int fui_activity_invisible=0x7f0c0038;
-    public static final int fui_activity_register_email=0x7f0c0039;
-    public static final int fui_activity_register_phone=0x7f0c003a;
-    public static final int fui_auth_method_picker_layout=0x7f0c003b;
-    public static final int fui_check_email_layout=0x7f0c003c;
-    public static final int fui_confirmation_code_layout=0x7f0c003d;
-    public static final int fui_dgts_country_row=0x7f0c003e;
-    public static final int fui_forgot_password_layout=0x7f0c003f;
-    public static final int fui_idp_button_facebook=0x7f0c0040;
-    public static final int fui_idp_button_github=0x7f0c0041;
-    public static final int fui_idp_button_google=0x7f0c0042;
-    public static final int fui_idp_button_twitter=0x7f0c0043;
-    public static final int fui_phone_layout=0x7f0c0044;
-    public static final int fui_provider_button_email=0x7f0c0045;
-    public static final int fui_provider_button_phone=0x7f0c0046;
-    public static final int fui_register_email_layout=0x7f0c0047;
-    public static final int fui_welcome_back_idp_prompt_layout=0x7f0c0048;
-    public static final int fui_welcome_back_password_prompt_layout=0x7f0c0049;
-    public static final int mtrl_layout_snackbar=0x7f0c004a;
-    public static final int mtrl_layout_snackbar_include=0x7f0c004b;
-    public static final int notification_action=0x7f0c004c;
-    public static final int notification_action_tombstone=0x7f0c004d;
-    public static final int notification_media_action=0x7f0c004e;
-    public static final int notification_media_cancel_action=0x7f0c004f;
-    public static final int notification_template_big_media=0x7f0c0050;
-    public static final int notification_template_big_media_custom=0x7f0c0051;
-    public static final int notification_template_big_media_narrow=0x7f0c0052;
-    public static final int notification_template_big_media_narrow_custom=0x7f0c0053;
-    public static final int notification_template_custom_big=0x7f0c0054;
-    public static final int notification_template_icon_group=0x7f0c0055;
-    public static final int notification_template_lines_media=0x7f0c0056;
-    public static final int notification_template_media=0x7f0c0057;
-    public static final int notification_template_media_custom=0x7f0c0058;
-    public static final int notification_template_part_chronometer=0x7f0c0059;
-    public static final int notification_template_part_time=0x7f0c005a;
-    public static final int profile_item=0x7f0c005b;
-    public static final int select_dialog_item_material=0x7f0c005c;
-    public static final int select_dialog_multichoice_material=0x7f0c005d;
-    public static final int select_dialog_singlechoice_material=0x7f0c005e;
-    public static final int slide_layout=0x7f0c005f;
-    public static final int support_simple_spinner_dropdown_item=0x7f0c0060;
+    public static final int activity_appointment_details=0x7f0c001c;
+    public static final int activity_appointment_details1_f=0x7f0c001d;
+    public static final int activity_blood_results=0x7f0c001e;
+    public static final int activity_blood_results1_f=0x7f0c001f;
+    public static final int activity_booking_dates=0x7f0c0020;
+    public static final int activity_child__profile=0x7f0c0021;
+    public static final int activity_child_record=0x7f0c0022;
+    public static final int activity_hos_sp=0x7f0c0023;
+    public static final int activity_hospital=0x7f0c0024;
+    public static final int activity_hospital_act1_f=0x7f0c0025;
+    public static final int activity_hospital_appointments=0x7f0c0026;
+    public static final int activity_hospital_appointments1_f=0x7f0c0027;
+    public static final int activity_hospital_blood=0x7f0c0028;
+    public static final int activity_hospital_blood1_f=0x7f0c0029;
+    public static final int activity_main=0x7f0c002a;
+    public static final int activity_new_child=0x7f0c002b;
+    public static final int activity_payment=0x7f0c002c;
+    public static final int activity_plan2=0x7f0c002d;
+    public static final int activity_pro_hospital=0x7f0c002e;
+    public static final int activity_profile=0x7f0c002f;
+    public static final int activity_registeration=0x7f0c0030;
+    public static final int activity_user=0x7f0c0031;
+    public static final int activity_verify_phone=0x7f0c0032;
+    public static final int browser_actions_context_menu_page=0x7f0c0033;
+    public static final int browser_actions_context_menu_row=0x7f0c0034;
+    public static final int design_bottom_navigation_item=0x7f0c0035;
+    public static final int design_bottom_sheet_dialog=0x7f0c0036;
+    public static final int design_layout_snackbar=0x7f0c0037;
+    public static final int design_layout_snackbar_include=0x7f0c0038;
+    public static final int design_layout_tab_icon=0x7f0c0039;
+    public static final int design_layout_tab_text=0x7f0c003a;
+    public static final int design_menu_item_action_area=0x7f0c003b;
+    public static final int design_navigation_item=0x7f0c003c;
+    public static final int design_navigation_item_header=0x7f0c003d;
+    public static final int design_navigation_item_separator=0x7f0c003e;
+    public static final int design_navigation_item_subheader=0x7f0c003f;
+    public static final int design_navigation_menu=0x7f0c0040;
+    public static final int design_navigation_menu_item=0x7f0c0041;
+    public static final int design_text_input_password_icon=0x7f0c0042;
+    public static final int fui_activity_invisible=0x7f0c0043;
+    public static final int fui_activity_register_email=0x7f0c0044;
+    public static final int fui_activity_register_phone=0x7f0c0045;
+    public static final int fui_auth_method_picker_layout=0x7f0c0046;
+    public static final int fui_check_email_layout=0x7f0c0047;
+    public static final int fui_confirmation_code_layout=0x7f0c0048;
+    public static final int fui_dgts_country_row=0x7f0c0049;
+    public static final int fui_forgot_password_layout=0x7f0c004a;
+    public static final int fui_idp_button_facebook=0x7f0c004b;
+    public static final int fui_idp_button_github=0x7f0c004c;
+    public static final int fui_idp_button_google=0x7f0c004d;
+    public static final int fui_idp_button_twitter=0x7f0c004e;
+    public static final int fui_phone_layout=0x7f0c004f;
+    public static final int fui_provider_button_email=0x7f0c0050;
+    public static final int fui_provider_button_phone=0x7f0c0051;
+    public static final int fui_register_email_layout=0x7f0c0052;
+    public static final int fui_welcome_back_idp_prompt_layout=0x7f0c0053;
+    public static final int fui_welcome_back_password_prompt_layout=0x7f0c0054;
+    public static final int hospital_item=0x7f0c0055;
+    public static final int mtrl_layout_snackbar=0x7f0c0056;
+    public static final int mtrl_layout_snackbar_include=0x7f0c0057;
+    public static final int notification_action=0x7f0c0058;
+    public static final int notification_action_tombstone=0x7f0c0059;
+    public static final int notification_media_action=0x7f0c005a;
+    public static final int notification_media_cancel_action=0x7f0c005b;
+    public static final int notification_template_big_media=0x7f0c005c;
+    public static final int notification_template_big_media_custom=0x7f0c005d;
+    public static final int notification_template_big_media_narrow=0x7f0c005e;
+    public static final int notification_template_big_media_narrow_custom=0x7f0c005f;
+    public static final int notification_template_custom_big=0x7f0c0060;
+    public static final int notification_template_icon_group=0x7f0c0061;
+    public static final int notification_template_lines_media=0x7f0c0062;
+    public static final int notification_template_media=0x7f0c0063;
+    public static final int notification_template_media_custom=0x7f0c0064;
+    public static final int notification_template_part_chronometer=0x7f0c0065;
+    public static final int notification_template_part_time=0x7f0c0066;
+    public static final int profile_item=0x7f0c0067;
+    public static final int select_dialog_item_material=0x7f0c0068;
+    public static final int select_dialog_multichoice_material=0x7f0c0069;
+    public static final int select_dialog_singlechoice_material=0x7f0c006a;
+    public static final int slide_layout=0x7f0c006b;
+    public static final int support_simple_spinner_dropdown_item=0x7f0c006c;
   }
   public static final class menu {
     public static final int main_menu=0x7f0d0000;
+    public static final int menu=0x7f0d0001;
   }
   public static final class mipmap {
     public static final int background=0x7f0e0000;
@@ -5704,101 +5754,104 @@ public final class R {
     public static final int fcm_fallback_notification_channel_label=0x7f100053;
     public static final int firebase_database_url=0x7f100054;
     public static final int firebase_web_host=0x7f100055;
-    public static final int fui_accessibility_logo=0x7f100056;
-    public static final int fui_auto_verified=0x7f100057;
-    public static final int fui_button_text_save=0x7f100058;
-    public static final int fui_button_text_send=0x7f100059;
-    public static final int fui_confirm_recovery_body=0x7f10005a;
-    public static final int fui_continue_phone_login=0x7f10005b;
-    public static final int fui_default_toolbar_title=0x7f10005c;
-    public static final int fui_email_account_creation_error=0x7f10005d;
-    public static final int fui_email_field_name=0x7f10005e;
-    public static final int fui_email_hint=0x7f10005f;
-    public static final int fui_enter_confirmation_code=0x7f100060;
-    public static final int fui_error_email_does_not_exist=0x7f100061;
-    public static final int fui_error_invalid_password=0x7f100062;
-    public static final int fui_error_quota_exceeded=0x7f100063;
-    public static final int fui_error_session_expired=0x7f100064;
-    public static final int fui_error_too_many_attempts=0x7f100065;
-    public static final int fui_error_unknown=0x7f100066;
-    public static final int fui_idp_name_facebook=0x7f100067;
-    public static final int fui_idp_name_github=0x7f100068;
-    public static final int fui_idp_name_google=0x7f100069;
-    public static final int fui_idp_name_twitter=0x7f10006a;
-    public static final int fui_incorrect_code_dialog_body=0x7f10006b;
-    public static final int fui_invalid_email_address=0x7f10006c;
-    public static final int fui_invalid_phone_number=0x7f10006d;
-    public static final int fui_missing_email_address=0x7f10006e;
-    public static final int fui_name_hint=0x7f10006f;
-    public static final int fui_next_default=0x7f100070;
-    public static final int fui_password_hint=0x7f100071;
-    public static final int fui_password_recovery_body=0x7f100072;
-    public static final int fui_phone_hint=0x7f100073;
-    public static final int fui_privacy_policy=0x7f100074;
-    public static final int fui_progress_dialog_checking_accounts=0x7f100075;
-    public static final int fui_progress_dialog_loading=0x7f100076;
-    public static final int fui_progress_dialog_sending=0x7f100077;
-    public static final int fui_progress_dialog_signing_in=0x7f100078;
-    public static final int fui_progress_dialog_signing_up=0x7f100079;
-    public static final int fui_required_field=0x7f10007a;
-    public static final int fui_resend_code=0x7f10007b;
-    public static final int fui_resend_code_in=0x7f10007c;
-    public static final int fui_sign_in_default=0x7f10007d;
-    public static final int fui_sign_in_with_email=0x7f10007e;
-    public static final int fui_sign_in_with_facebook=0x7f10007f;
-    public static final int fui_sign_in_with_github=0x7f100080;
-    public static final int fui_sign_in_with_google=0x7f100081;
-    public static final int fui_sign_in_with_phone=0x7f100082;
-    public static final int fui_sign_in_with_phone_number=0x7f100083;
-    public static final int fui_sign_in_with_twitter=0x7f100084;
-    public static final int fui_sms_terms_of_service=0x7f100085;
-    public static final int fui_sms_terms_of_service_and_privacy_policy_extended=0x7f100086;
-    public static final int fui_terms_of_service=0x7f100087;
-    public static final int fui_title_confirm_recover_password=0x7f100088;
-    public static final int fui_title_recover_password_activity=0x7f100089;
-    public static final int fui_title_register_email=0x7f10008a;
-    public static final int fui_title_welcome_back_idp_prompt=0x7f10008b;
-    public static final int fui_title_welcome_back_password_prompt=0x7f10008c;
-    public static final int fui_tos_and_pp=0x7f10008d;
-    public static final int fui_tos_and_pp_footer=0x7f10008e;
-    public static final int fui_trouble_signing_in=0x7f10008f;
-    public static final int fui_verify_phone_number=0x7f100090;
-    public static final int fui_verify_phone_number_title=0x7f100091;
-    public static final int fui_verify_your_phone_title=0x7f100092;
-    public static final int fui_verifying=0x7f100093;
-    public static final int fui_welcome_back_email_header=0x7f100094;
-    public static final int fui_welcome_back_idp_header=0x7f100095;
-    public static final int fui_welcome_back_idp_prompt=0x7f100096;
-    public static final int fui_welcome_back_password_prompt_body=0x7f100097;
-    public static final int gcm_defaultSenderId=0x7f100098;
-    public static final int gender=0x7f100099;
-    public static final int github_client_id=0x7f10009a;
-    public static final int github_client_secret=0x7f10009b;
-    public static final int google_api_key=0x7f10009c;
-    public static final int google_app_id=0x7f10009d;
-    public static final int google_crash_reporting_api_key=0x7f10009e;
-    public static final int google_storage_bucket=0x7f10009f;
-    public static final int hide_bottom_view_on_scroll_behavior=0x7f1000a0;
-    public static final int hospital=0x7f1000a1;
-    public static final int logo3=0x7f1000a2;
-    public static final int mtrl_chip_close_icon_content_description=0x7f1000a3;
-    public static final int new_child=0x7f1000a4;
-    public static final int password=0x7f1000a5;
-    public static final int password_toggle_content_description=0x7f1000a6;
-    public static final int path_password_eye=0x7f1000a7;
-    public static final int path_password_eye_mask_strike_through=0x7f1000a8;
-    public static final int path_password_eye_mask_visible=0x7f1000a9;
-    public static final int path_password_strike_through=0x7f1000aa;
-    public static final int project_id=0x7f1000ab;
-    public static final int search_menu_title=0x7f1000ac;
-    public static final int sign_in=0x7f1000ad;
-    public static final int status_bar_notification_info_overflow=0x7f1000ae;
-    public static final int telephone=0x7f1000af;
-    public static final int textView=0x7f1000b0;
-    public static final int textview=0x7f1000b1;
-    public static final int twitter_consumer_key=0x7f1000b2;
-    public static final int twitter_consumer_secret=0x7f1000b3;
-    public static final int user=0x7f1000b4;
+    public static final int forgot_password=0x7f100056;
+    public static final int fui_accessibility_logo=0x7f100057;
+    public static final int fui_auto_verified=0x7f100058;
+    public static final int fui_button_text_save=0x7f100059;
+    public static final int fui_button_text_send=0x7f10005a;
+    public static final int fui_confirm_recovery_body=0x7f10005b;
+    public static final int fui_continue_phone_login=0x7f10005c;
+    public static final int fui_default_toolbar_title=0x7f10005d;
+    public static final int fui_email_account_creation_error=0x7f10005e;
+    public static final int fui_email_field_name=0x7f10005f;
+    public static final int fui_email_hint=0x7f100060;
+    public static final int fui_enter_confirmation_code=0x7f100061;
+    public static final int fui_error_email_does_not_exist=0x7f100062;
+    public static final int fui_error_invalid_password=0x7f100063;
+    public static final int fui_error_quota_exceeded=0x7f100064;
+    public static final int fui_error_session_expired=0x7f100065;
+    public static final int fui_error_too_many_attempts=0x7f100066;
+    public static final int fui_error_unknown=0x7f100067;
+    public static final int fui_idp_name_facebook=0x7f100068;
+    public static final int fui_idp_name_github=0x7f100069;
+    public static final int fui_idp_name_google=0x7f10006a;
+    public static final int fui_idp_name_twitter=0x7f10006b;
+    public static final int fui_incorrect_code_dialog_body=0x7f10006c;
+    public static final int fui_invalid_email_address=0x7f10006d;
+    public static final int fui_invalid_phone_number=0x7f10006e;
+    public static final int fui_missing_email_address=0x7f10006f;
+    public static final int fui_name_hint=0x7f100070;
+    public static final int fui_next_default=0x7f100071;
+    public static final int fui_password_hint=0x7f100072;
+    public static final int fui_password_recovery_body=0x7f100073;
+    public static final int fui_phone_hint=0x7f100074;
+    public static final int fui_privacy_policy=0x7f100075;
+    public static final int fui_progress_dialog_checking_accounts=0x7f100076;
+    public static final int fui_progress_dialog_loading=0x7f100077;
+    public static final int fui_progress_dialog_sending=0x7f100078;
+    public static final int fui_progress_dialog_signing_in=0x7f100079;
+    public static final int fui_progress_dialog_signing_up=0x7f10007a;
+    public static final int fui_required_field=0x7f10007b;
+    public static final int fui_resend_code=0x7f10007c;
+    public static final int fui_resend_code_in=0x7f10007d;
+    public static final int fui_sign_in_default=0x7f10007e;
+    public static final int fui_sign_in_with_email=0x7f10007f;
+    public static final int fui_sign_in_with_facebook=0x7f100080;
+    public static final int fui_sign_in_with_github=0x7f100081;
+    public static final int fui_sign_in_with_google=0x7f100082;
+    public static final int fui_sign_in_with_phone=0x7f100083;
+    public static final int fui_sign_in_with_phone_number=0x7f100084;
+    public static final int fui_sign_in_with_twitter=0x7f100085;
+    public static final int fui_sms_terms_of_service=0x7f100086;
+    public static final int fui_sms_terms_of_service_and_privacy_policy_extended=0x7f100087;
+    public static final int fui_terms_of_service=0x7f100088;
+    public static final int fui_title_confirm_recover_password=0x7f100089;
+    public static final int fui_title_recover_password_activity=0x7f10008a;
+    public static final int fui_title_register_email=0x7f10008b;
+    public static final int fui_title_welcome_back_idp_prompt=0x7f10008c;
+    public static final int fui_title_welcome_back_password_prompt=0x7f10008d;
+    public static final int fui_tos_and_pp=0x7f10008e;
+    public static final int fui_tos_and_pp_footer=0x7f10008f;
+    public static final int fui_trouble_signing_in=0x7f100090;
+    public static final int fui_verify_phone_number=0x7f100091;
+    public static final int fui_verify_phone_number_title=0x7f100092;
+    public static final int fui_verify_your_phone_title=0x7f100093;
+    public static final int fui_verifying=0x7f100094;
+    public static final int fui_welcome_back_email_header=0x7f100095;
+    public static final int fui_welcome_back_idp_header=0x7f100096;
+    public static final int fui_welcome_back_idp_prompt=0x7f100097;
+    public static final int fui_welcome_back_password_prompt_body=0x7f100098;
+    public static final int gcm_defaultSenderId=0x7f100099;
+    public static final int gender=0x7f10009a;
+    public static final int github_client_id=0x7f10009b;
+    public static final int github_client_secret=0x7f10009c;
+    public static final int google_api_key=0x7f10009d;
+    public static final int google_app_id=0x7f10009e;
+    public static final int google_crash_reporting_api_key=0x7f10009f;
+    public static final int google_storage_bucket=0x7f1000a0;
+    public static final int hide_bottom_view_on_scroll_behavior=0x7f1000a1;
+    public static final int hospital=0x7f1000a2;
+    public static final int logo3=0x7f1000a3;
+    public static final int mtrl_chip_close_icon_content_description=0x7f1000a4;
+    public static final int new_child=0x7f1000a5;
+    public static final int password=0x7f1000a6;
+    public static final int password_toggle_content_description=0x7f1000a7;
+    public static final int path_password_eye=0x7f1000a8;
+    public static final int path_password_eye_mask_strike_through=0x7f1000a9;
+    public static final int path_password_eye_mask_visible=0x7f1000aa;
+    public static final int path_password_strike_through=0x7f1000ab;
+    public static final int project_id=0x7f1000ac;
+    public static final int remember_me=0x7f1000ad;
+    public static final int search_menu_title=0x7f1000ae;
+    public static final int sign_in=0x7f1000af;
+    public static final int sign_up=0x7f1000b0;
+    public static final int status_bar_notification_info_overflow=0x7f1000b1;
+    public static final int telephone=0x7f1000b2;
+    public static final int textView=0x7f1000b3;
+    public static final int textview=0x7f1000b4;
+    public static final int twitter_consumer_key=0x7f1000b5;
+    public static final int twitter_consumer_secret=0x7f1000b6;
+    public static final int user=0x7f1000b7;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f110000;
@@ -6363,35 +6416,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.example.abodimazen.fahad:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.example.abodimazen.fahad:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.example.abodimazen.fahad:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.abodimazen.fahad:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.example.abodimazen.fahad:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.abodimazen.fahad:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.example.abodimazen.fahad:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.example.abodimazen.fahad:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.example.abodimazen.fahad:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.abodimazen.fahad:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.example.abodimazen.fahad:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.example.abodimazen.fahad:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.example.abodimazen.fahad:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.example.abodimazen.fahad:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.abodimazen.fahad:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.abodimazen.fahad:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.example.abodimazen.fahad:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.example.abodimazen.fahad:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.abodimazen.fahad:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.example.abodimazen.fahad:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.example.abodimazen.fahad:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.example.abodimazen.fahad:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.example.abodimazen.fahad:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.example.abodimazen.fahad:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.example.abodimazen.fahad:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.example.abodimazen.fahad:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.abodimazen.fahad:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.example.abodimazen.fahad:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.example.abodimazen.fahad:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.example.abodimazen.ChildCare:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.example.abodimazen.ChildCare:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.example.abodimazen.ChildCare:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.abodimazen.ChildCare:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.example.abodimazen.ChildCare:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.abodimazen.ChildCare:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.example.abodimazen.ChildCare:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.example.abodimazen.ChildCare:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.example.abodimazen.ChildCare:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.abodimazen.ChildCare:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.example.abodimazen.ChildCare:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.example.abodimazen.ChildCare:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.example.abodimazen.ChildCare:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.example.abodimazen.ChildCare:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.abodimazen.ChildCare:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.abodimazen.ChildCare:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.example.abodimazen.ChildCare:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.example.abodimazen.ChildCare:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.abodimazen.ChildCare:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.example.abodimazen.ChildCare:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.example.abodimazen.ChildCare:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.example.abodimazen.ChildCare:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.example.abodimazen.ChildCare:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.example.abodimazen.ChildCare:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.example.abodimazen.ChildCare:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.example.abodimazen.ChildCare:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.abodimazen.ChildCare:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.example.abodimazen.ChildCare:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.example.abodimazen.ChildCare:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -6434,7 +6487,7 @@ public final class R {
         0x7f040225
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6442,11 +6495,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:background
+     * @attr name com.example.abodimazen.ChildCare:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6457,11 +6510,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:backgroundSplit
+     * @attr name com.example.abodimazen.ChildCare:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6472,11 +6525,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:backgroundStacked
+     * @attr name com.example.abodimazen.ChildCare:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6485,11 +6538,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetEnd
+     * @attr name com.example.abodimazen.ChildCare:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6498,11 +6551,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetEndWithActions
+     * @attr name com.example.abodimazen.ChildCare:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6511,11 +6564,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetLeft
+     * @attr name com.example.abodimazen.ChildCare:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6524,11 +6577,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetRight
+     * @attr name com.example.abodimazen.ChildCare:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6537,11 +6590,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetStart
+     * @attr name com.example.abodimazen.ChildCare:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6550,11 +6603,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetStartWithNavigation
+     * @attr name com.example.abodimazen.ChildCare:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6562,11 +6615,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:customNavigationLayout
+     * @attr name com.example.abodimazen.ChildCare:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -6584,11 +6637,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:displayOptions
+     * @attr name com.example.abodimazen.ChildCare:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6596,11 +6649,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:divider
+     * @attr name com.example.abodimazen.ChildCare:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6609,11 +6662,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:elevation
+     * @attr name com.example.abodimazen.ChildCare:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6622,21 +6675,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:height
+     * @attr name com.example.abodimazen.ChildCare:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:hideOnContentScroll
+     * @attr name com.example.abodimazen.ChildCare:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6644,11 +6697,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:homeAsUpIndicator
+     * @attr name com.example.abodimazen.ChildCare:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6656,11 +6709,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:homeLayout
+     * @attr name com.example.abodimazen.ChildCare:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6668,11 +6721,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:icon
+     * @attr name com.example.abodimazen.ChildCare:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6680,11 +6733,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:indeterminateProgressStyle
+     * @attr name com.example.abodimazen.ChildCare:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6693,11 +6746,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:itemPadding
+     * @attr name com.example.abodimazen.ChildCare:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6705,11 +6758,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:logo
+     * @attr name com.example.abodimazen.ChildCare:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6723,11 +6776,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:navigationMode
+     * @attr name com.example.abodimazen.ChildCare:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6735,11 +6788,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:popupTheme
+     * @attr name com.example.abodimazen.ChildCare:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6748,11 +6801,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:progressBarPadding
+     * @attr name com.example.abodimazen.ChildCare:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6760,21 +6813,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:progressBarStyle
+     * @attr name com.example.abodimazen.ChildCare:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:subtitle
+     * @attr name com.example.abodimazen.ChildCare:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6782,21 +6835,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:subtitleTextStyle
+     * @attr name com.example.abodimazen.ChildCare:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:title
+     * @attr name com.example.abodimazen.ChildCare:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6804,7 +6857,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:titleTextStyle
+     * @attr name com.example.abodimazen.ChildCare:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -6886,12 +6939,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.example.abodimazen.fahad:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.example.abodimazen.fahad:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.example.abodimazen.fahad:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.example.abodimazen.fahad:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.abodimazen.fahad:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.example.abodimazen.fahad:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.example.abodimazen.ChildCare:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.example.abodimazen.ChildCare:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.example.abodimazen.ChildCare:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.example.abodimazen.ChildCare:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.abodimazen.ChildCare:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.example.abodimazen.ChildCare:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -6905,7 +6958,7 @@ public final class R {
         0x7f0401d6, 0x7f040225
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6913,11 +6966,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:background
+     * @attr name com.example.abodimazen.ChildCare:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6928,11 +6981,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:backgroundSplit
+     * @attr name com.example.abodimazen.ChildCare:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6940,11 +6993,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:closeItemLayout
+     * @attr name com.example.abodimazen.ChildCare:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6953,11 +7006,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:height
+     * @attr name com.example.abodimazen.ChildCare:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6965,11 +7018,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:subtitleTextStyle
+     * @attr name com.example.abodimazen.ChildCare:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6977,7 +7030,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:titleTextStyle
+     * @attr name com.example.abodimazen.ChildCare:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -6987,8 +7040,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.abodimazen.fahad:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.abodimazen.fahad:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.abodimazen.ChildCare:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.abodimazen.ChildCare:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -6997,7 +7050,7 @@ public final class R {
         0x7f0400d7, 0x7f040116
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7005,17 +7058,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:expandActivityOverflowButtonDrawable
+     * @attr name com.example.abodimazen.ChildCare:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:initialActivityCount
+     * @attr name com.example.abodimazen.ChildCare:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -7026,13 +7079,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.example.abodimazen.fahad:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.example.abodimazen.fahad:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.example.abodimazen.fahad:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.example.abodimazen.fahad:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.example.abodimazen.fahad:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.example.abodimazen.fahad:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.example.abodimazen.fahad:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.example.abodimazen.ChildCare:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.example.abodimazen.ChildCare:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.example.abodimazen.ChildCare:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.example.abodimazen.ChildCare:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.example.abodimazen.ChildCare:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.example.abodimazen.ChildCare:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.example.abodimazen.ChildCare:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -7060,7 +7113,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7069,11 +7122,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:buttonIconDimen
+     * @attr name com.example.abodimazen.ChildCare:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7081,11 +7134,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonPanelSideLayout
+     * @attr name com.example.abodimazen.ChildCare:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7093,11 +7146,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:listItemLayout
+     * @attr name com.example.abodimazen.ChildCare:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7105,11 +7158,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:listLayout
+     * @attr name com.example.abodimazen.ChildCare:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7117,21 +7170,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:multiChoiceItemLayout
+     * @attr name com.example.abodimazen.ChildCare:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:showTitle
+     * @attr name com.example.abodimazen.ChildCare:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7139,7 +7192,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:singleChoiceItemLayout
+     * @attr name com.example.abodimazen.ChildCare:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -7341,9 +7394,9 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.example.abodimazen.fahad:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded com.example.abodimazen.fahad:expanded}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.example.abodimazen.fahad:liftOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.example.abodimazen.ChildCare:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.example.abodimazen.ChildCare:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.example.abodimazen.ChildCare:liftOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -7392,7 +7445,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7401,27 +7454,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:elevation
+     * @attr name com.example.abodimazen.ChildCare:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:expanded
+     * @attr name com.example.abodimazen.ChildCare:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#liftOnScroll}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#liftOnScroll}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:liftOnScroll
+     * @attr name com.example.abodimazen.ChildCare:liftOnScroll
      */
     public static final int AppBarLayout_liftOnScroll=5;
     /**
@@ -7431,10 +7484,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.example.abodimazen.fahad:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.example.abodimazen.fahad:state_collapsible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.example.abodimazen.fahad:state_liftable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.example.abodimazen.fahad:state_lifted}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.example.abodimazen.ChildCare:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.example.abodimazen.ChildCare:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.example.abodimazen.ChildCare:state_liftable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.example.abodimazen.ChildCare:state_lifted}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -7445,43 +7498,43 @@ public final class R {
         0x7f0401c9, 0x7f0401ca, 0x7f0401cb, 0x7f0401cc
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:state_collapsed
+     * @attr name com.example.abodimazen.ChildCare:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:state_collapsible
+     * @attr name com.example.abodimazen.ChildCare:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#state_liftable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#state_liftable}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:state_liftable
+     * @attr name com.example.abodimazen.ChildCare:state_liftable
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#state_lifted}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#state_lifted}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:state_lifted
+     * @attr name com.example.abodimazen.ChildCare:state_lifted
      */
     public static final int AppBarLayoutStates_state_lifted=3;
     /**
@@ -7491,8 +7544,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.example.abodimazen.fahad:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.example.abodimazen.fahad:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.example.abodimazen.ChildCare:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.example.abodimazen.ChildCare:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -7501,7 +7554,7 @@ public final class R {
         0x7f040164, 0x7f040165
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7518,11 +7571,11 @@ public final class R {
      * <tr><td>snapMargins</td><td>20</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_scrollFlags
+     * @attr name com.example.abodimazen.ChildCare:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7530,7 +7583,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_scrollInterpolator
+     * @attr name com.example.abodimazen.ChildCare:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -7541,9 +7594,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.example.abodimazen.fahad:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.example.abodimazen.fahad:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.example.abodimazen.fahad:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.example.abodimazen.ChildCare:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.example.abodimazen.ChildCare:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.example.abodimazen.ChildCare:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -7569,7 +7622,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7577,22 +7630,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:srcCompat
+     * @attr name com.example.abodimazen.ChildCare:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tint
+     * @attr name com.example.abodimazen.ChildCare:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7609,7 +7662,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:tintMode
+     * @attr name com.example.abodimazen.ChildCare:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -7620,9 +7673,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.example.abodimazen.fahad:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.example.abodimazen.fahad:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.example.abodimazen.fahad:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.example.abodimazen.ChildCare:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.example.abodimazen.ChildCare:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.example.abodimazen.ChildCare:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -7645,7 +7698,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7653,22 +7706,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tickMark
+     * @attr name com.example.abodimazen.ChildCare:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tickMarkTint
+     * @attr name com.example.abodimazen.ChildCare:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7685,7 +7738,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:tickMarkTintMode
+     * @attr name com.example.abodimazen.ChildCare:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -7825,16 +7878,16 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.example.abodimazen.fahad:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.example.abodimazen.fahad:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.example.abodimazen.fahad:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.example.abodimazen.fahad:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.example.abodimazen.fahad:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.example.abodimazen.fahad:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.example.abodimazen.fahad:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.example.abodimazen.fahad:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.example.abodimazen.fahad:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.abodimazen.fahad:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.example.abodimazen.ChildCare:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.example.abodimazen.ChildCare:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.example.abodimazen.ChildCare:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.example.abodimazen.ChildCare:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.example.abodimazen.ChildCare:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.example.abodimazen.ChildCare:firstBaselineToTopHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.example.abodimazen.ChildCare:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.example.abodimazen.ChildCare:lastBaselineToBottomHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.example.abodimazen.ChildCare:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.abodimazen.ChildCare:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -7866,7 +7919,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7875,11 +7928,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:autoSizeMaxTextSize
+     * @attr name com.example.abodimazen.ChildCare:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7888,11 +7941,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:autoSizeMinTextSize
+     * @attr name com.example.abodimazen.ChildCare:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7900,11 +7953,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:autoSizePresetSizes
+     * @attr name com.example.abodimazen.ChildCare:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7913,11 +7966,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:autoSizeStepGranularity
+     * @attr name com.example.abodimazen.ChildCare:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7930,11 +7983,11 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:autoSizeTextType
+     * @attr name com.example.abodimazen.ChildCare:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#firstBaselineToTopHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#firstBaselineToTopHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7943,21 +7996,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:firstBaselineToTopHeight
+     * @attr name com.example.abodimazen.ChildCare:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:fontFamily
+     * @attr name com.example.abodimazen.ChildCare:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#lastBaselineToBottomHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#lastBaselineToBottomHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7966,11 +8019,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:lastBaselineToBottomHeight
+     * @attr name com.example.abodimazen.ChildCare:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#lineHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#lineHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7979,11 +8032,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:lineHeight
+     * @attr name com.example.abodimazen.ChildCare:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7993,7 +8046,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAllCaps
+     * @attr name com.example.abodimazen.ChildCare:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=10;
     /**
@@ -8005,125 +8058,125 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.example.abodimazen.fahad:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.example.abodimazen.fahad:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.example.abodimazen.fahad:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.example.abodimazen.fahad:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.example.abodimazen.fahad:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.example.abodimazen.fahad:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.example.abodimazen.fahad:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.example.abodimazen.fahad:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.example.abodimazen.fahad:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.example.abodimazen.fahad:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.example.abodimazen.fahad:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.example.abodimazen.fahad:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.example.abodimazen.fahad:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.example.abodimazen.fahad:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.example.abodimazen.fahad:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.example.abodimazen.fahad:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.example.abodimazen.fahad:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.example.abodimazen.fahad:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.example.abodimazen.fahad:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.example.abodimazen.fahad:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.example.abodimazen.fahad:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.example.abodimazen.fahad:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.example.abodimazen.fahad:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.example.abodimazen.fahad:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.example.abodimazen.fahad:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.example.abodimazen.fahad:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.example.abodimazen.fahad:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.example.abodimazen.fahad:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.example.abodimazen.fahad:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.example.abodimazen.fahad:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.example.abodimazen.fahad:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.example.abodimazen.fahad:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.example.abodimazen.fahad:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.example.abodimazen.fahad:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.example.abodimazen.fahad:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.example.abodimazen.fahad:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.example.abodimazen.fahad:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.example.abodimazen.fahad:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.example.abodimazen.fahad:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.example.abodimazen.fahad:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.example.abodimazen.fahad:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.example.abodimazen.fahad:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.example.abodimazen.fahad:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.example.abodimazen.fahad:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.example.abodimazen.fahad:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.example.abodimazen.fahad:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.example.abodimazen.fahad:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.example.abodimazen.fahad:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.example.abodimazen.fahad:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.example.abodimazen.fahad:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.example.abodimazen.fahad:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.example.abodimazen.fahad:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.example.abodimazen.fahad:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.example.abodimazen.fahad:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.example.abodimazen.fahad:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.example.abodimazen.fahad:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.example.abodimazen.fahad:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.example.abodimazen.fahad:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.example.abodimazen.fahad:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.example.abodimazen.fahad:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.example.abodimazen.fahad:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.example.abodimazen.fahad:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.example.abodimazen.fahad:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.example.abodimazen.fahad:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.example.abodimazen.fahad:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.example.abodimazen.fahad:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.example.abodimazen.fahad:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.example.abodimazen.fahad:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.example.abodimazen.fahad:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.example.abodimazen.fahad:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.example.abodimazen.fahad:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.example.abodimazen.fahad:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.example.abodimazen.fahad:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.example.abodimazen.fahad:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.example.abodimazen.fahad:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.example.abodimazen.fahad:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.example.abodimazen.fahad:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.example.abodimazen.fahad:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.example.abodimazen.fahad:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.example.abodimazen.fahad:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.example.abodimazen.fahad:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.example.abodimazen.fahad:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.example.abodimazen.fahad:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.example.abodimazen.fahad:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.example.abodimazen.fahad:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.example.abodimazen.fahad:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.example.abodimazen.fahad:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.example.abodimazen.fahad:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.example.abodimazen.fahad:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.example.abodimazen.fahad:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.example.abodimazen.fahad:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.example.abodimazen.fahad:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.example.abodimazen.fahad:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.example.abodimazen.fahad:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.example.abodimazen.fahad:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.example.abodimazen.fahad:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.example.abodimazen.fahad:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.example.abodimazen.fahad:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.example.abodimazen.fahad:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.example.abodimazen.fahad:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.example.abodimazen.fahad:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.example.abodimazen.fahad:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.example.abodimazen.fahad:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.example.abodimazen.fahad:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.example.abodimazen.fahad:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.example.abodimazen.fahad:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.example.abodimazen.fahad:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.example.abodimazen.fahad:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.example.abodimazen.fahad:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.example.abodimazen.fahad:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.example.abodimazen.fahad:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.example.abodimazen.fahad:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.example.abodimazen.fahad:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.example.abodimazen.fahad:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.example.abodimazen.fahad:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.example.abodimazen.fahad:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.example.abodimazen.fahad:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.example.abodimazen.fahad:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.example.abodimazen.fahad:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.example.abodimazen.ChildCare:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.example.abodimazen.ChildCare:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.example.abodimazen.ChildCare:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.example.abodimazen.ChildCare:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.example.abodimazen.ChildCare:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.example.abodimazen.ChildCare:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.example.abodimazen.ChildCare:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.example.abodimazen.ChildCare:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.example.abodimazen.ChildCare:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.example.abodimazen.ChildCare:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.example.abodimazen.ChildCare:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.example.abodimazen.ChildCare:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.example.abodimazen.ChildCare:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.example.abodimazen.ChildCare:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.example.abodimazen.ChildCare:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.example.abodimazen.ChildCare:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.example.abodimazen.ChildCare:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.example.abodimazen.ChildCare:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.example.abodimazen.ChildCare:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.example.abodimazen.ChildCare:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.example.abodimazen.ChildCare:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.example.abodimazen.ChildCare:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.example.abodimazen.ChildCare:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.example.abodimazen.ChildCare:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.example.abodimazen.ChildCare:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.example.abodimazen.ChildCare:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.example.abodimazen.ChildCare:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.example.abodimazen.ChildCare:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.example.abodimazen.ChildCare:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.example.abodimazen.ChildCare:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.example.abodimazen.ChildCare:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.example.abodimazen.ChildCare:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.example.abodimazen.ChildCare:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.example.abodimazen.ChildCare:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.example.abodimazen.ChildCare:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.example.abodimazen.ChildCare:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.example.abodimazen.ChildCare:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.example.abodimazen.ChildCare:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.example.abodimazen.ChildCare:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.example.abodimazen.ChildCare:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.example.abodimazen.ChildCare:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.example.abodimazen.ChildCare:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.example.abodimazen.ChildCare:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.example.abodimazen.ChildCare:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.example.abodimazen.ChildCare:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.example.abodimazen.ChildCare:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.example.abodimazen.ChildCare:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.example.abodimazen.ChildCare:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.example.abodimazen.ChildCare:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.example.abodimazen.ChildCare:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.example.abodimazen.ChildCare:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.example.abodimazen.ChildCare:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.example.abodimazen.ChildCare:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.example.abodimazen.ChildCare:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.example.abodimazen.ChildCare:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.example.abodimazen.ChildCare:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.example.abodimazen.ChildCare:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.example.abodimazen.ChildCare:dialogCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.example.abodimazen.ChildCare:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.example.abodimazen.ChildCare:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.example.abodimazen.ChildCare:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.example.abodimazen.ChildCare:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.example.abodimazen.ChildCare:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.example.abodimazen.ChildCare:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.example.abodimazen.ChildCare:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.example.abodimazen.ChildCare:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.example.abodimazen.ChildCare:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.example.abodimazen.ChildCare:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.example.abodimazen.ChildCare:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.example.abodimazen.ChildCare:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.example.abodimazen.ChildCare:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.example.abodimazen.ChildCare:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.example.abodimazen.ChildCare:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.example.abodimazen.ChildCare:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.example.abodimazen.ChildCare:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.example.abodimazen.ChildCare:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.example.abodimazen.ChildCare:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.example.abodimazen.ChildCare:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.example.abodimazen.ChildCare:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.example.abodimazen.ChildCare:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.example.abodimazen.ChildCare:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.example.abodimazen.ChildCare:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.example.abodimazen.ChildCare:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.example.abodimazen.ChildCare:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.example.abodimazen.ChildCare:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.example.abodimazen.ChildCare:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.example.abodimazen.ChildCare:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.example.abodimazen.ChildCare:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.example.abodimazen.ChildCare:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.example.abodimazen.ChildCare:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.example.abodimazen.ChildCare:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.example.abodimazen.ChildCare:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.example.abodimazen.ChildCare:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.example.abodimazen.ChildCare:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.example.abodimazen.ChildCare:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.example.abodimazen.ChildCare:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.example.abodimazen.ChildCare:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.example.abodimazen.ChildCare:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.example.abodimazen.ChildCare:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.example.abodimazen.ChildCare:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.example.abodimazen.ChildCare:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.example.abodimazen.ChildCare:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.example.abodimazen.ChildCare:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.example.abodimazen.ChildCare:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.example.abodimazen.ChildCare:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.example.abodimazen.ChildCare:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.example.abodimazen.ChildCare:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.example.abodimazen.ChildCare:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.example.abodimazen.ChildCare:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.example.abodimazen.ChildCare:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.example.abodimazen.ChildCare:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.example.abodimazen.ChildCare:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.example.abodimazen.ChildCare:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.example.abodimazen.ChildCare:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.example.abodimazen.ChildCare:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.example.abodimazen.ChildCare:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.example.abodimazen.ChildCare:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.example.abodimazen.ChildCare:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.example.abodimazen.ChildCare:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -8303,7 +8356,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8311,11 +8364,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarDivider
+     * @attr name com.example.abodimazen.ChildCare:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8323,11 +8376,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarItemBackground
+     * @attr name com.example.abodimazen.ChildCare:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8335,11 +8388,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarPopupTheme
+     * @attr name com.example.abodimazen.ChildCare:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8356,11 +8409,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:actionBarSize
+     * @attr name com.example.abodimazen.ChildCare:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8368,11 +8421,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarSplitStyle
+     * @attr name com.example.abodimazen.ChildCare:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8380,11 +8433,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarStyle
+     * @attr name com.example.abodimazen.ChildCare:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8392,11 +8445,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarTabBarStyle
+     * @attr name com.example.abodimazen.ChildCare:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8404,11 +8457,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarTabStyle
+     * @attr name com.example.abodimazen.ChildCare:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8416,11 +8469,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarTabTextStyle
+     * @attr name com.example.abodimazen.ChildCare:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8428,11 +8481,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarTheme
+     * @attr name com.example.abodimazen.ChildCare:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8440,11 +8493,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionBarWidgetTheme
+     * @attr name com.example.abodimazen.ChildCare:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8452,11 +8505,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8464,11 +8517,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionDropDownStyle
+     * @attr name com.example.abodimazen.ChildCare:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8476,11 +8529,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionMenuTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8491,11 +8544,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionMenuTextColor
+     * @attr name com.example.abodimazen.ChildCare:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8503,11 +8556,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeBackground
+     * @attr name com.example.abodimazen.ChildCare:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8515,11 +8568,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeCloseButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8527,11 +8580,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeCloseDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8539,11 +8592,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeCopyDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8551,11 +8604,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeCutDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8563,11 +8616,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeFindDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8575,11 +8628,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModePasteDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8587,11 +8640,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModePopupWindowStyle
+     * @attr name com.example.abodimazen.ChildCare:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8599,11 +8652,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeSelectAllDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8611,11 +8664,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeShareDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8623,11 +8676,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeSplitBackground
+     * @attr name com.example.abodimazen.ChildCare:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8635,11 +8688,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeStyle
+     * @attr name com.example.abodimazen.ChildCare:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8647,11 +8700,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionModeWebSearchDrawable
+     * @attr name com.example.abodimazen.ChildCare:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8659,11 +8712,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionOverflowButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8671,11 +8724,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionOverflowMenuStyle
+     * @attr name com.example.abodimazen.ChildCare:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8683,11 +8736,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:activityChooserViewStyle
+     * @attr name com.example.abodimazen.ChildCare:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8695,21 +8748,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:alertDialogButtonGroupStyle
+     * @attr name com.example.abodimazen.ChildCare:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:alertDialogCenterButtons
+     * @attr name com.example.abodimazen.ChildCare:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8717,11 +8770,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:alertDialogStyle
+     * @attr name com.example.abodimazen.ChildCare:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8729,11 +8782,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:alertDialogTheme
+     * @attr name com.example.abodimazen.ChildCare:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8741,11 +8794,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:autoCompleteTextViewStyle
+     * @attr name com.example.abodimazen.ChildCare:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8753,11 +8806,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:borderlessButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8765,11 +8818,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonBarButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8777,11 +8830,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonBarNegativeButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8789,11 +8842,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonBarNeutralButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8801,11 +8854,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonBarPositiveButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8813,11 +8866,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonBarStyle
+     * @attr name com.example.abodimazen.ChildCare:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8825,11 +8878,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonStyle
+     * @attr name com.example.abodimazen.ChildCare:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8837,11 +8890,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonStyleSmall
+     * @attr name com.example.abodimazen.ChildCare:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8849,11 +8902,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:checkboxStyle
+     * @attr name com.example.abodimazen.ChildCare:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8861,77 +8914,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:checkedTextViewStyle
+     * @attr name com.example.abodimazen.ChildCare:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorAccent
+     * @attr name com.example.abodimazen.ChildCare:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorBackgroundFloating
+     * @attr name com.example.abodimazen.ChildCare:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorButtonNormal
+     * @attr name com.example.abodimazen.ChildCare:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorControlActivated
+     * @attr name com.example.abodimazen.ChildCare:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorControlHighlight
+     * @attr name com.example.abodimazen.ChildCare:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorControlNormal
+     * @attr name com.example.abodimazen.ChildCare:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8942,44 +8995,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorError
+     * @attr name com.example.abodimazen.ChildCare:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorPrimary
+     * @attr name com.example.abodimazen.ChildCare:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorPrimaryDark
+     * @attr name com.example.abodimazen.ChildCare:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorSwitchThumbNormal
+     * @attr name com.example.abodimazen.ChildCare:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8987,11 +9040,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:controlBackground
+     * @attr name com.example.abodimazen.ChildCare:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dialogCornerRadius}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dialogCornerRadius}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9000,11 +9053,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:dialogCornerRadius
+     * @attr name com.example.abodimazen.ChildCare:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9013,11 +9066,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:dialogPreferredPadding
+     * @attr name com.example.abodimazen.ChildCare:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9025,11 +9078,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:dialogTheme
+     * @attr name com.example.abodimazen.ChildCare:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9037,11 +9090,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:dividerHorizontal
+     * @attr name com.example.abodimazen.ChildCare:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9049,11 +9102,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:dividerVertical
+     * @attr name com.example.abodimazen.ChildCare:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9061,11 +9114,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:dropDownListViewStyle
+     * @attr name com.example.abodimazen.ChildCare:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9074,11 +9127,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:dropdownListPreferredItemHeight
+     * @attr name com.example.abodimazen.ChildCare:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9086,11 +9139,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:editTextBackground
+     * @attr name com.example.abodimazen.ChildCare:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9101,11 +9154,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:editTextColor
+     * @attr name com.example.abodimazen.ChildCare:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9113,11 +9166,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:editTextStyle
+     * @attr name com.example.abodimazen.ChildCare:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9125,11 +9178,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:homeAsUpIndicator
+     * @attr name com.example.abodimazen.ChildCare:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9137,11 +9190,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:imageButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9149,11 +9202,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:listChoiceBackgroundIndicator
+     * @attr name com.example.abodimazen.ChildCare:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9161,11 +9214,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:listDividerAlertDialog
+     * @attr name com.example.abodimazen.ChildCare:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9173,11 +9226,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:listMenuViewStyle
+     * @attr name com.example.abodimazen.ChildCare:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9185,11 +9238,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:listPopupWindowStyle
+     * @attr name com.example.abodimazen.ChildCare:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9198,11 +9251,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:listPreferredItemHeight
+     * @attr name com.example.abodimazen.ChildCare:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9211,11 +9264,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:listPreferredItemHeightLarge
+     * @attr name com.example.abodimazen.ChildCare:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9224,11 +9277,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:listPreferredItemHeightSmall
+     * @attr name com.example.abodimazen.ChildCare:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9237,11 +9290,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:listPreferredItemPaddingLeft
+     * @attr name com.example.abodimazen.ChildCare:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9250,11 +9303,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:listPreferredItemPaddingRight
+     * @attr name com.example.abodimazen.ChildCare:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9262,11 +9315,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:panelBackground
+     * @attr name com.example.abodimazen.ChildCare:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9274,11 +9327,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:panelMenuListTheme
+     * @attr name com.example.abodimazen.ChildCare:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9287,11 +9340,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:panelMenuListWidth
+     * @attr name com.example.abodimazen.ChildCare:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9299,11 +9352,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:popupMenuStyle
+     * @attr name com.example.abodimazen.ChildCare:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9311,11 +9364,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:popupWindowStyle
+     * @attr name com.example.abodimazen.ChildCare:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9323,11 +9376,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:radioButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9335,11 +9388,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:ratingBarStyle
+     * @attr name com.example.abodimazen.ChildCare:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9347,11 +9400,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:ratingBarStyleIndicator
+     * @attr name com.example.abodimazen.ChildCare:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9359,11 +9412,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:ratingBarStyleSmall
+     * @attr name com.example.abodimazen.ChildCare:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9371,11 +9424,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:searchViewStyle
+     * @attr name com.example.abodimazen.ChildCare:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9383,11 +9436,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:seekBarStyle
+     * @attr name com.example.abodimazen.ChildCare:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9395,11 +9448,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:selectableItemBackground
+     * @attr name com.example.abodimazen.ChildCare:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9407,11 +9460,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:selectableItemBackgroundBorderless
+     * @attr name com.example.abodimazen.ChildCare:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9419,11 +9472,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:spinnerDropDownItemStyle
+     * @attr name com.example.abodimazen.ChildCare:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9431,11 +9484,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:spinnerStyle
+     * @attr name com.example.abodimazen.ChildCare:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9443,11 +9496,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:switchStyle
+     * @attr name com.example.abodimazen.ChildCare:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9455,11 +9508,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceLargePopupMenu
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9467,11 +9520,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceListItem
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9479,11 +9532,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceListItemSecondary
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9491,11 +9544,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceListItemSmall
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9503,11 +9556,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearancePopupMenuHeader
+     * @attr name com.example.abodimazen.ChildCare:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9515,11 +9568,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceSearchResultSubtitle
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9527,11 +9580,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceSearchResultTitle
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9539,11 +9592,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceSmallPopupMenu
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9554,11 +9607,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textColorAlertDialogListItem
+     * @attr name com.example.abodimazen.ChildCare:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9569,11 +9622,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textColorSearchUrl
+     * @attr name com.example.abodimazen.ChildCare:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9581,11 +9634,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:toolbarNavigationButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9593,11 +9646,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:toolbarStyle
+     * @attr name com.example.abodimazen.ChildCare:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9608,11 +9661,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tooltipForegroundColor
+     * @attr name com.example.abodimazen.ChildCare:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9620,51 +9673,51 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tooltipFrameBackground
+     * @attr name com.example.abodimazen.ChildCare:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=109;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:viewInflaterClass
+     * @attr name com.example.abodimazen.ChildCare:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:windowActionBar
+     * @attr name com.example.abodimazen.ChildCare:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:windowActionBarOverlay
+     * @attr name com.example.abodimazen.ChildCare:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:windowActionModeOverlay
+     * @attr name com.example.abodimazen.ChildCare:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9677,11 +9730,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.abodimazen.fahad:windowFixedHeightMajor
+     * @attr name com.example.abodimazen.ChildCare:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9694,11 +9747,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.abodimazen.fahad:windowFixedHeightMinor
+     * @attr name com.example.abodimazen.ChildCare:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9711,11 +9764,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.abodimazen.fahad:windowFixedWidthMajor
+     * @attr name com.example.abodimazen.ChildCare:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9728,11 +9781,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.abodimazen.fahad:windowFixedWidthMinor
+     * @attr name com.example.abodimazen.ChildCare:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9745,11 +9798,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.abodimazen.fahad:windowMinWidthMajor
+     * @attr name com.example.abodimazen.ChildCare:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9762,17 +9815,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.abodimazen.fahad:windowMinWidthMinor
+     * @attr name com.example.abodimazen.ChildCare:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:windowNoTitle
+     * @attr name com.example.abodimazen.ChildCare:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=120;
     /**
@@ -9782,12 +9835,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.example.abodimazen.fahad:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.example.abodimazen.fahad:fabAlignmentMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.example.abodimazen.fahad:fabCradleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.example.abodimazen.fahad:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.example.abodimazen.fahad:fabCradleVerticalOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.example.abodimazen.fahad:hideOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.example.abodimazen.ChildCare:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.example.abodimazen.ChildCare:fabAlignmentMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.example.abodimazen.ChildCare:fabCradleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.example.abodimazen.ChildCare:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.example.abodimazen.ChildCare:fabCradleVerticalOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.example.abodimazen.ChildCare:hideOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #BottomAppBar_backgroundTint
      * @see #BottomAppBar_fabAlignmentMode
@@ -9801,18 +9854,18 @@ public final class R {
         0x7f0400e3, 0x7f040102
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:backgroundTint
+     * @attr name com.example.abodimazen.ChildCare:backgroundTint
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fabAlignmentMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fabAlignmentMode}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9825,11 +9878,11 @@ public final class R {
      * <tr><td>end</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:fabAlignmentMode
+     * @attr name com.example.abodimazen.ChildCare:fabAlignmentMode
      */
     public static final int BottomAppBar_fabAlignmentMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fabCradleMargin}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fabCradleMargin}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9838,11 +9891,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:fabCradleMargin
+     * @attr name com.example.abodimazen.ChildCare:fabCradleMargin
      */
     public static final int BottomAppBar_fabCradleMargin=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fabCradleRoundedCornerRadius}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fabCradleRoundedCornerRadius}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9851,11 +9904,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:fabCradleRoundedCornerRadius
+     * @attr name com.example.abodimazen.ChildCare:fabCradleRoundedCornerRadius
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fabCradleVerticalOffset}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fabCradleVerticalOffset}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9864,17 +9917,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:fabCradleVerticalOffset
+     * @attr name com.example.abodimazen.ChildCare:fabCradleVerticalOffset
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hideOnScroll}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hideOnScroll}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:hideOnScroll
+     * @attr name com.example.abodimazen.ChildCare:hideOnScroll
      */
     public static final int BottomAppBar_hideOnScroll=5;
     /**
@@ -9884,16 +9937,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.example.abodimazen.fahad:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.example.abodimazen.fahad:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.example.abodimazen.fahad:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.example.abodimazen.fahad:itemIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.example.abodimazen.fahad:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.example.abodimazen.fahad:itemTextAppearanceActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.example.abodimazen.fahad:itemTextAppearanceInactive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.example.abodimazen.fahad:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.example.abodimazen.fahad:labelVisibilityMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.example.abodimazen.fahad:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.example.abodimazen.ChildCare:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.example.abodimazen.ChildCare:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.example.abodimazen.ChildCare:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.example.abodimazen.ChildCare:itemIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.example.abodimazen.ChildCare:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.example.abodimazen.ChildCare:itemTextAppearanceActive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.example.abodimazen.ChildCare:itemTextAppearanceInactive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.example.abodimazen.ChildCare:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.example.abodimazen.ChildCare:labelVisibilityMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.example.abodimazen.ChildCare:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -9912,7 +9965,7 @@ public final class R {
         0x7f040126, 0x7f04017c
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9921,11 +9974,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:elevation
+     * @attr name com.example.abodimazen.ChildCare:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9933,21 +9986,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemBackground
+     * @attr name com.example.abodimazen.ChildCare:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemHorizontalTranslationEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemHorizontalTranslationEnabled}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemHorizontalTranslationEnabled
+     * @attr name com.example.abodimazen.ChildCare:itemHorizontalTranslationEnabled
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemIconSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemIconSize}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9956,22 +10009,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:itemIconSize
+     * @attr name com.example.abodimazen.ChildCare:itemIconSize
      */
     public static final int BottomNavigationView_itemIconSize=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemIconTint
+     * @attr name com.example.abodimazen.ChildCare:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemTextAppearanceActive}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemTextAppearanceActive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9979,11 +10032,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemTextAppearanceActive
+     * @attr name com.example.abodimazen.ChildCare:itemTextAppearanceActive
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemTextAppearanceInactive}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemTextAppearanceInactive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9991,22 +10044,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemTextAppearanceInactive
+     * @attr name com.example.abodimazen.ChildCare:itemTextAppearanceInactive
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemTextColor
+     * @attr name com.example.abodimazen.ChildCare:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#labelVisibilityMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#labelVisibilityMode}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10021,11 +10074,11 @@ public final class R {
      * <tr><td>unlabeled</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:labelVisibilityMode
+     * @attr name com.example.abodimazen.ChildCare:labelVisibilityMode
      */
     public static final int BottomNavigationView_labelVisibilityMode=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10033,7 +10086,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:menu
+     * @attr name com.example.abodimazen.ChildCare:menu
      */
     public static final int BottomNavigationView_menu=9;
     /**
@@ -10043,10 +10096,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.example.abodimazen.fahad:behavior_fitToContents}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.example.abodimazen.fahad:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.example.abodimazen.fahad:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.example.abodimazen.fahad:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.example.abodimazen.ChildCare:behavior_fitToContents}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.example.abodimazen.ChildCare:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.example.abodimazen.ChildCare:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.example.abodimazen.ChildCare:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_fitToContents
      * @see #BottomSheetBehavior_Layout_behavior_hideable
@@ -10057,27 +10110,27 @@ public final class R {
         0x7f04003a, 0x7f04003b, 0x7f04003d, 0x7f04003e
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#behavior_fitToContents}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#behavior_fitToContents}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:behavior_fitToContents
+     * @attr name com.example.abodimazen.ChildCare:behavior_fitToContents
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:behavior_hideable
+     * @attr name com.example.abodimazen.ChildCare:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10094,17 +10147,17 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:behavior_peekHeight
+     * @attr name com.example.abodimazen.ChildCare:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:behavior_skipCollapsed
+     * @attr name com.example.abodimazen.ChildCare:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=3;
     /**
@@ -10114,7 +10167,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.abodimazen.fahad:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.abodimazen.ChildCare:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -10122,13 +10175,13 @@ public final class R {
         0x7f040026
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:allowStacking
+     * @attr name com.example.abodimazen.ChildCare:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -10140,17 +10193,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.example.abodimazen.fahad:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.example.abodimazen.fahad:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.example.abodimazen.fahad:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.example.abodimazen.fahad:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.example.abodimazen.fahad:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.example.abodimazen.fahad:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.example.abodimazen.fahad:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.example.abodimazen.fahad:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.example.abodimazen.fahad:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.example.abodimazen.fahad:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.example.abodimazen.fahad:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.example.abodimazen.ChildCare:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.example.abodimazen.ChildCare:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.example.abodimazen.ChildCare:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.example.abodimazen.ChildCare:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.example.abodimazen.ChildCare:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.example.abodimazen.ChildCare:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.example.abodimazen.ChildCare:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.example.abodimazen.ChildCare:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.example.abodimazen.ChildCare:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.example.abodimazen.ChildCare:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.example.abodimazen.ChildCare:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -10199,18 +10252,18 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:cardBackgroundColor
+     * @attr name com.example.abodimazen.ChildCare:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10219,11 +10272,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:cardCornerRadius
+     * @attr name com.example.abodimazen.ChildCare:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10232,11 +10285,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:cardElevation
+     * @attr name com.example.abodimazen.ChildCare:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10245,31 +10298,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:cardMaxElevation
+     * @attr name com.example.abodimazen.ChildCare:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:cardPreventCornerOverlap
+     * @attr name com.example.abodimazen.ChildCare:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:cardUseCompatPadding
+     * @attr name com.example.abodimazen.ChildCare:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10278,11 +10331,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentPadding
+     * @attr name com.example.abodimazen.ChildCare:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10291,11 +10344,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentPaddingBottom
+     * @attr name com.example.abodimazen.ChildCare:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10304,11 +10357,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentPaddingLeft
+     * @attr name com.example.abodimazen.ChildCare:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10317,11 +10370,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentPaddingRight
+     * @attr name com.example.abodimazen.ChildCare:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10330,7 +10383,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentPaddingTop
+     * @attr name com.example.abodimazen.ChildCare:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -10345,35 +10398,35 @@ public final class R {
      * <tr><td><code>{@link #Chip_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_text android:text}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIcon com.example.abodimazen.fahad:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconEnabled com.example.abodimazen.fahad:checkedIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconVisible com.example.abodimazen.fahad:checkedIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipBackgroundColor com.example.abodimazen.fahad:chipBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipCornerRadius com.example.abodimazen.fahad:chipCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipEndPadding com.example.abodimazen.fahad:chipEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIcon com.example.abodimazen.fahad:chipIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconEnabled com.example.abodimazen.fahad:chipIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconSize com.example.abodimazen.fahad:chipIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconTint com.example.abodimazen.fahad:chipIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconVisible com.example.abodimazen.fahad:chipIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipMinHeight com.example.abodimazen.fahad:chipMinHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStartPadding com.example.abodimazen.fahad:chipStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeColor com.example.abodimazen.fahad:chipStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeWidth com.example.abodimazen.fahad:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.example.abodimazen.fahad:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEnabled com.example.abodimazen.fahad:closeIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEndPadding com.example.abodimazen.fahad:closeIconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconSize com.example.abodimazen.fahad:closeIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconStartPadding com.example.abodimazen.fahad:closeIconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconTint com.example.abodimazen.fahad:closeIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconVisible com.example.abodimazen.fahad:closeIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_hideMotionSpec com.example.abodimazen.fahad:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconEndPadding com.example.abodimazen.fahad:iconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconStartPadding com.example.abodimazen.fahad:iconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_rippleColor com.example.abodimazen.fahad:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_showMotionSpec com.example.abodimazen.fahad:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textEndPadding com.example.abodimazen.fahad:textEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textStartPadding com.example.abodimazen.fahad:textStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIcon com.example.abodimazen.ChildCare:checkedIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconEnabled com.example.abodimazen.ChildCare:checkedIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconVisible com.example.abodimazen.ChildCare:checkedIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipBackgroundColor com.example.abodimazen.ChildCare:chipBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipCornerRadius com.example.abodimazen.ChildCare:chipCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipEndPadding com.example.abodimazen.ChildCare:chipEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIcon com.example.abodimazen.ChildCare:chipIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconEnabled com.example.abodimazen.ChildCare:chipIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconSize com.example.abodimazen.ChildCare:chipIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconTint com.example.abodimazen.ChildCare:chipIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconVisible com.example.abodimazen.ChildCare:chipIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipMinHeight com.example.abodimazen.ChildCare:chipMinHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStartPadding com.example.abodimazen.ChildCare:chipStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeColor com.example.abodimazen.ChildCare:chipStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeWidth com.example.abodimazen.ChildCare:chipStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.example.abodimazen.ChildCare:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEnabled com.example.abodimazen.ChildCare:closeIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEndPadding com.example.abodimazen.ChildCare:closeIconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconSize com.example.abodimazen.ChildCare:closeIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconStartPadding com.example.abodimazen.ChildCare:closeIconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconTint com.example.abodimazen.ChildCare:closeIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconVisible com.example.abodimazen.ChildCare:closeIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_hideMotionSpec com.example.abodimazen.ChildCare:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconEndPadding com.example.abodimazen.ChildCare:iconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconStartPadding com.example.abodimazen.ChildCare:iconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_rippleColor com.example.abodimazen.ChildCare:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_showMotionSpec com.example.abodimazen.ChildCare:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textEndPadding com.example.abodimazen.ChildCare:textEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textStartPadding com.example.abodimazen.ChildCare:textStartPadding}</code></td><td></td></tr>
      * </table>
      * @see #Chip_android_textAppearance
      * @see #Chip_android_ellipsize
@@ -10487,7 +10540,7 @@ public final class R {
      */
     public static final int Chip_android_checkable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#checkedIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#checkedIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10495,42 +10548,42 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:checkedIcon
+     * @attr name com.example.abodimazen.ChildCare:checkedIcon
      */
     public static final int Chip_checkedIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#checkedIconEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#checkedIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:checkedIconEnabled
+     * @attr name com.example.abodimazen.ChildCare:checkedIconEnabled
      */
     public static final int Chip_checkedIconEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#checkedIconVisible}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#checkedIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:checkedIconVisible
+     * @attr name com.example.abodimazen.ChildCare:checkedIconVisible
      */
     public static final int Chip_checkedIconVisible=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipBackgroundColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipBackgroundColor
+     * @attr name com.example.abodimazen.ChildCare:chipBackgroundColor
      */
     public static final int Chip_chipBackgroundColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipCornerRadius}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipCornerRadius}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10539,11 +10592,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipCornerRadius
+     * @attr name com.example.abodimazen.ChildCare:chipCornerRadius
      */
     public static final int Chip_chipCornerRadius=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipEndPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10552,11 +10605,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipEndPadding
+     * @attr name com.example.abodimazen.ChildCare:chipEndPadding
      */
     public static final int Chip_chipEndPadding=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10564,21 +10617,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipIcon
+     * @attr name com.example.abodimazen.ChildCare:chipIcon
      */
     public static final int Chip_chipIcon=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipIconEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipIconEnabled
+     * @attr name com.example.abodimazen.ChildCare:chipIconEnabled
      */
     public static final int Chip_chipIconEnabled=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipIconSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10587,32 +10640,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipIconSize
+     * @attr name com.example.abodimazen.ChildCare:chipIconSize
      */
     public static final int Chip_chipIconSize=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipIconTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipIconTint
+     * @attr name com.example.abodimazen.ChildCare:chipIconTint
      */
     public static final int Chip_chipIconTint=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipIconVisible}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipIconVisible
+     * @attr name com.example.abodimazen.ChildCare:chipIconVisible
      */
     public static final int Chip_chipIconVisible=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipMinHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipMinHeight}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10621,11 +10674,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipMinHeight
+     * @attr name com.example.abodimazen.ChildCare:chipMinHeight
      */
     public static final int Chip_chipMinHeight=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipStartPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10634,22 +10687,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipStartPadding
+     * @attr name com.example.abodimazen.ChildCare:chipStartPadding
      */
     public static final int Chip_chipStartPadding=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipStrokeColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipStrokeColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipStrokeColor
+     * @attr name com.example.abodimazen.ChildCare:chipStrokeColor
      */
     public static final int Chip_chipStrokeColor=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipStrokeWidth}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10658,11 +10711,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipStrokeWidth
+     * @attr name com.example.abodimazen.ChildCare:chipStrokeWidth
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10670,21 +10723,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:closeIcon
+     * @attr name com.example.abodimazen.ChildCare:closeIcon
      */
     public static final int Chip_closeIcon=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIconEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:closeIconEnabled
+     * @attr name com.example.abodimazen.ChildCare:closeIconEnabled
      */
     public static final int Chip_closeIconEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIconEndPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10693,11 +10746,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:closeIconEndPadding
+     * @attr name com.example.abodimazen.ChildCare:closeIconEndPadding
      */
     public static final int Chip_closeIconEndPadding=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIconSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10706,11 +10759,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:closeIconSize
+     * @attr name com.example.abodimazen.ChildCare:closeIconSize
      */
     public static final int Chip_closeIconSize=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIconStartPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10719,32 +10772,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:closeIconStartPadding
+     * @attr name com.example.abodimazen.ChildCare:closeIconStartPadding
      */
     public static final int Chip_closeIconStartPadding=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIconTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:closeIconTint
+     * @attr name com.example.abodimazen.ChildCare:closeIconTint
      */
     public static final int Chip_closeIconTint=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIconVisible}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:closeIconVisible
+     * @attr name com.example.abodimazen.ChildCare:closeIconVisible
      */
     public static final int Chip_closeIconVisible=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10752,11 +10805,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:hideMotionSpec
+     * @attr name com.example.abodimazen.ChildCare:hideMotionSpec
      */
     public static final int Chip_hideMotionSpec=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconEndPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10765,11 +10818,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:iconEndPadding
+     * @attr name com.example.abodimazen.ChildCare:iconEndPadding
      */
     public static final int Chip_iconEndPadding=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconStartPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10778,22 +10831,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:iconStartPadding
+     * @attr name com.example.abodimazen.ChildCare:iconStartPadding
      */
     public static final int Chip_iconStartPadding=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#rippleColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:rippleColor
+     * @attr name com.example.abodimazen.ChildCare:rippleColor
      */
     public static final int Chip_rippleColor=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10801,11 +10854,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:showMotionSpec
+     * @attr name com.example.abodimazen.ChildCare:showMotionSpec
      */
     public static final int Chip_showMotionSpec=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textEndPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10814,11 +10867,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:textEndPadding
+     * @attr name com.example.abodimazen.ChildCare:textEndPadding
      */
     public static final int Chip_textEndPadding=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textStartPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10827,7 +10880,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:textStartPadding
+     * @attr name com.example.abodimazen.ChildCare:textStartPadding
      */
     public static final int Chip_textStartPadding=33;
     /**
@@ -10837,12 +10890,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ChipGroup_checkedChip com.example.abodimazen.fahad:checkedChip}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacing com.example.abodimazen.fahad:chipSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.example.abodimazen.fahad:chipSpacingHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.example.abodimazen.fahad:chipSpacingVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleLine com.example.abodimazen.fahad:singleLine}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleSelection com.example.abodimazen.fahad:singleSelection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_checkedChip com.example.abodimazen.ChildCare:checkedChip}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacing com.example.abodimazen.ChildCare:chipSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.example.abodimazen.ChildCare:chipSpacingHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.example.abodimazen.ChildCare:chipSpacingVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleLine com.example.abodimazen.ChildCare:singleLine}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleSelection com.example.abodimazen.ChildCare:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #ChipGroup_checkedChip
      * @see #ChipGroup_chipSpacing
@@ -10856,7 +10909,7 @@ public final class R {
         0x7f0401bc, 0x7f0401bd
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#checkedChip}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#checkedChip}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10864,11 +10917,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:checkedChip
+     * @attr name com.example.abodimazen.ChildCare:checkedChip
      */
     public static final int ChipGroup_checkedChip=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipSpacing}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipSpacing}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10877,11 +10930,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipSpacing
+     * @attr name com.example.abodimazen.ChildCare:chipSpacing
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipSpacingHorizontal}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipSpacingHorizontal}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10890,11 +10943,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipSpacingHorizontal
+     * @attr name com.example.abodimazen.ChildCare:chipSpacingHorizontal
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipSpacingVertical}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipSpacingVertical}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10903,27 +10956,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:chipSpacingVertical
+     * @attr name com.example.abodimazen.ChildCare:chipSpacingVertical
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#singleLine}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#singleLine}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:singleLine
+     * @attr name com.example.abodimazen.ChildCare:singleLine
      */
     public static final int ChipGroup_singleLine=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#singleSelection}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#singleSelection}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:singleSelection
+     * @attr name com.example.abodimazen.ChildCare:singleSelection
      */
     public static final int ChipGroup_singleSelection=5;
     /**
@@ -10933,11 +10986,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_border_color com.example.abodimazen.fahad:civ_border_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_border_overlay com.example.abodimazen.fahad:civ_border_overlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_border_width com.example.abodimazen.fahad:civ_border_width}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_circle_background_color com.example.abodimazen.fahad:civ_circle_background_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CircleImageView_civ_fill_color com.example.abodimazen.fahad:civ_fill_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_border_color com.example.abodimazen.ChildCare:civ_border_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_border_overlay com.example.abodimazen.ChildCare:civ_border_overlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_border_width com.example.abodimazen.ChildCare:civ_border_width}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_circle_background_color com.example.abodimazen.ChildCare:civ_circle_background_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CircleImageView_civ_fill_color com.example.abodimazen.ChildCare:civ_fill_color}</code></td><td></td></tr>
      * </table>
      * @see #CircleImageView_civ_border_color
      * @see #CircleImageView_civ_border_overlay
@@ -10950,28 +11003,28 @@ public final class R {
         0x7f040080
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#civ_border_color}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#civ_border_color}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:civ_border_color
+     * @attr name com.example.abodimazen.ChildCare:civ_border_color
      */
     public static final int CircleImageView_civ_border_color=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#civ_border_overlay}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#civ_border_overlay}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:civ_border_overlay
+     * @attr name com.example.abodimazen.ChildCare:civ_border_overlay
      */
     public static final int CircleImageView_civ_border_overlay=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#civ_border_width}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#civ_border_width}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10980,29 +11033,29 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:civ_border_width
+     * @attr name com.example.abodimazen.ChildCare:civ_border_width
      */
     public static final int CircleImageView_civ_border_width=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#civ_circle_background_color}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#civ_circle_background_color}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:civ_circle_background_color
+     * @attr name com.example.abodimazen.ChildCare:civ_circle_background_color
      */
     public static final int CircleImageView_civ_circle_background_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#civ_fill_color}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#civ_fill_color}
      * attribute's value can be found in the {@link #CircleImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:civ_fill_color
+     * @attr name com.example.abodimazen.ChildCare:civ_fill_color
      */
     public static final int CircleImageView_civ_fill_color=4;
     /**
@@ -11012,22 +11065,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.example.abodimazen.fahad:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.example.abodimazen.fahad:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.example.abodimazen.fahad:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.example.abodimazen.fahad:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.example.abodimazen.fahad:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.example.abodimazen.fahad:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.example.abodimazen.fahad:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.example.abodimazen.fahad:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.example.abodimazen.fahad:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.example.abodimazen.fahad:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.example.abodimazen.fahad:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.example.abodimazen.fahad:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.example.abodimazen.fahad:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.example.abodimazen.fahad:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.example.abodimazen.fahad:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.example.abodimazen.fahad:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.example.abodimazen.ChildCare:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.example.abodimazen.ChildCare:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.example.abodimazen.ChildCare:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.example.abodimazen.ChildCare:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.example.abodimazen.ChildCare:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.example.abodimazen.ChildCare:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.example.abodimazen.ChildCare:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.example.abodimazen.ChildCare:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.example.abodimazen.ChildCare:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.example.abodimazen.ChildCare:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.example.abodimazen.ChildCare:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.example.abodimazen.ChildCare:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.example.abodimazen.ChildCare:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.example.abodimazen.ChildCare:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.example.abodimazen.ChildCare:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.example.abodimazen.ChildCare:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -11053,7 +11106,7 @@ public final class R {
         0x7f0401ce, 0x7f04021b, 0x7f04021c, 0x7f040226
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11074,11 +11127,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:collapsedTitleGravity
+     * @attr name com.example.abodimazen.ChildCare:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11086,22 +11139,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:collapsedTitleTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:contentScrim
+     * @attr name com.example.abodimazen.ChildCare:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11122,11 +11175,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:expandedTitleGravity
+     * @attr name com.example.abodimazen.ChildCare:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11135,11 +11188,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:expandedTitleMargin
+     * @attr name com.example.abodimazen.ChildCare:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11148,11 +11201,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:expandedTitleMarginBottom
+     * @attr name com.example.abodimazen.ChildCare:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11161,11 +11214,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:expandedTitleMarginEnd
+     * @attr name com.example.abodimazen.ChildCare:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11174,11 +11227,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:expandedTitleMarginStart
+     * @attr name com.example.abodimazen.ChildCare:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11187,11 +11240,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:expandedTitleMarginTop
+     * @attr name com.example.abodimazen.ChildCare:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11199,20 +11252,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:expandedTitleTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:scrimAnimationDuration
+     * @attr name com.example.abodimazen.ChildCare:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11221,42 +11274,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:scrimVisibleHeightTrigger
+     * @attr name com.example.abodimazen.ChildCare:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:statusBarScrim
+     * @attr name com.example.abodimazen.ChildCare:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:title
+     * @attr name com.example.abodimazen.ChildCare:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:titleEnabled
+     * @attr name com.example.abodimazen.ChildCare:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11264,7 +11317,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:toolbarId
+     * @attr name com.example.abodimazen.ChildCare:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -11274,8 +11327,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.example.abodimazen.fahad:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.example.abodimazen.fahad:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.example.abodimazen.ChildCare:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.example.abodimazen.ChildCare:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -11284,7 +11337,7 @@ public final class R {
         0x7f04012d, 0x7f04012e
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11298,16 +11351,16 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_collapseMode
+     * @attr name com.example.abodimazen.ChildCare:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_collapseParallaxMultiplier
+     * @attr name com.example.abodimazen.ChildCare:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
@@ -11319,7 +11372,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.example.abodimazen.fahad:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.example.abodimazen.ChildCare:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -11349,12 +11402,12 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:alpha
+     * @attr name com.example.abodimazen.ChildCare:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -11364,16 +11417,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarBackgroundColor com.example.abodimazen.fahad:compactCalendarBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentDayBackgroundColor com.example.abodimazen.fahad:compactCalendarCurrentDayBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentDayIndicatorStyle com.example.abodimazen.fahad:compactCalendarCurrentDayIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentSelectedDayBackgroundColor com.example.abodimazen.fahad:compactCalendarCurrentSelectedDayBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentSelectedDayIndicatorStyle com.example.abodimazen.fahad:compactCalendarCurrentSelectedDayIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarEventIndicatorStyle com.example.abodimazen.fahad:compactCalendarEventIndicatorStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarMultiEventIndicatorColor com.example.abodimazen.fahad:compactCalendarMultiEventIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarTargetHeight com.example.abodimazen.fahad:compactCalendarTargetHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarTextColor com.example.abodimazen.fahad:compactCalendarTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompactCalendarView_compactCalendarTextSize com.example.abodimazen.fahad:compactCalendarTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarBackgroundColor com.example.abodimazen.ChildCare:compactCalendarBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentDayBackgroundColor com.example.abodimazen.ChildCare:compactCalendarCurrentDayBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentDayIndicatorStyle com.example.abodimazen.ChildCare:compactCalendarCurrentDayIndicatorStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentSelectedDayBackgroundColor com.example.abodimazen.ChildCare:compactCalendarCurrentSelectedDayBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarCurrentSelectedDayIndicatorStyle com.example.abodimazen.ChildCare:compactCalendarCurrentSelectedDayIndicatorStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarEventIndicatorStyle com.example.abodimazen.ChildCare:compactCalendarEventIndicatorStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarMultiEventIndicatorColor com.example.abodimazen.ChildCare:compactCalendarMultiEventIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarTargetHeight com.example.abodimazen.ChildCare:compactCalendarTargetHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarTextColor com.example.abodimazen.ChildCare:compactCalendarTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompactCalendarView_compactCalendarTextSize com.example.abodimazen.ChildCare:compactCalendarTextSize}</code></td><td></td></tr>
      * </table>
      * @see #CompactCalendarView_compactCalendarBackgroundColor
      * @see #CompactCalendarView_compactCalendarCurrentDayBackgroundColor
@@ -11392,29 +11445,29 @@ public final class R {
         0x7f0400a3, 0x7f0400a4
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarBackgroundColor}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarBackgroundColor
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarBackgroundColor
      */
     public static final int CompactCalendarView_compactCalendarBackgroundColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarCurrentDayBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarCurrentDayBackgroundColor}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarCurrentDayBackgroundColor
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarCurrentDayBackgroundColor
      */
     public static final int CompactCalendarView_compactCalendarCurrentDayBackgroundColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarCurrentDayIndicatorStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarCurrentDayIndicatorStyle}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11427,22 +11480,22 @@ public final class R {
      * <tr><td>no_fill_large_indicator</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarCurrentDayIndicatorStyle
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarCurrentDayIndicatorStyle
      */
     public static final int CompactCalendarView_compactCalendarCurrentDayIndicatorStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarCurrentSelectedDayBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarCurrentSelectedDayBackgroundColor}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarCurrentSelectedDayBackgroundColor
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarCurrentSelectedDayBackgroundColor
      */
     public static final int CompactCalendarView_compactCalendarCurrentSelectedDayBackgroundColor=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarCurrentSelectedDayIndicatorStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarCurrentSelectedDayIndicatorStyle}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11455,11 +11508,11 @@ public final class R {
      * <tr><td>no_fill_large_indicator</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarCurrentSelectedDayIndicatorStyle
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarCurrentSelectedDayIndicatorStyle
      */
     public static final int CompactCalendarView_compactCalendarCurrentSelectedDayIndicatorStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarEventIndicatorStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarEventIndicatorStyle}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11473,22 +11526,22 @@ public final class R {
      * <tr><td>small_indicator</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarEventIndicatorStyle
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarEventIndicatorStyle
      */
     public static final int CompactCalendarView_compactCalendarEventIndicatorStyle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarMultiEventIndicatorColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarMultiEventIndicatorColor}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarMultiEventIndicatorColor
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarMultiEventIndicatorColor
      */
     public static final int CompactCalendarView_compactCalendarMultiEventIndicatorColor=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarTargetHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarTargetHeight}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11497,22 +11550,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarTargetHeight
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarTargetHeight
      */
     public static final int CompactCalendarView_compactCalendarTargetHeight=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarTextColor}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarTextColor
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarTextColor
      */
     public static final int CompactCalendarView_compactCalendarTextColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#compactCalendarTextSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#compactCalendarTextSize}
      * attribute's value can be found in the {@link #CompactCalendarView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11521,7 +11574,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:compactCalendarTextSize
+     * @attr name com.example.abodimazen.ChildCare:compactCalendarTextSize
      */
     public static final int CompactCalendarView_compactCalendarTextSize=9;
     /**
@@ -11532,8 +11585,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.example.abodimazen.fahad:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.abodimazen.fahad:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.example.abodimazen.ChildCare:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.abodimazen.ChildCare:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -11555,18 +11608,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:buttonTint
+     * @attr name com.example.abodimazen.ChildCare:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11583,7 +11636,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:buttonTintMode
+     * @attr name com.example.abodimazen.ChildCare:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -11598,61 +11651,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.example.abodimazen.fahad:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.example.abodimazen.fahad:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.example.abodimazen.fahad:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.example.abodimazen.fahad:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.example.abodimazen.fahad:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.example.abodimazen.fahad:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.example.abodimazen.fahad:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.example.abodimazen.fahad:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.example.abodimazen.fahad:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.example.abodimazen.fahad:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.example.abodimazen.fahad:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.example.abodimazen.fahad:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.example.abodimazen.fahad:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.example.abodimazen.fahad:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.example.abodimazen.fahad:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.example.abodimazen.fahad:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.example.abodimazen.fahad:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.example.abodimazen.fahad:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.example.abodimazen.fahad:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.example.abodimazen.fahad:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.example.abodimazen.fahad:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.example.abodimazen.fahad:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.example.abodimazen.fahad:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.example.abodimazen.fahad:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.example.abodimazen.fahad:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.example.abodimazen.fahad:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.example.abodimazen.fahad:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.example.abodimazen.fahad:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.example.abodimazen.fahad:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.example.abodimazen.fahad:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.example.abodimazen.fahad:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.example.abodimazen.fahad:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.example.abodimazen.fahad:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.example.abodimazen.fahad:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.example.abodimazen.fahad:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.example.abodimazen.fahad:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.example.abodimazen.fahad:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.example.abodimazen.fahad:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.example.abodimazen.fahad:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.example.abodimazen.fahad:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.example.abodimazen.fahad:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.example.abodimazen.fahad:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.example.abodimazen.fahad:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.example.abodimazen.fahad:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.example.abodimazen.fahad:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.example.abodimazen.fahad:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.example.abodimazen.fahad:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.example.abodimazen.fahad:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.example.abodimazen.fahad:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.example.abodimazen.fahad:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.example.abodimazen.fahad:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.example.abodimazen.fahad:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.example.abodimazen.fahad:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.example.abodimazen.fahad:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.example.abodimazen.fahad:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.example.abodimazen.ChildCare:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.example.abodimazen.ChildCare:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.example.abodimazen.ChildCare:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.example.abodimazen.ChildCare:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.example.abodimazen.ChildCare:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.example.abodimazen.ChildCare:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.example.abodimazen.ChildCare:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.example.abodimazen.ChildCare:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.example.abodimazen.ChildCare:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.example.abodimazen.ChildCare:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.example.abodimazen.ChildCare:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.example.abodimazen.ChildCare:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.example.abodimazen.ChildCare:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.example.abodimazen.ChildCare:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.example.abodimazen.ChildCare:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.example.abodimazen.ChildCare:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.example.abodimazen.ChildCare:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.example.abodimazen.ChildCare:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.example.abodimazen.ChildCare:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.example.abodimazen.ChildCare:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.example.abodimazen.ChildCare:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.example.abodimazen.ChildCare:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.example.abodimazen.ChildCare:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.example.abodimazen.ChildCare:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.example.abodimazen.ChildCare:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.example.abodimazen.ChildCare:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.example.abodimazen.ChildCare:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.example.abodimazen.ChildCare:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.example.abodimazen.ChildCare:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.example.abodimazen.ChildCare:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.example.abodimazen.ChildCare:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.example.abodimazen.ChildCare:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.example.abodimazen.ChildCare:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.example.abodimazen.ChildCare:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.example.abodimazen.ChildCare:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.example.abodimazen.ChildCare:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.example.abodimazen.ChildCare:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.example.abodimazen.ChildCare:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.example.abodimazen.ChildCare:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.example.abodimazen.ChildCare:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.example.abodimazen.ChildCare:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.example.abodimazen.ChildCare:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.example.abodimazen.ChildCare:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.example.abodimazen.ChildCare:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.example.abodimazen.ChildCare:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.example.abodimazen.ChildCare:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.example.abodimazen.ChildCare:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.example.abodimazen.ChildCare:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.example.abodimazen.ChildCare:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.example.abodimazen.ChildCare:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.example.abodimazen.ChildCare:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.example.abodimazen.ChildCare:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.example.abodimazen.ChildCare:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.example.abodimazen.ChildCare:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.example.abodimazen.ChildCare:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -11802,17 +11855,17 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_minHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:barrierAllowsGoneWidgets
+     * @attr name com.example.abodimazen.ChildCare:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11829,21 +11882,21 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:barrierDirection
+     * @attr name com.example.abodimazen.ChildCare:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:chainUseRtl
+     * @attr name com.example.abodimazen.ChildCare:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11851,50 +11904,50 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:constraintSet
+     * @attr name com.example.abodimazen.ChildCare:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:constraint_referenced_ids
+     * @attr name com.example.abodimazen.ChildCare:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constrainedHeight
+     * @attr name com.example.abodimazen.ChildCare:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constrainedWidth
+     * @attr name com.example.abodimazen.ChildCare:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBaseline_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11910,20 +11963,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBaseline_toBaselineOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBottom_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11939,11 +11992,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBottom_toBottomOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11959,11 +12012,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBottom_toTopOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11971,20 +12024,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintCircle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintCircleAngle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11993,21 +12046,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintCircleRadius
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintDimensionRatio
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12023,11 +12076,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintEnd_toEndOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12043,11 +12096,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintEnd_toStartOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12056,11 +12109,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintGuide_begin
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12069,20 +12122,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintGuide_end
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintGuide_percent
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12096,11 +12149,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_default
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12117,11 +12170,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_max
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12138,29 +12191,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_min
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_percent
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHorizontal_bias
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12174,29 +12227,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHorizontal_chainStyle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHorizontal_weight
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintLeft_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12212,11 +12265,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintLeft_toLeftOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12232,20 +12285,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintLeft_toRightOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintRight_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12261,11 +12314,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintRight_toLeftOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12281,11 +12334,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintRight_toRightOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12301,11 +12354,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintStart_toEndOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12321,20 +12374,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintStart_toStartOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintTop_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12350,11 +12403,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintTop_toBottomOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12370,20 +12423,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintTop_toTopOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintVertical_bias
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12397,20 +12450,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintVertical_chainStyle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintVertical_weight
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12424,11 +12477,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_default
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12445,11 +12498,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_max
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12466,20 +12519,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_min
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_percent
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12488,11 +12541,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_editor_absoluteX
+     * @attr name com.example.abodimazen.ChildCare:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12501,11 +12554,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_editor_absoluteY
+     * @attr name com.example.abodimazen.ChildCare:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12514,11 +12567,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginBottom
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12527,11 +12580,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginEnd
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12540,11 +12593,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginLeft
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12553,11 +12606,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginRight
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12566,11 +12619,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginStart
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12579,11 +12632,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginTop
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12595,13 +12648,13 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_optimizationLevel
+     * @attr name com.example.abodimazen.ChildCare:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -12611,8 +12664,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.example.abodimazen.fahad:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.example.abodimazen.fahad:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.example.abodimazen.ChildCare:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.example.abodimazen.ChildCare:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
@@ -12621,7 +12674,7 @@ public final class R {
         0x7f0400a7, 0x7f0400d2
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#content}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12629,11 +12682,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:content
+     * @attr name com.example.abodimazen.ChildCare:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12646,7 +12699,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:emptyVisibility
+     * @attr name com.example.abodimazen.ChildCare:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -12683,59 +12736,59 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.example.abodimazen.fahad:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.example.abodimazen.fahad:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.example.abodimazen.fahad:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.example.abodimazen.fahad:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.example.abodimazen.fahad:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.example.abodimazen.fahad:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.example.abodimazen.fahad:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.example.abodimazen.fahad:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.example.abodimazen.fahad:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.example.abodimazen.fahad:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.example.abodimazen.fahad:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.example.abodimazen.fahad:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.example.abodimazen.fahad:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.example.abodimazen.fahad:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.example.abodimazen.fahad:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.example.abodimazen.fahad:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.example.abodimazen.fahad:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.example.abodimazen.fahad:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.example.abodimazen.fahad:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.example.abodimazen.fahad:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.example.abodimazen.fahad:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.example.abodimazen.fahad:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.example.abodimazen.fahad:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.example.abodimazen.fahad:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.example.abodimazen.fahad:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.example.abodimazen.fahad:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.example.abodimazen.fahad:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.example.abodimazen.fahad:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.example.abodimazen.fahad:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.example.abodimazen.fahad:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.example.abodimazen.fahad:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.example.abodimazen.fahad:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.example.abodimazen.fahad:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.example.abodimazen.fahad:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.example.abodimazen.fahad:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.example.abodimazen.fahad:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.example.abodimazen.fahad:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.example.abodimazen.fahad:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.example.abodimazen.fahad:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.example.abodimazen.fahad:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.example.abodimazen.fahad:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.example.abodimazen.fahad:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.example.abodimazen.fahad:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.example.abodimazen.fahad:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.example.abodimazen.fahad:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.example.abodimazen.fahad:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.example.abodimazen.fahad:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.example.abodimazen.fahad:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.example.abodimazen.fahad:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.example.abodimazen.fahad:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.example.abodimazen.fahad:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.example.abodimazen.fahad:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.example.abodimazen.fahad:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.example.abodimazen.ChildCare:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.example.abodimazen.ChildCare:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.example.abodimazen.ChildCare:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.example.abodimazen.ChildCare:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.example.abodimazen.ChildCare:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.example.abodimazen.ChildCare:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.example.abodimazen.ChildCare:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.example.abodimazen.ChildCare:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.example.abodimazen.ChildCare:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.example.abodimazen.ChildCare:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.example.abodimazen.ChildCare:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.example.abodimazen.ChildCare:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.example.abodimazen.ChildCare:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.example.abodimazen.ChildCare:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.example.abodimazen.ChildCare:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.example.abodimazen.ChildCare:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.example.abodimazen.ChildCare:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.example.abodimazen.ChildCare:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.example.abodimazen.ChildCare:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.example.abodimazen.ChildCare:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.example.abodimazen.ChildCare:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.example.abodimazen.ChildCare:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.example.abodimazen.ChildCare:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.example.abodimazen.ChildCare:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.example.abodimazen.ChildCare:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.example.abodimazen.ChildCare:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.example.abodimazen.ChildCare:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.example.abodimazen.ChildCare:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.example.abodimazen.ChildCare:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.example.abodimazen.ChildCare:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.example.abodimazen.ChildCare:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.example.abodimazen.ChildCare:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.example.abodimazen.ChildCare:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.example.abodimazen.ChildCare:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.example.abodimazen.ChildCare:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.example.abodimazen.ChildCare:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.example.abodimazen.ChildCare:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.example.abodimazen.ChildCare:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.example.abodimazen.ChildCare:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.example.abodimazen.ChildCare:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.example.abodimazen.ChildCare:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.example.abodimazen.ChildCare:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.example.abodimazen.ChildCare:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.example.abodimazen.ChildCare:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.example.abodimazen.ChildCare:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.example.abodimazen.ChildCare:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.example.abodimazen.ChildCare:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.example.abodimazen.ChildCare:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.example.abodimazen.ChildCare:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.example.abodimazen.ChildCare:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.example.abodimazen.ChildCare:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.example.abodimazen.ChildCare:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.example.abodimazen.ChildCare:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -13196,17 +13249,17 @@ public final class R {
      */
     public static final int ConstraintSet_android_elevation=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:barrierAllowsGoneWidgets
+     * @attr name com.example.abodimazen.ChildCare:barrierAllowsGoneWidgets
      */
     public static final int ConstraintSet_barrierAllowsGoneWidgets=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13223,60 +13276,60 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:barrierDirection
+     * @attr name com.example.abodimazen.ChildCare:barrierDirection
      */
     public static final int ConstraintSet_barrierDirection=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:chainUseRtl
+     * @attr name com.example.abodimazen.ChildCare:chainUseRtl
      */
     public static final int ConstraintSet_chainUseRtl=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:constraint_referenced_ids
+     * @attr name com.example.abodimazen.ChildCare:constraint_referenced_ids
      */
     public static final int ConstraintSet_constraint_referenced_ids=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constrainedHeight
+     * @attr name com.example.abodimazen.ChildCare:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constrainedWidth
+     * @attr name com.example.abodimazen.ChildCare:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBaseline_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13292,20 +13345,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBaseline_toBaselineOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBottom_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13321,11 +13374,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBottom_toBottomOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13341,11 +13394,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintBottom_toTopOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13353,20 +13406,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintCircle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintCircleAngle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13375,21 +13428,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintCircleRadius
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintDimensionRatio
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13405,11 +13458,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintEnd_toEndOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13425,11 +13478,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintEnd_toStartOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13438,11 +13491,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintGuide_begin
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13451,20 +13504,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintGuide_end
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintGuide_percent
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13478,11 +13531,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_default
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13499,11 +13552,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_max
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13520,29 +13573,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_min
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHeight_percent
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHorizontal_bias
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13556,29 +13609,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHorizontal_chainStyle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintHorizontal_weight
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintLeft_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13594,11 +13647,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintLeft_toLeftOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13614,20 +13667,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintLeft_toRightOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintRight_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13643,11 +13696,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintRight_toLeftOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13663,11 +13716,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintRight_toRightOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13683,11 +13736,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintStart_toEndOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13703,20 +13756,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintStart_toStartOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintTop_creator
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13732,11 +13785,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintTop_toBottomOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13752,20 +13805,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintTop_toTopOf
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintVertical_bias
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13779,20 +13832,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintVertical_chainStyle
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=66;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintVertical_weight
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=67;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13806,11 +13859,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_default
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=68;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13827,11 +13880,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_max
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=69;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13848,20 +13901,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_min
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=70;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_constraintWidth_percent
+     * @attr name com.example.abodimazen.ChildCare:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=71;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13870,11 +13923,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_editor_absoluteX
+     * @attr name com.example.abodimazen.ChildCare:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=72;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13883,11 +13936,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_editor_absoluteY
+     * @attr name com.example.abodimazen.ChildCare:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=73;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13896,11 +13949,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginBottom
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=74;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13909,11 +13962,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginEnd
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13922,11 +13975,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginLeft
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=76;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13935,11 +13988,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginRight
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=77;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13948,11 +14001,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginStart
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=78;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13961,7 +14014,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:layout_goneMarginTop
+     * @attr name com.example.abodimazen.ChildCare:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=79;
     /**
@@ -13971,8 +14024,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.abodimazen.fahad:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.abodimazen.fahad:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.abodimazen.ChildCare:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.abodimazen.ChildCare:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -13981,7 +14034,7 @@ public final class R {
         0x7f040125, 0x7f0401cd
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13989,11 +14042,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:keylines
+     * @attr name com.example.abodimazen.ChildCare:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14004,7 +14057,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:statusBarBackground
+     * @attr name com.example.abodimazen.ChildCare:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -14015,12 +14068,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.abodimazen.fahad:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.abodimazen.fahad:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.abodimazen.fahad:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.abodimazen.fahad:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.abodimazen.fahad:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.abodimazen.fahad:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.abodimazen.ChildCare:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.abodimazen.ChildCare:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.abodimazen.ChildCare:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.abodimazen.ChildCare:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.abodimazen.ChildCare:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.abodimazen.ChildCare:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -14064,7 +14117,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14072,11 +14125,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_anchor
+     * @attr name com.example.abodimazen.ChildCare:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14101,21 +14154,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_anchorGravity
+     * @attr name com.example.abodimazen.ChildCare:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:layout_behavior
+     * @attr name com.example.abodimazen.ChildCare:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14134,11 +14187,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_dodgeInsetEdges
+     * @attr name com.example.abodimazen.ChildCare:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14156,16 +14209,16 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:layout_insetEdge
+     * @attr name com.example.abodimazen.ChildCare:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout_keyline
+     * @attr name com.example.abodimazen.ChildCare:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -14175,8 +14228,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.example.abodimazen.fahad:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.example.abodimazen.fahad:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.example.abodimazen.ChildCare:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.example.abodimazen.ChildCare:bottomSheetStyle}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
@@ -14185,7 +14238,7 @@ public final class R {
         0x7f040043, 0x7f040044
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14193,11 +14246,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:bottomSheetDialogTheme
+     * @attr name com.example.abodimazen.ChildCare:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14205,7 +14258,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:bottomSheetStyle
+     * @attr name com.example.abodimazen.ChildCare:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
@@ -14215,14 +14268,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.abodimazen.fahad:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.abodimazen.fahad:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.abodimazen.fahad:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.example.abodimazen.fahad:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.abodimazen.fahad:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.abodimazen.fahad:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.abodimazen.fahad:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.abodimazen.fahad:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.abodimazen.ChildCare:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.abodimazen.ChildCare:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.abodimazen.ChildCare:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.example.abodimazen.ChildCare:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.abodimazen.ChildCare:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.abodimazen.ChildCare:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.abodimazen.ChildCare:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.abodimazen.ChildCare:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -14238,7 +14291,7 @@ public final class R {
         0x7f0400c8, 0x7f0400f9, 0x7f0401c2, 0x7f040212
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14247,11 +14300,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:arrowHeadLength
+     * @attr name com.example.abodimazen.ChildCare:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14260,11 +14313,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:arrowShaftLength
+     * @attr name com.example.abodimazen.ChildCare:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14273,22 +14326,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:barLength
+     * @attr name com.example.abodimazen.ChildCare:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:color
+     * @attr name com.example.abodimazen.ChildCare:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14297,11 +14350,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:drawableSize
+     * @attr name com.example.abodimazen.ChildCare:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14310,21 +14363,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:gapBetweenBars
+     * @attr name com.example.abodimazen.ChildCare:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:spinBars
+     * @attr name com.example.abodimazen.ChildCare:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14333,7 +14386,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:thickness
+     * @attr name com.example.abodimazen.ChildCare:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -14343,19 +14396,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.example.abodimazen.fahad:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.example.abodimazen.fahad:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.example.abodimazen.fahad:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.example.abodimazen.fahad:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.example.abodimazen.fahad:fabCustomSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize com.example.abodimazen.fahad:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.example.abodimazen.fahad:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.example.abodimazen.fahad:hoveredFocusedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.example.abodimazen.fahad:maxImageSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.example.abodimazen.fahad:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.example.abodimazen.fahad:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.example.abodimazen.fahad:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.example.abodimazen.fahad:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.example.abodimazen.ChildCare:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.example.abodimazen.ChildCare:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.example.abodimazen.ChildCare:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.example.abodimazen.ChildCare:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.example.abodimazen.ChildCare:fabCustomSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.example.abodimazen.ChildCare:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.example.abodimazen.ChildCare:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.example.abodimazen.ChildCare:hoveredFocusedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.example.abodimazen.ChildCare:maxImageSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.example.abodimazen.ChildCare:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.example.abodimazen.ChildCare:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.example.abodimazen.ChildCare:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.example.abodimazen.ChildCare:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -14378,18 +14431,18 @@ public final class R {
         0x7f040230
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:backgroundTint
+     * @attr name com.example.abodimazen.ChildCare:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14406,11 +14459,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:backgroundTintMode
+     * @attr name com.example.abodimazen.ChildCare:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14419,11 +14472,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:borderWidth
+     * @attr name com.example.abodimazen.ChildCare:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14432,11 +14485,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:elevation
+     * @attr name com.example.abodimazen.ChildCare:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fabCustomSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fabCustomSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14445,11 +14498,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:fabCustomSize
+     * @attr name com.example.abodimazen.ChildCare:fabCustomSize
      */
     public static final int FloatingActionButton_fabCustomSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14463,11 +14516,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:fabSize
+     * @attr name com.example.abodimazen.ChildCare:fabSize
      */
     public static final int FloatingActionButton_fabSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14475,11 +14528,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:hideMotionSpec
+     * @attr name com.example.abodimazen.ChildCare:hideMotionSpec
      */
     public static final int FloatingActionButton_hideMotionSpec=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hoveredFocusedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hoveredFocusedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14488,11 +14541,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:hoveredFocusedTranslationZ
+     * @attr name com.example.abodimazen.ChildCare:hoveredFocusedTranslationZ
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#maxImageSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#maxImageSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14501,11 +14554,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:maxImageSize
+     * @attr name com.example.abodimazen.ChildCare:maxImageSize
      */
     public static final int FloatingActionButton_maxImageSize=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14514,22 +14567,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:pressedTranslationZ
+     * @attr name com.example.abodimazen.ChildCare:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:rippleColor
+     * @attr name com.example.abodimazen.ChildCare:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14537,17 +14590,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:showMotionSpec
+     * @attr name com.example.abodimazen.ChildCare:showMotionSpec
      */
     public static final int FloatingActionButton_showMotionSpec=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:useCompatPadding
+     * @attr name com.example.abodimazen.ChildCare:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=12;
     /**
@@ -14557,7 +14610,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.example.abodimazen.fahad:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.example.abodimazen.ChildCare:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -14565,13 +14618,13 @@ public final class R {
         0x7f040039
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:behavior_autoHide
+     * @attr name com.example.abodimazen.ChildCare:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -14581,8 +14634,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FlowLayout_itemSpacing com.example.abodimazen.fahad:itemSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FlowLayout_lineSpacing com.example.abodimazen.fahad:lineSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_itemSpacing com.example.abodimazen.ChildCare:itemSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_lineSpacing com.example.abodimazen.ChildCare:lineSpacing}</code></td><td></td></tr>
      * </table>
      * @see #FlowLayout_itemSpacing
      * @see #FlowLayout_lineSpacing
@@ -14591,7 +14644,7 @@ public final class R {
         0x7f040120, 0x7f040168
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemSpacing}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14600,11 +14653,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:itemSpacing
+     * @attr name com.example.abodimazen.ChildCare:itemSpacing
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#lineSpacing}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#lineSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14613,7 +14666,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:lineSpacing
+     * @attr name com.example.abodimazen.ChildCare:lineSpacing
      */
     public static final int FlowLayout_lineSpacing=1;
     /**
@@ -14623,12 +14676,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.example.abodimazen.fahad:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.example.abodimazen.fahad:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.example.abodimazen.fahad:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.example.abodimazen.fahad:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.example.abodimazen.fahad:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.example.abodimazen.fahad:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.example.abodimazen.ChildCare:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.example.abodimazen.ChildCare:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.example.abodimazen.ChildCare:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.example.abodimazen.ChildCare:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.example.abodimazen.ChildCare:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.example.abodimazen.ChildCare:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -14642,17 +14695,17 @@ public final class R {
         0x7f0400f3, 0x7f0400f4
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:fontProviderAuthority
+     * @attr name com.example.abodimazen.ChildCare:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14660,11 +14713,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:fontProviderCerts
+     * @attr name com.example.abodimazen.ChildCare:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14677,11 +14730,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:fontProviderFetchStrategy
+     * @attr name com.example.abodimazen.ChildCare:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14694,27 +14747,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:fontProviderFetchTimeout
+     * @attr name com.example.abodimazen.ChildCare:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:fontProviderPackage
+     * @attr name com.example.abodimazen.ChildCare:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:fontProviderQuery
+     * @attr name com.example.abodimazen.ChildCare:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -14729,11 +14782,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.example.abodimazen.fahad:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.example.abodimazen.fahad:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.example.abodimazen.fahad:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.example.abodimazen.fahad:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.example.abodimazen.fahad:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.example.abodimazen.ChildCare:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.example.abodimazen.ChildCare:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.example.abodimazen.ChildCare:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.example.abodimazen.ChildCare:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.example.abodimazen.ChildCare:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -14809,7 +14862,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14817,11 +14870,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:font
+     * @attr name com.example.abodimazen.ChildCare:font
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14834,35 +14887,35 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:fontStyle
+     * @attr name com.example.abodimazen.ChildCare:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:fontVariationSettings
+     * @attr name com.example.abodimazen.ChildCare:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:fontWeight
+     * @attr name com.example.abodimazen.ChildCare:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#ttcIndex}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#ttcIndex}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:ttcIndex
+     * @attr name com.example.abodimazen.ChildCare:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -14874,7 +14927,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.example.abodimazen.fahad:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.example.abodimazen.ChildCare:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -14926,13 +14979,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:foregroundInsidePadding
+     * @attr name com.example.abodimazen.ChildCare:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -15202,10 +15255,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.example.abodimazen.fahad:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.abodimazen.fahad:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.abodimazen.fahad:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.abodimazen.fahad:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.example.abodimazen.ChildCare:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.abodimazen.ChildCare:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.abodimazen.ChildCare:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.abodimazen.ChildCare:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -15297,7 +15350,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15305,11 +15358,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:divider
+     * @attr name com.example.abodimazen.ChildCare:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15318,21 +15371,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:dividerPadding
+     * @attr name com.example.abodimazen.ChildCare:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:measureWithLargestChild
+     * @attr name com.example.abodimazen.ChildCare:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15347,7 +15400,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:showDividers
+     * @attr name com.example.abodimazen.ChildCare:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -15503,9 +15556,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LoadingImageView_circleCrop com.example.abodimazen.fahad:circleCrop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.example.abodimazen.fahad:imageAspectRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.example.abodimazen.fahad:imageAspectRatioAdjust}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_circleCrop com.example.abodimazen.ChildCare:circleCrop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.example.abodimazen.ChildCare:imageAspectRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.example.abodimazen.ChildCare:imageAspectRatioAdjust}</code></td><td></td></tr>
      * </table>
      * @see #LoadingImageView_circleCrop
      * @see #LoadingImageView_imageAspectRatio
@@ -15515,26 +15568,26 @@ public final class R {
         0x7f04007b, 0x7f040112, 0x7f040113
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#circleCrop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#circleCrop}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:circleCrop
+     * @attr name com.example.abodimazen.ChildCare:circleCrop
      */
     public static final int LoadingImageView_circleCrop=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#imageAspectRatio}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#imageAspectRatio}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:imageAspectRatio
+     * @attr name com.example.abodimazen.ChildCare:imageAspectRatio
      */
     public static final int LoadingImageView_imageAspectRatio=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#imageAspectRatioAdjust}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#imageAspectRatioAdjust}
      * attribute's value can be found in the {@link #LoadingImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15548,7 +15601,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:imageAspectRatioAdjust
+     * @attr name com.example.abodimazen.ChildCare:imageAspectRatioAdjust
      */
     public static final int LoadingImageView_imageAspectRatioAdjust=2;
     /**
@@ -15562,18 +15615,18 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.example.abodimazen.fahad:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.example.abodimazen.fahad:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_cornerRadius com.example.abodimazen.fahad:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.example.abodimazen.fahad:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconGravity com.example.abodimazen.fahad:iconGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconPadding com.example.abodimazen.fahad:iconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconSize com.example.abodimazen.fahad:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.example.abodimazen.fahad:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.example.abodimazen.fahad:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_rippleColor com.example.abodimazen.fahad:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeColor com.example.abodimazen.fahad:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeWidth com.example.abodimazen.fahad:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.example.abodimazen.ChildCare:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.example.abodimazen.ChildCare:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_cornerRadius com.example.abodimazen.ChildCare:cornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.example.abodimazen.ChildCare:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconGravity com.example.abodimazen.ChildCare:iconGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconPadding com.example.abodimazen.ChildCare:iconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconSize com.example.abodimazen.ChildCare:iconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.example.abodimazen.ChildCare:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.example.abodimazen.ChildCare:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_rippleColor com.example.abodimazen.ChildCare:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeColor com.example.abodimazen.ChildCare:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeWidth com.example.abodimazen.ChildCare:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialButton_android_insetLeft
      * @see #MaterialButton_android_insetRight
@@ -15667,18 +15720,18 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:backgroundTint
+     * @attr name com.example.abodimazen.ChildCare:backgroundTint
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15695,11 +15748,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:backgroundTintMode
+     * @attr name com.example.abodimazen.ChildCare:backgroundTintMode
      */
     public static final int MaterialButton_backgroundTintMode=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#cornerRadius}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#cornerRadius}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15708,11 +15761,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:cornerRadius
+     * @attr name com.example.abodimazen.ChildCare:cornerRadius
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#icon}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15720,11 +15773,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:icon
+     * @attr name com.example.abodimazen.ChildCare:icon
      */
     public static final int MaterialButton_icon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconGravity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconGravity}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15737,11 +15790,11 @@ public final class R {
      * <tr><td>textStart</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:iconGravity
+     * @attr name com.example.abodimazen.ChildCare:iconGravity
      */
     public static final int MaterialButton_iconGravity=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconPadding}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15750,11 +15803,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:iconPadding
+     * @attr name com.example.abodimazen.ChildCare:iconPadding
      */
     public static final int MaterialButton_iconPadding=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconSize}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15763,22 +15816,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:iconSize
+     * @attr name com.example.abodimazen.ChildCare:iconSize
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:iconTint
+     * @attr name com.example.abodimazen.ChildCare:iconTint
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15795,33 +15848,33 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:iconTintMode
+     * @attr name com.example.abodimazen.ChildCare:iconTintMode
      */
     public static final int MaterialButton_iconTintMode=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#rippleColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:rippleColor
+     * @attr name com.example.abodimazen.ChildCare:rippleColor
      */
     public static final int MaterialButton_rippleColor=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:strokeColor
+     * @attr name com.example.abodimazen.ChildCare:strokeColor
      */
     public static final int MaterialButton_strokeColor=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15830,7 +15883,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:strokeWidth
+     * @attr name com.example.abodimazen.ChildCare:strokeWidth
      */
     public static final int MaterialButton_strokeWidth=15;
     /**
@@ -15840,8 +15893,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeColor com.example.abodimazen.fahad:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.example.abodimazen.fahad:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeColor com.example.abodimazen.ChildCare:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.example.abodimazen.ChildCare:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCardView_strokeColor
      * @see #MaterialCardView_strokeWidth
@@ -15850,18 +15903,18 @@ public final class R {
         0x7f0401cf, 0x7f0401d0
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:strokeColor
+     * @attr name com.example.abodimazen.ChildCare:strokeColor
      */
     public static final int MaterialCardView_strokeColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15870,7 +15923,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:strokeWidth
+     * @attr name com.example.abodimazen.ChildCare:strokeWidth
      */
     public static final int MaterialCardView_strokeWidth=1;
     /**
@@ -15880,38 +15933,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.example.abodimazen.fahad:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.example.abodimazen.fahad:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.example.abodimazen.fahad:chipGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.example.abodimazen.fahad:chipStandaloneStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.example.abodimazen.fahad:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.example.abodimazen.fahad:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.example.abodimazen.fahad:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.example.abodimazen.fahad:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.example.abodimazen.fahad:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.example.abodimazen.fahad:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.example.abodimazen.fahad:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.example.abodimazen.fahad:floatingActionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.example.abodimazen.fahad:materialButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.example.abodimazen.fahad:materialCardViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.example.abodimazen.fahad:navigationViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.example.abodimazen.fahad:scrimBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.example.abodimazen.fahad:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.example.abodimazen.fahad:tabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.example.abodimazen.fahad:textAppearanceBody1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.example.abodimazen.fahad:textAppearanceBody2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.example.abodimazen.fahad:textAppearanceButton}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.example.abodimazen.fahad:textAppearanceCaption}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.example.abodimazen.fahad:textAppearanceHeadline1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.example.abodimazen.fahad:textAppearanceHeadline2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.example.abodimazen.fahad:textAppearanceHeadline3}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.example.abodimazen.fahad:textAppearanceHeadline4}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.example.abodimazen.fahad:textAppearanceHeadline5}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.example.abodimazen.fahad:textAppearanceHeadline6}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.example.abodimazen.fahad:textAppearanceOverline}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.example.abodimazen.fahad:textAppearanceSubtitle1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.example.abodimazen.fahad:textAppearanceSubtitle2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.example.abodimazen.fahad:textInputStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.example.abodimazen.ChildCare:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.example.abodimazen.ChildCare:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.example.abodimazen.ChildCare:chipGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.example.abodimazen.ChildCare:chipStandaloneStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.example.abodimazen.ChildCare:chipStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.example.abodimazen.ChildCare:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.example.abodimazen.ChildCare:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.example.abodimazen.ChildCare:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.example.abodimazen.ChildCare:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.example.abodimazen.ChildCare:colorSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.example.abodimazen.ChildCare:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.example.abodimazen.ChildCare:floatingActionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.example.abodimazen.ChildCare:materialButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.example.abodimazen.ChildCare:materialCardViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.example.abodimazen.ChildCare:navigationViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.example.abodimazen.ChildCare:scrimBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.example.abodimazen.ChildCare:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.example.abodimazen.ChildCare:tabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.example.abodimazen.ChildCare:textAppearanceBody1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.example.abodimazen.ChildCare:textAppearanceBody2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.example.abodimazen.ChildCare:textAppearanceButton}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.example.abodimazen.ChildCare:textAppearanceCaption}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.example.abodimazen.ChildCare:textAppearanceHeadline1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.example.abodimazen.ChildCare:textAppearanceHeadline2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.example.abodimazen.ChildCare:textAppearanceHeadline3}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.example.abodimazen.ChildCare:textAppearanceHeadline4}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.example.abodimazen.ChildCare:textAppearanceHeadline5}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.example.abodimazen.ChildCare:textAppearanceHeadline6}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.example.abodimazen.ChildCare:textAppearanceOverline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.example.abodimazen.ChildCare:textAppearanceSubtitle1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.example.abodimazen.ChildCare:textAppearanceSubtitle2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.example.abodimazen.ChildCare:textInputStyle}</code></td><td></td></tr>
      * </table>
      * @see #MaterialComponentsTheme_bottomSheetDialogTheme
      * @see #MaterialComponentsTheme_bottomSheetStyle
@@ -15957,7 +16010,7 @@ public final class R {
         0x7f040205, 0x7f04020a, 0x7f04020b, 0x7f04020f
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15965,11 +16018,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:bottomSheetDialogTheme
+     * @attr name com.example.abodimazen.ChildCare:bottomSheetDialogTheme
      */
     public static final int MaterialComponentsTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15977,11 +16030,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:bottomSheetStyle
+     * @attr name com.example.abodimazen.ChildCare:bottomSheetStyle
      */
     public static final int MaterialComponentsTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipGroupStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipGroupStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15989,11 +16042,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipGroupStyle
+     * @attr name com.example.abodimazen.ChildCare:chipGroupStyle
      */
     public static final int MaterialComponentsTheme_chipGroupStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipStandaloneStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipStandaloneStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16001,11 +16054,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipStandaloneStyle
+     * @attr name com.example.abodimazen.ChildCare:chipStandaloneStyle
      */
     public static final int MaterialComponentsTheme_chipStandaloneStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#chipStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#chipStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16013,66 +16066,66 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:chipStyle
+     * @attr name com.example.abodimazen.ChildCare:chipStyle
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorAccent}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorAccent
+     * @attr name com.example.abodimazen.ChildCare:colorAccent
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorBackgroundFloating
+     * @attr name com.example.abodimazen.ChildCare:colorBackgroundFloating
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorPrimary
+     * @attr name com.example.abodimazen.ChildCare:colorPrimary
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorPrimaryDark
+     * @attr name com.example.abodimazen.ChildCare:colorPrimaryDark
      */
     public static final int MaterialComponentsTheme_colorPrimaryDark=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorSecondary}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorSecondary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:colorSecondary
+     * @attr name com.example.abodimazen.ChildCare:colorSecondary
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16080,11 +16133,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:editTextStyle
+     * @attr name com.example.abodimazen.ChildCare:editTextStyle
      */
     public static final int MaterialComponentsTheme_editTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#floatingActionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#floatingActionButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16110,11 +16163,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.abodimazen.fahad:floatingActionButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:floatingActionButtonStyle
      */
     public static final int MaterialComponentsTheme_floatingActionButtonStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#materialButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#materialButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16122,11 +16175,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:materialButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:materialButtonStyle
      */
     public static final int MaterialComponentsTheme_materialButtonStyle=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#materialCardViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#materialCardViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16134,11 +16187,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:materialCardViewStyle
+     * @attr name com.example.abodimazen.ChildCare:materialCardViewStyle
      */
     public static final int MaterialComponentsTheme_materialCardViewStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#navigationViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#navigationViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16146,11 +16199,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:navigationViewStyle
+     * @attr name com.example.abodimazen.ChildCare:navigationViewStyle
      */
     public static final int MaterialComponentsTheme_navigationViewStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#scrimBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#scrimBackground}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16161,11 +16214,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:scrimBackground
+     * @attr name com.example.abodimazen.ChildCare:scrimBackground
      */
     public static final int MaterialComponentsTheme_scrimBackground=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16173,11 +16226,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:snackbarButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:snackbarButtonStyle
      */
     public static final int MaterialComponentsTheme_snackbarButtonStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16185,11 +16238,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabStyle
+     * @attr name com.example.abodimazen.ChildCare:tabStyle
      */
     public static final int MaterialComponentsTheme_tabStyle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceBody1}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceBody1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16197,11 +16250,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceBody1
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceBody1
      */
     public static final int MaterialComponentsTheme_textAppearanceBody1=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceBody2}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceBody2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16209,11 +16262,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceBody2
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceBody2
      */
     public static final int MaterialComponentsTheme_textAppearanceBody2=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceButton}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceButton}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16221,11 +16274,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceButton
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceButton
      */
     public static final int MaterialComponentsTheme_textAppearanceButton=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceCaption}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceCaption}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16233,11 +16286,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceCaption
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceCaption
      */
     public static final int MaterialComponentsTheme_textAppearanceCaption=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceHeadline1}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceHeadline1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16245,11 +16298,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceHeadline1
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceHeadline1
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline1=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceHeadline2}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceHeadline2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16257,11 +16310,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceHeadline2
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceHeadline2
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline2=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceHeadline3}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceHeadline3}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16269,11 +16322,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceHeadline3
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceHeadline3
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline3=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceHeadline4}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceHeadline4}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16281,11 +16334,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceHeadline4
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceHeadline4
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline4=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceHeadline5}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceHeadline5}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16293,11 +16346,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceHeadline5
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceHeadline5
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline5=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceHeadline6}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceHeadline6}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16305,11 +16358,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceHeadline6
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceHeadline6
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline6=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceOverline}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceOverline}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16317,11 +16370,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceOverline
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceOverline
      */
     public static final int MaterialComponentsTheme_textAppearanceOverline=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceSubtitle1}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceSubtitle1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16329,11 +16382,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceSubtitle1
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceSubtitle1
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle1=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAppearanceSubtitle2}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAppearanceSubtitle2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16341,11 +16394,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAppearanceSubtitle2
+     * @attr name com.example.abodimazen.ChildCare:textAppearanceSubtitle2
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle2=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textInputStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textInputStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16353,7 +16406,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:textInputStyle
+     * @attr name com.example.abodimazen.ChildCare:textInputStyle
      */
     public static final int MaterialComponentsTheme_textInputStyle=31;
     /**
@@ -16363,19 +16416,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_determinateCircularProgressStyle com.example.abodimazen.fahad:mpb_determinateCircularProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_indeterminateTint com.example.abodimazen.fahad:mpb_indeterminateTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_indeterminateTintMode com.example.abodimazen.fahad:mpb_indeterminateTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressBackgroundTint com.example.abodimazen.fahad:mpb_progressBackgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressBackgroundTintMode com.example.abodimazen.fahad:mpb_progressBackgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressStyle com.example.abodimazen.fahad:mpb_progressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressTint com.example.abodimazen.fahad:mpb_progressTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressTintMode com.example.abodimazen.fahad:mpb_progressTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_secondaryProgressTint com.example.abodimazen.fahad:mpb_secondaryProgressTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_secondaryProgressTintMode com.example.abodimazen.fahad:mpb_secondaryProgressTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_setBothDrawables com.example.abodimazen.fahad:mpb_setBothDrawables}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_showProgressBackground com.example.abodimazen.fahad:mpb_showProgressBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialProgressBar_mpb_useIntrinsicPadding com.example.abodimazen.fahad:mpb_useIntrinsicPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_determinateCircularProgressStyle com.example.abodimazen.ChildCare:mpb_determinateCircularProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_indeterminateTint com.example.abodimazen.ChildCare:mpb_indeterminateTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_indeterminateTintMode com.example.abodimazen.ChildCare:mpb_indeterminateTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressBackgroundTint com.example.abodimazen.ChildCare:mpb_progressBackgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressBackgroundTintMode com.example.abodimazen.ChildCare:mpb_progressBackgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressStyle com.example.abodimazen.ChildCare:mpb_progressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressTint com.example.abodimazen.ChildCare:mpb_progressTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_progressTintMode com.example.abodimazen.ChildCare:mpb_progressTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_secondaryProgressTint com.example.abodimazen.ChildCare:mpb_secondaryProgressTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_secondaryProgressTintMode com.example.abodimazen.ChildCare:mpb_secondaryProgressTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_setBothDrawables com.example.abodimazen.ChildCare:mpb_setBothDrawables}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_showProgressBackground com.example.abodimazen.ChildCare:mpb_showProgressBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialProgressBar_mpb_useIntrinsicPadding com.example.abodimazen.ChildCare:mpb_useIntrinsicPadding}</code></td><td></td></tr>
      * </table>
      * @see #MaterialProgressBar_mpb_determinateCircularProgressStyle
      * @see #MaterialProgressBar_mpb_indeterminateTint
@@ -16398,7 +16451,7 @@ public final class R {
         0x7f040189
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_determinateCircularProgressStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_determinateCircularProgressStyle}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16411,11 +16464,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:mpb_determinateCircularProgressStyle
+     * @attr name com.example.abodimazen.ChildCare:mpb_determinateCircularProgressStyle
      */
     public static final int MaterialProgressBar_mpb_determinateCircularProgressStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_indeterminateTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_indeterminateTint}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16426,11 +16479,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:mpb_indeterminateTint
+     * @attr name com.example.abodimazen.ChildCare:mpb_indeterminateTint
      */
     public static final int MaterialProgressBar_mpb_indeterminateTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_indeterminateTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_indeterminateTintMode}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16447,11 +16500,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:mpb_indeterminateTintMode
+     * @attr name com.example.abodimazen.ChildCare:mpb_indeterminateTintMode
      */
     public static final int MaterialProgressBar_mpb_indeterminateTintMode=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_progressBackgroundTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_progressBackgroundTint}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16462,11 +16515,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:mpb_progressBackgroundTint
+     * @attr name com.example.abodimazen.ChildCare:mpb_progressBackgroundTint
      */
     public static final int MaterialProgressBar_mpb_progressBackgroundTint=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_progressBackgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_progressBackgroundTintMode}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16483,11 +16536,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:mpb_progressBackgroundTintMode
+     * @attr name com.example.abodimazen.ChildCare:mpb_progressBackgroundTintMode
      */
     public static final int MaterialProgressBar_mpb_progressBackgroundTintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_progressStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_progressStyle}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16500,11 +16553,11 @@ public final class R {
      * <tr><td>horizontal</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:mpb_progressStyle
+     * @attr name com.example.abodimazen.ChildCare:mpb_progressStyle
      */
     public static final int MaterialProgressBar_mpb_progressStyle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_progressTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_progressTint}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16515,11 +16568,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:mpb_progressTint
+     * @attr name com.example.abodimazen.ChildCare:mpb_progressTint
      */
     public static final int MaterialProgressBar_mpb_progressTint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_progressTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_progressTintMode}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16536,11 +16589,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:mpb_progressTintMode
+     * @attr name com.example.abodimazen.ChildCare:mpb_progressTintMode
      */
     public static final int MaterialProgressBar_mpb_progressTintMode=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_secondaryProgressTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_secondaryProgressTint}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16551,11 +16604,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:mpb_secondaryProgressTint
+     * @attr name com.example.abodimazen.ChildCare:mpb_secondaryProgressTint
      */
     public static final int MaterialProgressBar_mpb_secondaryProgressTint=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_secondaryProgressTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_secondaryProgressTintMode}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16572,37 +16625,37 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:mpb_secondaryProgressTintMode
+     * @attr name com.example.abodimazen.ChildCare:mpb_secondaryProgressTintMode
      */
     public static final int MaterialProgressBar_mpb_secondaryProgressTintMode=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_setBothDrawables}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_setBothDrawables}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:mpb_setBothDrawables
+     * @attr name com.example.abodimazen.ChildCare:mpb_setBothDrawables
      */
     public static final int MaterialProgressBar_mpb_setBothDrawables=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_showProgressBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_showProgressBackground}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:mpb_showProgressBackground
+     * @attr name com.example.abodimazen.ChildCare:mpb_showProgressBackground
      */
     public static final int MaterialProgressBar_mpb_showProgressBackground=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#mpb_useIntrinsicPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#mpb_useIntrinsicPadding}
      * attribute's value can be found in the {@link #MaterialProgressBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:mpb_useIntrinsicPadding
+     * @attr name com.example.abodimazen.ChildCare:mpb_useIntrinsicPadding
      */
     public static final int MaterialProgressBar_mpb_useIntrinsicPadding=12;
     /**
@@ -16728,16 +16781,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.example.abodimazen.fahad:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.example.abodimazen.fahad:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.example.abodimazen.fahad:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.example.abodimazen.fahad:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.example.abodimazen.fahad:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.example.abodimazen.fahad:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.example.abodimazen.fahad:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.example.abodimazen.fahad:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.example.abodimazen.fahad:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.example.abodimazen.fahad:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.example.abodimazen.ChildCare:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.example.abodimazen.ChildCare:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.example.abodimazen.ChildCare:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.example.abodimazen.ChildCare:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.example.abodimazen.ChildCare:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.example.abodimazen.ChildCare:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.example.abodimazen.ChildCare:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.example.abodimazen.ChildCare:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.example.abodimazen.ChildCare:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.example.abodimazen.ChildCare:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -16914,7 +16967,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16922,31 +16975,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:actionLayout
+     * @attr name com.example.abodimazen.ChildCare:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:actionProviderClass
+     * @attr name com.example.abodimazen.ChildCare:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:actionViewClass
+     * @attr name com.example.abodimazen.ChildCare:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -16963,32 +17016,32 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:alphabeticModifiers
+     * @attr name com.example.abodimazen.ChildCare:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:contentDescription
+     * @attr name com.example.abodimazen.ChildCare:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:iconTint
+     * @attr name com.example.abodimazen.ChildCare:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17005,11 +17058,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:iconTintMode
+     * @attr name com.example.abodimazen.ChildCare:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -17026,11 +17079,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:numericModifiers
+     * @attr name com.example.abodimazen.ChildCare:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -17046,17 +17099,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:showAsAction
+     * @attr name com.example.abodimazen.ChildCare:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:tooltipText
+     * @attr name com.example.abodimazen.ChildCare:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -17073,8 +17126,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.abodimazen.fahad:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.example.abodimazen.fahad:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.abodimazen.ChildCare:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.example.abodimazen.ChildCare:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -17179,17 +17232,17 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:preserveIconSpacing
+     * @attr name com.example.abodimazen.ChildCare:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17197,7 +17250,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:subMenuArrow
+     * @attr name com.example.abodimazen.ChildCare:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -17210,15 +17263,15 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.example.abodimazen.fahad:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout com.example.abodimazen.fahad:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground com.example.abodimazen.fahad:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.example.abodimazen.fahad:itemHorizontalPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconPadding com.example.abodimazen.fahad:itemIconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint com.example.abodimazen.fahad:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.example.abodimazen.fahad:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor com.example.abodimazen.fahad:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.example.abodimazen.fahad:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.example.abodimazen.ChildCare:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.example.abodimazen.ChildCare:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.example.abodimazen.ChildCare:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.example.abodimazen.ChildCare:itemHorizontalPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconPadding com.example.abodimazen.ChildCare:itemIconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint com.example.abodimazen.ChildCare:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.example.abodimazen.ChildCare:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor com.example.abodimazen.ChildCare:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.example.abodimazen.ChildCare:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -17277,7 +17330,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17286,11 +17339,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:elevation
+     * @attr name com.example.abodimazen.ChildCare:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17298,11 +17351,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:headerLayout
+     * @attr name com.example.abodimazen.ChildCare:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17310,11 +17363,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemBackground
+     * @attr name com.example.abodimazen.ChildCare:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemHorizontalPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemHorizontalPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17323,11 +17376,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:itemHorizontalPadding
+     * @attr name com.example.abodimazen.ChildCare:itemHorizontalPadding
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemIconPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemIconPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17336,22 +17389,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:itemIconPadding
+     * @attr name com.example.abodimazen.ChildCare:itemIconPadding
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemIconTint
+     * @attr name com.example.abodimazen.ChildCare:itemIconTint
      */
     public static final int NavigationView_itemIconTint=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17359,22 +17412,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:itemTextColor
+     * @attr name com.example.abodimazen.ChildCare:itemTextColor
      */
     public static final int NavigationView_itemTextColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17382,7 +17435,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:menu
+     * @attr name com.example.abodimazen.ChildCare:menu
      */
     public static final int NavigationView_menu=11;
     /**
@@ -17394,7 +17447,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.abodimazen.fahad:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.abodimazen.ChildCare:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -17431,13 +17484,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:overlapAnchor
+     * @attr name com.example.abodimazen.ChildCare:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -17447,7 +17500,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.abodimazen.fahad:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.abodimazen.ChildCare:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -17455,13 +17508,13 @@ public final class R {
         0x7f0401c8
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:state_above_anchor
+     * @attr name com.example.abodimazen.ChildCare:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -17471,8 +17524,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.example.abodimazen.fahad:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.example.abodimazen.fahad:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.example.abodimazen.ChildCare:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.example.abodimazen.ChildCare:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -17481,7 +17534,7 @@ public final class R {
         0x7f040191, 0x7f040194
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17490,11 +17543,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:paddingBottomNoButtons
+     * @attr name com.example.abodimazen.ChildCare:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17503,7 +17556,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:paddingTopNoTitle
+     * @attr name com.example.abodimazen.ChildCare:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -17515,15 +17568,15 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.example.abodimazen.fahad:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.example.abodimazen.fahad:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.example.abodimazen.fahad:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.example.abodimazen.fahad:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.example.abodimazen.fahad:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.example.abodimazen.fahad:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout com.example.abodimazen.fahad:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount com.example.abodimazen.fahad:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.example.abodimazen.fahad:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.example.abodimazen.ChildCare:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.example.abodimazen.ChildCare:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.example.abodimazen.ChildCare:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.example.abodimazen.ChildCare:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.example.abodimazen.ChildCare:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.example.abodimazen.ChildCare:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout com.example.abodimazen.ChildCare:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount com.example.abodimazen.ChildCare:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.example.abodimazen.ChildCare:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -17578,17 +17631,17 @@ public final class R {
      */
     public static final int RecyclerView_android_descendantFocusability=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:fastScrollEnabled
+     * @attr name com.example.abodimazen.ChildCare:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17596,11 +17649,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:fastScrollHorizontalThumbDrawable
+     * @attr name com.example.abodimazen.ChildCare:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17608,11 +17661,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:fastScrollHorizontalTrackDrawable
+     * @attr name com.example.abodimazen.ChildCare:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17620,11 +17673,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:fastScrollVerticalThumbDrawable
+     * @attr name com.example.abodimazen.ChildCare:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17632,46 +17685,46 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:fastScrollVerticalTrackDrawable
+     * @attr name com.example.abodimazen.ChildCare:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:layoutManager
+     * @attr name com.example.abodimazen.ChildCare:layoutManager
      */
     public static final int RecyclerView_layoutManager=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:reverseLayout
+     * @attr name com.example.abodimazen.ChildCare:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:spanCount
+     * @attr name com.example.abodimazen.ChildCare:spanCount
      */
     public static final int RecyclerView_spanCount=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:stackFromEnd
+     * @attr name com.example.abodimazen.ChildCare:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=10;
     /**
@@ -17681,7 +17734,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.example.abodimazen.fahad:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.example.abodimazen.ChildCare:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -17689,7 +17742,7 @@ public final class R {
         0x7f040117
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17700,7 +17753,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:insetForeground
+     * @attr name com.example.abodimazen.ChildCare:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -17710,7 +17763,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.example.abodimazen.fahad:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.example.abodimazen.ChildCare:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -17718,7 +17771,7 @@ public final class R {
         0x7f04003c
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17727,7 +17780,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:behavior_overlapTop
+     * @attr name com.example.abodimazen.ChildCare:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -17741,19 +17794,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.example.abodimazen.fahad:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.example.abodimazen.fahad:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.example.abodimazen.fahad:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.example.abodimazen.fahad:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.abodimazen.fahad:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.example.abodimazen.fahad:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.example.abodimazen.fahad:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.example.abodimazen.fahad:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.example.abodimazen.fahad:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.example.abodimazen.fahad:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.example.abodimazen.fahad:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.abodimazen.fahad:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.example.abodimazen.fahad:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.example.abodimazen.ChildCare:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.example.abodimazen.ChildCare:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.example.abodimazen.ChildCare:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.example.abodimazen.ChildCare:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.abodimazen.ChildCare:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.example.abodimazen.ChildCare:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.example.abodimazen.ChildCare:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.example.abodimazen.ChildCare:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.example.abodimazen.ChildCare:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.example.abodimazen.ChildCare:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.example.abodimazen.ChildCare:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.abodimazen.ChildCare:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.example.abodimazen.ChildCare:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -17891,7 +17944,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17899,11 +17952,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:closeIcon
+     * @attr name com.example.abodimazen.ChildCare:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17911,21 +17964,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:commitIcon
+     * @attr name com.example.abodimazen.ChildCare:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:defaultQueryHint
+     * @attr name com.example.abodimazen.ChildCare:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17933,21 +17986,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:goIcon
+     * @attr name com.example.abodimazen.ChildCare:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:iconifiedByDefault
+     * @attr name com.example.abodimazen.ChildCare:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17955,11 +18008,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:layout
+     * @attr name com.example.abodimazen.ChildCare:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17967,21 +18020,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:queryBackground
+     * @attr name com.example.abodimazen.ChildCare:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:queryHint
+     * @attr name com.example.abodimazen.ChildCare:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17989,11 +18042,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:searchHintIcon
+     * @attr name com.example.abodimazen.ChildCare:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18001,11 +18054,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:searchIcon
+     * @attr name com.example.abodimazen.ChildCare:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18013,11 +18066,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:submitBackground
+     * @attr name com.example.abodimazen.ChildCare:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18025,11 +18078,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:suggestionRowLayout
+     * @attr name com.example.abodimazen.ChildCare:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18037,7 +18090,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:voiceIcon
+     * @attr name com.example.abodimazen.ChildCare:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -18047,9 +18100,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SignInButton_buttonSize com.example.abodimazen.fahad:buttonSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_colorScheme com.example.abodimazen.fahad:colorScheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_scopeUris com.example.abodimazen.fahad:scopeUris}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_buttonSize com.example.abodimazen.ChildCare:buttonSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_colorScheme com.example.abodimazen.ChildCare:colorScheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SignInButton_scopeUris com.example.abodimazen.ChildCare:scopeUris}</code></td><td></td></tr>
      * </table>
      * @see #SignInButton_buttonSize
      * @see #SignInButton_colorScheme
@@ -18059,7 +18112,7 @@ public final class R {
         0x7f040056, 0x7f040097, 0x7f0401ac
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonSize}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonSize}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18077,11 +18130,11 @@ public final class R {
      * <tr><td>wide</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:buttonSize
+     * @attr name com.example.abodimazen.ChildCare:buttonSize
      */
     public static final int SignInButton_buttonSize=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#colorScheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#colorScheme}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18099,11 +18152,11 @@ public final class R {
      * <tr><td>light</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:colorScheme
+     * @attr name com.example.abodimazen.ChildCare:colorScheme
      */
     public static final int SignInButton_colorScheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#scopeUris}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#scopeUris}
      * attribute's value can be found in the {@link #SignInButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18113,7 +18166,7 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:scopeUris
+     * @attr name com.example.abodimazen.ChildCare:scopeUris
      */
     public static final int SignInButton_scopeUris=2;
     /**
@@ -18123,8 +18176,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.example.abodimazen.fahad:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarStyle com.example.abodimazen.fahad:snackbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.example.abodimazen.ChildCare:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarStyle com.example.abodimazen.ChildCare:snackbarStyle}</code></td><td></td></tr>
      * </table>
      * @see #Snackbar_snackbarButtonStyle
      * @see #Snackbar_snackbarStyle
@@ -18133,7 +18186,7 @@ public final class R {
         0x7f0401be, 0x7f0401bf
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18141,11 +18194,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:snackbarButtonStyle
+     * @attr name com.example.abodimazen.ChildCare:snackbarButtonStyle
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#snackbarStyle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#snackbarStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18153,7 +18206,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:snackbarStyle
+     * @attr name com.example.abodimazen.ChildCare:snackbarStyle
      */
     public static final int Snackbar_snackbarStyle=1;
     /**
@@ -18164,8 +18217,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.example.abodimazen.fahad:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.example.abodimazen.fahad:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.example.abodimazen.ChildCare:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.example.abodimazen.ChildCare:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
@@ -18188,7 +18241,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18197,11 +18250,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:elevation
+     * @attr name com.example.abodimazen.ChildCare:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18210,7 +18263,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:maxActionInlineWidth
+     * @attr name com.example.abodimazen.ChildCare:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -18220,7 +18273,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SpacedEditText_spacingProportion com.example.abodimazen.fahad:spacingProportion}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SpacedEditText_spacingProportion com.example.abodimazen.ChildCare:spacingProportion}</code></td><td></td></tr>
      * </table>
      * @see #SpacedEditText_spacingProportion
      */
@@ -18228,12 +18281,12 @@ public final class R {
         0x7f0401c0
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#spacingProportion}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#spacingProportion}
      * attribute's value can be found in the {@link #SpacedEditText} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.abodimazen.fahad:spacingProportion
+     * @attr name com.example.abodimazen.ChildCare:spacingProportion
      */
     public static final int SpacedEditText_spacingProportion=0;
     /**
@@ -18247,7 +18300,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.example.abodimazen.fahad:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.example.abodimazen.ChildCare:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -18322,7 +18375,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18330,7 +18383,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:popupTheme
+     * @attr name com.example.abodimazen.ChildCare:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -18449,10 +18502,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableBottomCompat com.example.abodimazen.fahad:drawableBottomCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableEndCompat com.example.abodimazen.fahad:drawableEndCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableStartCompat com.example.abodimazen.fahad:drawableStartCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableTopCompat com.example.abodimazen.fahad:drawableTopCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableBottomCompat com.example.abodimazen.ChildCare:drawableBottomCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableEndCompat com.example.abodimazen.ChildCare:drawableEndCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableStartCompat com.example.abodimazen.ChildCare:drawableStartCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SupportVectorDrawablesButton_drawableTopCompat com.example.abodimazen.ChildCare:drawableTopCompat}</code></td><td></td></tr>
      * </table>
      * @see #SupportVectorDrawablesButton_drawableBottomCompat
      * @see #SupportVectorDrawablesButton_drawableEndCompat
@@ -18463,7 +18516,7 @@ public final class R {
         0x7f0400c6, 0x7f0400c7, 0x7f0400c9, 0x7f0400ca
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#drawableBottomCompat}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#drawableBottomCompat}
      * attribute's value can be found in the {@link #SupportVectorDrawablesButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18471,11 +18524,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:drawableBottomCompat
+     * @attr name com.example.abodimazen.ChildCare:drawableBottomCompat
      */
     public static final int SupportVectorDrawablesButton_drawableBottomCompat=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#drawableEndCompat}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#drawableEndCompat}
      * attribute's value can be found in the {@link #SupportVectorDrawablesButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18483,11 +18536,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:drawableEndCompat
+     * @attr name com.example.abodimazen.ChildCare:drawableEndCompat
      */
     public static final int SupportVectorDrawablesButton_drawableEndCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#drawableStartCompat}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#drawableStartCompat}
      * attribute's value can be found in the {@link #SupportVectorDrawablesButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18495,11 +18548,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:drawableStartCompat
+     * @attr name com.example.abodimazen.ChildCare:drawableStartCompat
      */
     public static final int SupportVectorDrawablesButton_drawableStartCompat=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#drawableTopCompat}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#drawableTopCompat}
      * attribute's value can be found in the {@link #SupportVectorDrawablesButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18507,7 +18560,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:drawableTopCompat
+     * @attr name com.example.abodimazen.ChildCare:drawableTopCompat
      */
     public static final int SupportVectorDrawablesButton_drawableTopCompat=3;
     /**
@@ -18520,17 +18573,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.example.abodimazen.fahad:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.example.abodimazen.fahad:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.abodimazen.fahad:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.example.abodimazen.fahad:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.abodimazen.fahad:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.abodimazen.fahad:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.example.abodimazen.fahad:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.example.abodimazen.fahad:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.example.abodimazen.fahad:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.example.abodimazen.fahad:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.example.abodimazen.fahad:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.example.abodimazen.ChildCare:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.example.abodimazen.ChildCare:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.abodimazen.ChildCare:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.example.abodimazen.ChildCare:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.abodimazen.ChildCare:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.abodimazen.ChildCare:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.example.abodimazen.ChildCare:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.example.abodimazen.ChildCare:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.example.abodimazen.ChildCare:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.example.abodimazen.ChildCare:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.example.abodimazen.ChildCare:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -18586,27 +18639,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:showText
+     * @attr name com.example.abodimazen.ChildCare:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:splitTrack
+     * @attr name com.example.abodimazen.ChildCare:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18615,11 +18668,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:switchMinWidth
+     * @attr name com.example.abodimazen.ChildCare:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18628,11 +18681,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:switchPadding
+     * @attr name com.example.abodimazen.ChildCare:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18640,11 +18693,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:switchTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18653,22 +18706,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:thumbTextPadding
+     * @attr name com.example.abodimazen.ChildCare:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:thumbTint
+     * @attr name com.example.abodimazen.ChildCare:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18685,11 +18738,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:thumbTintMode
+     * @attr name com.example.abodimazen.ChildCare:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18697,22 +18750,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:track
+     * @attr name com.example.abodimazen.ChildCare:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:trackTint
+     * @attr name com.example.abodimazen.ChildCare:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18729,7 +18782,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:trackTintMode
+     * @attr name com.example.abodimazen.ChildCare:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -18791,31 +18844,31 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground com.example.abodimazen.fahad:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart com.example.abodimazen.fahad:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity com.example.abodimazen.fahad:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTint com.example.abodimazen.fahad:tabIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.example.abodimazen.fahad:tabIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicator com.example.abodimazen.fahad:tabIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.example.abodimazen.fahad:tabIndicatorAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.example.abodimazen.fahad:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.example.abodimazen.fahad:tabIndicatorFullWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.example.abodimazen.fahad:tabIndicatorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.example.abodimazen.fahad:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.example.abodimazen.fahad:tabInlineLabel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.example.abodimazen.fahad:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth com.example.abodimazen.fahad:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode com.example.abodimazen.fahad:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding com.example.abodimazen.fahad:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.example.abodimazen.fahad:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.example.abodimazen.fahad:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.example.abodimazen.fahad:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.example.abodimazen.fahad:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabRippleColor com.example.abodimazen.fahad:tabRippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.example.abodimazen.fahad:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.example.abodimazen.fahad:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor com.example.abodimazen.fahad:tabTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.example.abodimazen.fahad:tabUnboundedRipple}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground com.example.abodimazen.ChildCare:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.example.abodimazen.ChildCare:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.example.abodimazen.ChildCare:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTint com.example.abodimazen.ChildCare:tabIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.example.abodimazen.ChildCare:tabIconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicator com.example.abodimazen.ChildCare:tabIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.example.abodimazen.ChildCare:tabIndicatorAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.example.abodimazen.ChildCare:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.example.abodimazen.ChildCare:tabIndicatorFullWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.example.abodimazen.ChildCare:tabIndicatorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.example.abodimazen.ChildCare:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.example.abodimazen.ChildCare:tabInlineLabel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.example.abodimazen.ChildCare:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.example.abodimazen.ChildCare:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.example.abodimazen.ChildCare:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.example.abodimazen.ChildCare:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.example.abodimazen.ChildCare:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.example.abodimazen.ChildCare:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.example.abodimazen.ChildCare:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.example.abodimazen.ChildCare:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabRippleColor com.example.abodimazen.ChildCare:tabRippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.example.abodimazen.ChildCare:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.example.abodimazen.ChildCare:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.example.abodimazen.ChildCare:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.example.abodimazen.ChildCare:tabUnboundedRipple}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -18853,7 +18906,7 @@ public final class R {
         0x7f0401f5
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18861,11 +18914,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabBackground
+     * @attr name com.example.abodimazen.ChildCare:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18874,11 +18927,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabContentStart
+     * @attr name com.example.abodimazen.ChildCare:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18891,22 +18944,22 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:tabGravity
+     * @attr name com.example.abodimazen.ChildCare:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIconTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIconTint}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabIconTint
+     * @attr name com.example.abodimazen.ChildCare:tabIconTint
      */
     public static final int TabLayout_tabIconTint=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIconTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIconTintMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18923,11 +18976,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:tabIconTintMode
+     * @attr name com.example.abodimazen.ChildCare:tabIconTintMode
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIndicator}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIndicator}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18935,41 +18988,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabIndicator
+     * @attr name com.example.abodimazen.ChildCare:tabIndicator
      */
     public static final int TabLayout_tabIndicator=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIndicatorAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIndicatorAnimationDuration}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabIndicatorAnimationDuration
+     * @attr name com.example.abodimazen.ChildCare:tabIndicatorAnimationDuration
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabIndicatorColor
+     * @attr name com.example.abodimazen.ChildCare:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIndicatorFullWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIndicatorFullWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabIndicatorFullWidth
+     * @attr name com.example.abodimazen.ChildCare:tabIndicatorFullWidth
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIndicatorGravity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIndicatorGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18984,11 +19037,11 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:tabIndicatorGravity
+     * @attr name com.example.abodimazen.ChildCare:tabIndicatorGravity
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18997,21 +19050,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabIndicatorHeight
+     * @attr name com.example.abodimazen.ChildCare:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabInlineLabel}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabInlineLabel}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabInlineLabel
+     * @attr name com.example.abodimazen.ChildCare:tabInlineLabel
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19020,11 +19073,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabMaxWidth
+     * @attr name com.example.abodimazen.ChildCare:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19033,11 +19086,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabMinWidth
+     * @attr name com.example.abodimazen.ChildCare:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -19050,11 +19103,11 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:tabMode
+     * @attr name com.example.abodimazen.ChildCare:tabMode
      */
     public static final int TabLayout_tabMode=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19063,11 +19116,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabPadding
+     * @attr name com.example.abodimazen.ChildCare:tabPadding
      */
     public static final int TabLayout_tabPadding=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19076,11 +19129,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabPaddingBottom
+     * @attr name com.example.abodimazen.ChildCare:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19089,11 +19142,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabPaddingEnd
+     * @attr name com.example.abodimazen.ChildCare:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19102,11 +19155,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabPaddingStart
+     * @attr name com.example.abodimazen.ChildCare:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19115,33 +19168,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:tabPaddingTop
+     * @attr name com.example.abodimazen.ChildCare:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabRippleColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabRippleColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabRippleColor
+     * @attr name com.example.abodimazen.ChildCare:tabRippleColor
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabSelectedTextColor
+     * @attr name com.example.abodimazen.ChildCare:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19149,28 +19202,28 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabTextColor
+     * @attr name com.example.abodimazen.ChildCare:tabTextColor
      */
     public static final int TabLayout_tabTextColor=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#tabUnboundedRipple}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#tabUnboundedRipple}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:tabUnboundedRipple
+     * @attr name com.example.abodimazen.ChildCare:tabUnboundedRipple
      */
     public static final int TabLayout_tabUnboundedRipple=24;
     /**
@@ -19191,8 +19244,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.example.abodimazen.fahad:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.example.abodimazen.fahad:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.example.abodimazen.ChildCare:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.example.abodimazen.ChildCare:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -19358,17 +19411,17 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:fontFamily
+     * @attr name com.example.abodimazen.ChildCare:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19378,7 +19431,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:textAllCaps
+     * @attr name com.example.abodimazen.ChildCare:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -19390,32 +19443,32 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.example.abodimazen.fahad:boxBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.example.abodimazen.fahad:boxBackgroundMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.example.abodimazen.fahad:boxCollapsedPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.example.abodimazen.fahad:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.example.abodimazen.fahad:boxCornerRadiusBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.example.abodimazen.fahad:boxCornerRadiusTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.example.abodimazen.fahad:boxCornerRadiusTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.example.abodimazen.fahad:boxStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.example.abodimazen.fahad:boxStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.example.abodimazen.fahad:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.example.abodimazen.fahad:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.example.abodimazen.fahad:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.example.abodimazen.fahad:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.example.abodimazen.fahad:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.example.abodimazen.fahad:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperText com.example.abodimazen.fahad:helperText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.example.abodimazen.fahad:helperTextEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.example.abodimazen.fahad:helperTextTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.example.abodimazen.fahad:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.example.abodimazen.fahad:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.example.abodimazen.fahad:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.example.abodimazen.fahad:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.example.abodimazen.fahad:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.example.abodimazen.fahad:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.example.abodimazen.fahad:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.example.abodimazen.fahad:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.example.abodimazen.ChildCare:boxBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.example.abodimazen.ChildCare:boxBackgroundMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.example.abodimazen.ChildCare:boxCollapsedPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.example.abodimazen.ChildCare:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.example.abodimazen.ChildCare:boxCornerRadiusBottomStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.example.abodimazen.ChildCare:boxCornerRadiusTopEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.example.abodimazen.ChildCare:boxCornerRadiusTopStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.example.abodimazen.ChildCare:boxStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.example.abodimazen.ChildCare:boxStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.example.abodimazen.ChildCare:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.example.abodimazen.ChildCare:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.example.abodimazen.ChildCare:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.example.abodimazen.ChildCare:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.example.abodimazen.ChildCare:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.example.abodimazen.ChildCare:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperText com.example.abodimazen.ChildCare:helperText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.example.abodimazen.ChildCare:helperTextEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.example.abodimazen.ChildCare:helperTextTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.example.abodimazen.ChildCare:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.example.abodimazen.ChildCare:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.example.abodimazen.ChildCare:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.example.abodimazen.ChildCare:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.example.abodimazen.ChildCare:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.example.abodimazen.ChildCare:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.example.abodimazen.ChildCare:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.example.abodimazen.ChildCare:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -19481,18 +19534,18 @@ public final class R {
      */
     public static final int TextInputLayout_android_hint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxBackgroundColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:boxBackgroundColor
+     * @attr name com.example.abodimazen.ChildCare:boxBackgroundColor
      */
     public static final int TextInputLayout_boxBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxBackgroundMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxBackgroundMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -19506,11 +19559,11 @@ public final class R {
      * <tr><td>outline</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:boxBackgroundMode
+     * @attr name com.example.abodimazen.ChildCare:boxBackgroundMode
      */
     public static final int TextInputLayout_boxBackgroundMode=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxCollapsedPaddingTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxCollapsedPaddingTop}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19519,11 +19572,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:boxCollapsedPaddingTop
+     * @attr name com.example.abodimazen.ChildCare:boxCollapsedPaddingTop
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxCornerRadiusBottomEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxCornerRadiusBottomEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19532,11 +19585,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:boxCornerRadiusBottomEnd
+     * @attr name com.example.abodimazen.ChildCare:boxCornerRadiusBottomEnd
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxCornerRadiusBottomStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxCornerRadiusBottomStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19545,11 +19598,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:boxCornerRadiusBottomStart
+     * @attr name com.example.abodimazen.ChildCare:boxCornerRadiusBottomStart
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxCornerRadiusTopEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxCornerRadiusTopEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19558,11 +19611,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:boxCornerRadiusTopEnd
+     * @attr name com.example.abodimazen.ChildCare:boxCornerRadiusTopEnd
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxCornerRadiusTopStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxCornerRadiusTopStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19571,22 +19624,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:boxCornerRadiusTopStart
+     * @attr name com.example.abodimazen.ChildCare:boxCornerRadiusTopStart
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxStrokeColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxStrokeColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:boxStrokeColor
+     * @attr name com.example.abodimazen.ChildCare:boxStrokeColor
      */
     public static final int TextInputLayout_boxStrokeColor=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#boxStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#boxStrokeWidth}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19595,30 +19648,30 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:boxStrokeWidth
+     * @attr name com.example.abodimazen.ChildCare:boxStrokeWidth
      */
     public static final int TextInputLayout_boxStrokeWidth=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:counterEnabled
+     * @attr name com.example.abodimazen.ChildCare:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.abodimazen.fahad:counterMaxLength
+     * @attr name com.example.abodimazen.ChildCare:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19626,11 +19679,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:counterOverflowTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19638,21 +19691,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:counterTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:errorEnabled
+     * @attr name com.example.abodimazen.ChildCare:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19660,31 +19713,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:errorTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#helperText}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#helperText}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:helperText
+     * @attr name com.example.abodimazen.ChildCare:helperText
      */
     public static final int TextInputLayout_helperText=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#helperTextEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#helperTextEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:helperTextEnabled
+     * @attr name com.example.abodimazen.ChildCare:helperTextEnabled
      */
     public static final int TextInputLayout_helperTextEnabled=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#helperTextTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#helperTextTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19692,31 +19745,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:helperTextTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:helperTextTextAppearance
      */
     public static final int TextInputLayout_helperTextTextAppearance=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:hintAnimationEnabled
+     * @attr name com.example.abodimazen.ChildCare:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:hintEnabled
+     * @attr name com.example.abodimazen.ChildCare:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19724,21 +19777,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:hintTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:passwordToggleContentDescription
+     * @attr name com.example.abodimazen.ChildCare:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19746,32 +19799,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:passwordToggleDrawable
+     * @attr name com.example.abodimazen.ChildCare:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:passwordToggleEnabled
+     * @attr name com.example.abodimazen.ChildCare:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:passwordToggleTint
+     * @attr name com.example.abodimazen.ChildCare:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -19787,7 +19840,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:passwordToggleTintMode
+     * @attr name com.example.abodimazen.ChildCare:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=27;
     /**
@@ -19798,8 +19851,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ThemeEnforcement_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.example.abodimazen.fahad:enforceMaterialTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.example.abodimazen.fahad:enforceTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.example.abodimazen.ChildCare:enforceMaterialTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.example.abodimazen.ChildCare:enforceTextAppearance}</code></td><td></td></tr>
      * </table>
      * @see #ThemeEnforcement_android_textAppearance
      * @see #ThemeEnforcement_enforceMaterialTheme
@@ -19821,23 +19874,23 @@ public final class R {
      */
     public static final int ThemeEnforcement_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#enforceMaterialTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#enforceMaterialTheme}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:enforceMaterialTheme
+     * @attr name com.example.abodimazen.ChildCare:enforceMaterialTheme
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#enforceTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#enforceTextAppearance}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.abodimazen.fahad:enforceTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:enforceTextAppearance
      */
     public static final int ThemeEnforcement_enforceTextAppearance=2;
     /**
@@ -19849,33 +19902,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.example.abodimazen.fahad:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.abodimazen.fahad:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.example.abodimazen.fahad:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.abodimazen.fahad:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.example.abodimazen.fahad:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.abodimazen.fahad:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.example.abodimazen.fahad:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.example.abodimazen.fahad:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.example.abodimazen.fahad:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.example.abodimazen.fahad:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.example.abodimazen.fahad:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.abodimazen.fahad:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.abodimazen.fahad:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.example.abodimazen.fahad:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.example.abodimazen.fahad:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.example.abodimazen.fahad:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.abodimazen.fahad:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.abodimazen.fahad:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.example.abodimazen.fahad:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.example.abodimazen.fahad:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.abodimazen.fahad:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.abodimazen.fahad:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.example.abodimazen.fahad:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.example.abodimazen.fahad:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.example.abodimazen.fahad:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.abodimazen.fahad:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.example.abodimazen.fahad:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.example.abodimazen.ChildCare:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.abodimazen.ChildCare:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.example.abodimazen.ChildCare:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.abodimazen.ChildCare:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.example.abodimazen.ChildCare:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.abodimazen.ChildCare:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.example.abodimazen.ChildCare:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.example.abodimazen.ChildCare:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.example.abodimazen.ChildCare:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.example.abodimazen.ChildCare:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.example.abodimazen.ChildCare:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.abodimazen.ChildCare:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.abodimazen.ChildCare:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.example.abodimazen.ChildCare:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.example.abodimazen.ChildCare:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.example.abodimazen.ChildCare:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.abodimazen.ChildCare:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.abodimazen.ChildCare:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.example.abodimazen.ChildCare:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.example.abodimazen.ChildCare:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.abodimazen.ChildCare:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.abodimazen.ChildCare:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.example.abodimazen.ChildCare:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.example.abodimazen.ChildCare:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.example.abodimazen.ChildCare:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.abodimazen.ChildCare:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.example.abodimazen.ChildCare:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -19960,7 +20013,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -19973,21 +20026,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:buttonGravity
+     * @attr name com.example.abodimazen.ChildCare:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:collapseContentDescription
+     * @attr name com.example.abodimazen.ChildCare:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19995,11 +20048,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:collapseIcon
+     * @attr name com.example.abodimazen.ChildCare:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20008,11 +20061,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetEnd
+     * @attr name com.example.abodimazen.ChildCare:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20021,11 +20074,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetEndWithActions
+     * @attr name com.example.abodimazen.ChildCare:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20034,11 +20087,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetLeft
+     * @attr name com.example.abodimazen.ChildCare:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20047,11 +20100,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetRight
+     * @attr name com.example.abodimazen.ChildCare:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20060,11 +20113,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetStart
+     * @attr name com.example.abodimazen.ChildCare:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20073,11 +20126,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:contentInsetStartWithNavigation
+     * @attr name com.example.abodimazen.ChildCare:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20085,21 +20138,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:logo
+     * @attr name com.example.abodimazen.ChildCare:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:logoDescription
+     * @attr name com.example.abodimazen.ChildCare:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20108,21 +20161,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:maxButtonHeight
+     * @attr name com.example.abodimazen.ChildCare:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:navigationContentDescription
+     * @attr name com.example.abodimazen.ChildCare:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20130,11 +20183,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:navigationIcon
+     * @attr name com.example.abodimazen.ChildCare:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20142,21 +20195,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:popupTheme
+     * @attr name com.example.abodimazen.ChildCare:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:subtitle
+     * @attr name com.example.abodimazen.ChildCare:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20164,32 +20217,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:subtitleTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:subtitleTextColor
+     * @attr name com.example.abodimazen.ChildCare:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.abodimazen.fahad:title
+     * @attr name com.example.abodimazen.ChildCare:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20198,11 +20251,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:titleMargin
+     * @attr name com.example.abodimazen.ChildCare:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20211,11 +20264,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:titleMarginBottom
+     * @attr name com.example.abodimazen.ChildCare:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20224,11 +20277,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:titleMarginEnd
+     * @attr name com.example.abodimazen.ChildCare:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20237,11 +20290,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:titleMarginStart
+     * @attr name com.example.abodimazen.ChildCare:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20250,11 +20303,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:titleMarginTop
+     * @attr name com.example.abodimazen.ChildCare:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20263,11 +20316,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:titleMargins
+     * @attr name com.example.abodimazen.ChildCare:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20275,18 +20328,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:titleTextAppearance
+     * @attr name com.example.abodimazen.ChildCare:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:titleTextColor
+     * @attr name com.example.abodimazen.ChildCare:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -20298,9 +20351,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.example.abodimazen.fahad:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.example.abodimazen.fahad:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.example.abodimazen.fahad:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.example.abodimazen.ChildCare:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.example.abodimazen.ChildCare:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.example.abodimazen.ChildCare:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -20343,7 +20396,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20352,11 +20405,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:paddingEnd
+     * @attr name com.example.abodimazen.ChildCare:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20365,11 +20418,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.abodimazen.fahad:paddingStart
+     * @attr name com.example.abodimazen.ChildCare:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20377,7 +20430,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:theme
+     * @attr name com.example.abodimazen.ChildCare:theme
      */
     public static final int View_theme=4;
     /**
@@ -20388,8 +20441,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.abodimazen.fahad:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.abodimazen.fahad:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.abodimazen.ChildCare:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.abodimazen.ChildCare:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -20414,18 +20467,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.abodimazen.fahad:backgroundTint
+     * @attr name com.example.abodimazen.ChildCare:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.abodimazen.fahad.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.example.abodimazen.ChildCare.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20442,7 +20495,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.abodimazen.fahad:backgroundTintMode
+     * @attr name com.example.abodimazen.ChildCare:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**

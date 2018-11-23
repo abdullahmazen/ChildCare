@@ -30,7 +30,7 @@ import java.util.List;
 
 public class Profile extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private CollectionReference profileRef = db.collection("Child Profile");
+    private CollectionReference profileRef = db.collection("Child");
     private FirebaseAuth mAuth;
     private padapter adapter;
     @Override
