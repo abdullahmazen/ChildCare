@@ -51,7 +51,7 @@ public class Profile extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        startActivity(new Intent(Profile.this,User.class));
+                        startActivity(new Intent(Profile.this,MainActivity.class));
                         finish();
                     }
                 });

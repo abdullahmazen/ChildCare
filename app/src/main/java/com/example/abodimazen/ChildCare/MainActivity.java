@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mNext;
     private Button mBack;
     private Button mAbout;
+    private int mCurrentPage;
 
 
     @Override
@@ -74,6 +75,20 @@ public class MainActivity extends AppCompatActivity {
 
         mviewPager.addOnPageChangeListener(onPageChangeListener);
 addDotsIndiction(0);
+
+    mNext.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        mviewPager.setCurrentItem(mCurrentPage +1);
+    }
+    });
+
+    mBack.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            mviewPager.setCurrentItem(mCurrentPage -1);
+        }
+    });
     }
 
     public void addDotsIndiction(int position) {
@@ -105,6 +120,7 @@ addDotsIndiction(0);
         @Override
         public void onPageSelected(int i) {
 
+            mCurrentPage = i;
             addDotsIndiction(i);
 
             if (i==0){
