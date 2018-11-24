@@ -30,7 +30,7 @@ public class HospitalAppointments1F extends AppCompatActivity {
 
     private void setUpRecyclerView() {
 
-        Query query = childRef.whereEqualTo("hospitalName", "Soliman Fakeeh Hospital").whereEqualTo("dateStatus", "yes");
+        Query query = childRef.whereEqualTo("hospitalName", "Soliman Fakeeh hospital").whereEqualTo("dateStatus", "yes");
 
 
         FirestoreRecyclerOptions<Child> options = new FirestoreRecyclerOptions.Builder<Child>()

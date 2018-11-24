@@ -4,40 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/background"
     tools:context="com.example.abodimazen.ChildCare.Payment">
 
 
     <TextView
         android:id="@+id/ppt"
-        android:layout_width="150dp"
-        android:layout_marginLeft="120dp"
-        android:textSize="20dp"
-        android:text="Total Price"
-        android:layout_marginTop="70dp"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-300dp"
         android:gravity="center"
-        android:layout_height="wrap_content"/>
+        android:text="Total Price"
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp" />
 
 
     <Button
-        android:text="Paypal"
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:background="@drawable/paypal"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
         android:onClick="paypal"/>
 
     <Button
         android:id="@+id/inPerson"
-        android:text="Pay in Person"
-        android:layout_marginTop="250dp"
-        android:layout_width="match_parent"
+        android:background="@drawable/payinperson"
+        android:layout_marginTop="280dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="inPerson"/>
 
     <Button
         android:id="@+id/credit_card"
-        android:text="credit card"
-        android:layout_marginTop="300dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-       />
+        android:layout_width="172dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/visa" />
 </android.support.design.widget.CoordinatorLayout>

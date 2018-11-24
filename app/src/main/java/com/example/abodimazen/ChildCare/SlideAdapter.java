@@ -24,7 +24,7 @@ public class SlideAdapter extends PagerAdapter {
     public int[] Slide_image = {
 
             R.drawable.ic_launcher_child_img,
-            R.drawable.ic_launcher_foreground_phone,
+            R.drawable.ic_launcher_phone,
             R.drawable.email
 
     };

@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.abodimazen.fahad.R;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
@@ -31,6 +30,7 @@ public class padapter extends FirestoreRecyclerAdapter<addp, padapter.profileHol
 
 
 
+
     }
 
 
@@ -47,6 +47,7 @@ public class padapter extends FirestoreRecyclerAdapter<addp, padapter.profileHol
 
     class profileHolder extends RecyclerView.ViewHolder {
         TextView textViewName;
+
 
 
 

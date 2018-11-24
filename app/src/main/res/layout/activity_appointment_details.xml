@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#383153"
+    android:background="@mipmap/background"
     android:fitsSystemWindows="true"
     tools:context="com.example.abodimazen.ChildCare.AppointmentDetails">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="350dp"
         android:fitsSystemWindows="true">
 
     <android.support.design.widget.CollapsingToolbarLayout
@@ -19,7 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
-        app:contentScrim="?attr/colorPrimary"
         app:expandedTitleMarginStart="48dp"
         app:expandedTitleMarginEnd="64dp"
         android:fitsSystemWindows="true">
@@ -65,11 +64,7 @@
             android:layout_marginTop="5dp"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="36dp"
-                android:layout_margin="10dp"
-                android:src="@drawable/location_timeline" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,7 +89,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#383153"
         android:orientation="vertical">
 
     <LinearLayout
@@ -113,10 +107,7 @@
         app:marker_size="25dp" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+
 
 
         <TextView
@@ -125,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="-30dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
@@ -139,15 +130,24 @@
             app:layout_constraintVertical_bias="0.3" />
 
         <TextView
+            android:id="@+id/textView16"
+            android:layout_width="93dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="-30dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintStart_toEndOf="@+id/ParentsName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <TextView
             android:id="@+id/ParentsName"
             android:layout_width="131dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="-8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="-243dp"
             android:text="ParentName:"
             android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -158,15 +158,23 @@
             app:layout_constraintVertical_bias="0.039" />
 
         <TextView
+            android:id="@+id/textView13"
+            android:layout_width="93dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="-15dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintStart_toEndOf="@+id/ParentsName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <TextView
             android:id="@+id/DateofBirth"
             android:layout_width="92dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="-8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="-225dp"
             android:text="@string/date_of_birth"
             android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -177,15 +185,24 @@
             app:layout_constraintVertical_bias="0.385" />
 
         <TextView
+            android:id="@+id/textView17"
+            android:layout_width="93dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <TextView
             android:id="@+id/Bloodtype"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="-200dp"
+            android:layout_marginTop="18dp"
             android:text="BloodType"
             android:textColor="@color/colorWhite"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -195,26 +212,207 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.633" />
 
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="93dp"
+            android:layout_height="31dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/PhoneNumber"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-220dp"
+            android:layout_marginTop="37dp"
+            android:text="PhoneNumber:"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.213" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="93dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.638"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+
     </LinearLayout>
     </LinearLayout>
 
 
     </android.support.v4.widget.NestedScrollView>
 
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.vipul.hp_hp.timelineview.TimelineView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="25dp"
+                    android:layout_marginTop="-20dp"
+                    app:line="@color/colorWhite"
+                    app:line_size="1dp"
+                    app:marker="@drawable/ic_local_hospital"
+                    app:marker_size="25dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/Vaccination"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Vaccination"
+                        android:textColor="@color/colorWhite"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.065"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.469" />
+
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="93dp"
+                        android:layout_height="31dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.638"
+                        app:layout_constraintStart_toEndOf="@+id/ParentsName"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.038" />
+
+
+                    <TextView
+                        android:id="@+id/Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-8dp"
+                        android:text="Date Of Appointment:"
+                        android:textColor="@color/colorWhite"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.081"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.723" />
+
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="182dp"
+                        android:layout_height="31dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.638"
+                        app:layout_constraintStart_toEndOf="@+id/ParentsName"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.038" />
+
+
+
+                    <TextView
+                        android:id="@+id/TypeofPlan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-8dp"
+                        android:text="Type Of Plan:"
+                        android:textColor="@color/colorWhite"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.066"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.545" />
+
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="93dp"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-28dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.638"
+                        app:layout_constraintStart_toEndOf="@+id/ParentsName"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.038" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
 
     <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="200dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#383153"
             android:orientation="vertical">
 
             <LinearLayout
@@ -229,7 +427,7 @@
                     android:paddingLeft="25dp"
                     app:line="@color/colorWhite"
                     app:line_size="1dp"
-                    app:marker="@drawable/location_timeline"
+                    app:marker="@drawable/ic_location"
                     app:marker_size="25dp" />
 
 
@@ -247,7 +445,7 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginStart="8dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="8dp"
                         android:text="Address:"
                         android:textColor="@color/colorWhite"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -257,33 +455,43 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.122" />
 
+
+
+
                     <TextView
-                        android:id="@+id/PhoneNumber"
-                        android:layout_width="126dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="-7dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="PhoneNumber:"
+                        android:id="@+id/textView14"
+                        android:layout_width="93dp"
+                        android:layout_height="31dp"
                         android:textColor="@color/colorWhite"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.07"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintHorizontal_bias="0.638"
+                        app:layout_constraintStart_toEndOf="@+id/ParentsName"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.213" />
-
+                        app:layout_constraintVertical_bias="0.038" />
 
 
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
-
     </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:text="DONE"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="210dp"
+        android:background="@drawable/btn_backg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
 
 
 </android.support.design.widget.CoordinatorLayout>

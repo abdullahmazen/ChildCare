@@ -126,7 +126,7 @@ public class Child_Profile extends AppCompatActivity{
                     @Override
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                         if (i == 0) {
-                            Text_hospial .setText("King Abdullah hospital");
+                            Text_hospial .setText("King Abdullah Hospital");
                             Intent P = getIntent();
                             final Bundle a = P.getExtras();
                             if (a != null) {
@@ -135,14 +135,14 @@ public class Child_Profile extends AppCompatActivity{
 
                                 Map<String, Object> Ahospital = new HashMap<>();
 
-                                Ahospital.put("hospitalName", "King Abdullah hospital");
+                                Ahospital.put("hospitalName", "King Abdullah Hospital");
                                 db.collection("Child").document(n).update(Ahospital);
                             }
 
 
                         }
                         if (i == 1) {
-                            Text_hospial .setText("Suliman Fakeh Hospital");
+                            Text_hospial .setText("Soliman Fakeeh hospital");
 
                             Intent P = getIntent();
                             final Bundle a = P.getExtras();
@@ -151,7 +151,7 @@ public class Child_Profile extends AppCompatActivity{
 
 
                                 Map<String, Object> Shospital = new HashMap<>();
-                                Shospital.put("hospitalName", "Suliman Fakeh Hospital");
+                                Shospital.put("hospitalName", "Soliman Fakeeh hospital");
                                 db.collection("Child").document(n).update(Shospital);
                             }
                         }

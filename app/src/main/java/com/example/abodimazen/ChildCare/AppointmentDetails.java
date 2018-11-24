@@ -22,7 +22,7 @@ import java.util.Map;
 
 public class AppointmentDetails extends AppCompatActivity {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private TextView parent, address, phone, cname, datebirth, vacc, typeplan, blood,appointment, hospitalname;
+    private TextView parent, address, phone, cname, datebirth, vacc, typeplan, blood,appointment;
     private Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,6 @@ public class AppointmentDetails extends AppCompatActivity {
         typeplan = findViewById(R.id.textView19);
         blood = findViewById(R.id.textView20);
         appointment = findViewById(R.id.textView21);
-        hospitalname = findViewById(R.id.textView22);
         button = findViewById(R.id.button);
 
         Intent in = getIntent();
@@ -60,7 +59,6 @@ public class AppointmentDetails extends AppCompatActivity {
                             String Typeplan = documentSnapshot.getString("typeOfPlan");
                             String Blood = documentSnapshot.getString("bloodType");
                             String Appointment = documentSnapshot.getString("date");
-                            String Hospitalname = documentSnapshot.getString("hospitalName");
                             String Id = documentSnapshot.getString("user_id");
 
                             cname.setText(cName);
@@ -69,7 +67,6 @@ public class AppointmentDetails extends AppCompatActivity {
                             typeplan.setText(Typeplan);
                             blood.setText(Blood);
                             appointment.setText(Appointment);
-                            hospitalname.setText(Hospitalname);
 
                             db.collection("Users").document(Id).get()
                                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {

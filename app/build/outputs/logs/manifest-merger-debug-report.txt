@@ -4,6 +4,7 @@ ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/Androi
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
+MERGED from [com.shuhart.stepview:stepview:1.2.8] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/stepview-1.2.8.aar/2f067aa3e7c5b89eab731476307dcd66/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.sundeepk:compact-calendar-view:1.9.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/compact-calendar-view-1.9.1.aar/32f8858d2700c8ebede645486d203b5e/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:2:1-17:12
 MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/AndroidManifest.xml:2:1-114:12
@@ -307,6 +308,8 @@ uses-sdk
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
+MERGED from [com.shuhart.stepview:stepview:1.2.8] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/stepview-1.2.8.aar/2f067aa3e7c5b89eab731476307dcd66/AndroidManifest.xml:7:5-9:41
+MERGED from [com.shuhart.stepview:stepview:1.2.8] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/stepview-1.2.8.aar/2f067aa3e7c5b89eab731476307dcd66/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.sundeepk:compact-calendar-view:1.9.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/compact-calendar-view-1.9.1.aar/32f8858d2700c8ebede645486d203b5e/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.sundeepk:compact-calendar-view:1.9.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/compact-calendar-view-1.9.1.aar/32f8858d2700c8ebede645486d203b5e/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:7:5-9:41

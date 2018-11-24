@@ -18,6 +18,17 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
+                                      <entry key="backgroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="49" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
@@ -33,11 +44,14 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundImage" value="$USER_HOME$/Desktop/kaah.jpg" />
-                                      <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/kaah.jpg" />
-                                      <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="ic_launcher_kaah" />
+                                      <entry key="backgroundImage" value="$USER_HOME$/Desktop/child_img.jpg" />
+                                      <entry key="backgroundLayerName" value="ic_launcher_back_child_img" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/child_img.jpg" />
+                                      <entry key="foregroundLayerName" value="ic_launcher_child" />
+                                      <entry key="legacyIconShape" value="CIRCLE" />
+                                      <entry key="outputName" value="ic_launcher_child_img" />
+                                      <entry key="previewDensity" value="MEDIUM" />
+                                      <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -68,7 +82,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_account_circle_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_local_hospital_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -78,8 +92,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="c62bff" />
-                            <entry key="outputName" value="ic_account_circle" />
+                            <entry key="color" value="0019ff" />
+                            <entry key="outputName" value="ic_local_hospital" />
                             <entry key="sourceFile" value="$USER_HOME$" />
                           </map>
                         </option>
