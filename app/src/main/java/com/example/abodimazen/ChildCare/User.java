@@ -15,9 +15,10 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class User extends AppCompatActivity {
 
-    // Create a Spinner and EditText Object to get the Phone Number
     private Spinner spinner;
-    private EditText editText;
+    private EditText editText,address, name;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,8 @@ public class User extends AppCompatActivity {
 
 
         editText = findViewById(R.id.editTextPhone);
-
+        address = findViewById(R.id.address);
+        name = findViewById(R.id.name);
         editText.setTextColor(Color.WHITE);
         findViewById(R.id.buttonContinue).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,8 @@ public class User extends AppCompatActivity {
 
                 String code = CountryData.countryAreaCodes[spinner.getSelectedItemPosition()];
                 String number = editText.getText().toString().trim();
+                String Address = address.getText().toString().trim();
+                String Name = name.getText().toString().trim();
 
                 if (number.isEmpty() || number.length() < 9) {
                     editText.setError("Valid Number is required!");
@@ -48,6 +52,8 @@ public class User extends AppCompatActivity {
                 String phoneNumber = "+" + code + number;
 
                 Intent intent = new Intent(User.this, VerifyPhoneActivity.class);
+                intent.putExtra("Name", Name);
+                intent.putExtra("Address", Address);
                 intent.putExtra("phoneNumber", phoneNumber);
                 startActivity(intent);
             }

@@ -242,7 +242,7 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="93dp"
+            android:layout_width="155dp"
             android:layout_height="31dp"
             android:layout_marginTop="40dp"
             android:textColor="@color/colorWhite"
@@ -456,13 +456,13 @@
                         app:layout_constraintVertical_bias="0.122" />
 
 
-
-
                     <TextView
                         android:id="@+id/textView14"
                         android:layout_width="93dp"
                         android:layout_height="31dp"
                         android:textColor="@color/colorWhite"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="-35dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.638"

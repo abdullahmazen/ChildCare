@@ -28,54 +28,40 @@ public class Plan extends AppCompatActivity {
         standerd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String Standrd = "Standred"+ "\n" + "50.00";
-
                 Intent P = getIntent();
                 final Bundle a = P.getExtras();
 
-                    String n = (String) a.get("id");
+                String n = (String) a.get("id");
 
-                    String pStandred = standerd.getText().toString();
-
-                    Map<String, Object> Standred = new HashMap<>();
-                    Standred.put("typeOfPlan", Standrd);
-                    db.collection("Child").document(n).update(Standred);
-
-
+                Map<String, Object> Standard = new HashMap<>();
+                Standard.put("typeOfPlan", "Standard");
+                Standard.put("price", "50.00");
+                db.collection("Child").document(n).update(Standard);
 
 
                 Intent q = new Intent(Plan.this, Payment.class);
-
                 q.putExtra("id", n);
                 startActivity(q);
-
-
-
-    }
-});
+            }
+        });
 
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String ppPlus = "Plus"+ "\n" + "200.00";
-
                 Intent P = getIntent();
                 final Bundle a = P.getExtras();
 
+                String n = (String) a.get("id");
 
-                    String n = (String) a.get("id");
+                Map<String, Object> Plus = new HashMap<>();
+                Plus.put("typeOfPlan", "Plus");
+                Plus.put("price", "200.00");
+                db.collection("Child").document(n).update(Plus);
 
-                    String pPlus = plus.getText().toString();
-                    Map<String, Object> Plus = new HashMap<>();
-                    Plus.put("typeOfPlan", ppPlus);
-                    db.collection("Child").document(n).update(Plus);
 
-                    Intent q = new Intent(Plan.this, Payment.class);
-
-                    q.putExtra("id", n);
-                    startActivity(q);
-
+                Intent q = new Intent(Plan.this, Payment.class);
+                q.putExtra("id", n);
+                startActivity(q);
             }
         });
     }

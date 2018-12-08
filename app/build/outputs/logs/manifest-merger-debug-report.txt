@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
+ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
 MERGED from [com.shuhart.stepview:stepview:1.2.8] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/stepview-1.2.8.aar/2f067aa3e7c5b89eab731476307dcd66/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.sundeepk:compact-calendar-view:1.9.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/compact-calendar-view-1.9.1.aar/32f8858d2700c8ebede645486d203b5e/AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:2:1-17:12
@@ -79,20 +79,20 @@ MERGED from [com.android.support:print:28.0.0] /Users/Abodimazen/.gradle/caches/
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.0.aar/2b0268b78b668b2bd5f10e6f2e35f8a8/AndroidManifest.xml:2:1-11:12
 MERGED from [io.card:android-sdk:5.5.1] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.1.aar/54818555a2f855dc0ec81b028b841cd9/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/6cb32ab046d010992e987c596df70313/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:3:5-43
 		INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
+		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
 		INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
-		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-46:12
+		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:1-48:12
 		INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:2:11-69
@@ -125,7 +125,7 @@ ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/Androi
 	android:name
 		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:6:22-77
 application
-ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:8:5-44:19
+ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:8:5-46:19
 MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.vipulasri:timelineview:1.0.3] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/timelineview-1.0.3.aar/cf674012dbb10f8f0955880b260ea3df/AndroidManifest.xml:11:5-15:19
 MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/Abodimazen/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/423da9474dc35c85f13a9b6b4c4c83dd/AndroidManifest.xml:15:5-112:19
@@ -301,9 +301,17 @@ ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/Androi
 	android:name
 		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:42:19-47
 activity#com.example.abodimazen.ChildCare.BookingDates
-ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:43:9-91
+ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:43:9-82
 	android:name
 		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:43:19-79
+activity#com.example.abodimazen.ChildCare.forgotPassword
+ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:44:9-84
+	android:name
+		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:44:19-81
+activity#com.example.abodimazen.ChildCare.childInfo
+ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:45:9-88
+	android:name
+		ADDED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml:45:19-76
 uses-sdk
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/Abodimazen/AndroidStudioProjects/ChildCare/app/src/main/AndroidManifest.xml

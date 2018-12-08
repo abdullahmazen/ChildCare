@@ -42,8 +42,7 @@ public class Child_record extends AppCompatActivity {
     private TextView textView_First_Primary;
     private static final int GALLERY_INTENT = 1;
     private Uri mUri;
-    private ImageView ImageView_choose_image;
-    private ImageView ImageView_choose_image1;
+
     private TextView textView_Dates_At_Birth;
     private TextView textView_Dates_2Month;
     private TextView textView_Dates_4Month;
@@ -80,8 +79,6 @@ public class Child_record extends AppCompatActivity {
         textViewـEighteen_Month = findViewById(R.id.textViewـEighteen_Month);
         textView_Twenty_four_Month = findViewById(R.id.textView_Twenty_four_Month);
         textView_First_Primary = findViewById(R.id.textView_First_Primary);
-        ImageView_choose_image = findViewById(R.id.ImageView_choose_image);
-        ImageView_choose_image1 = findViewById(R.id.ImageView_choose_image1);
         textView_Dates_At_Birth = findViewById(R.id.textView_Dates_At_Birth);
         textView_Dates_2Month = findViewById(R.id.textView_Dates_2Month);
         textView_Dates_4Month = findViewById(R.id.textView_Dates_4Month);
@@ -91,6 +88,7 @@ public class Child_record extends AppCompatActivity {
         textView_Dates_18Month = findViewById(R.id.textView_Dates_18Month);
         textView_Dates_24Month = findViewById(R.id.textView_Dates_24Month);
         textView_Dates_First_Primary = findViewById(R.id.textView_Dates_First_Primary);
+
 
 
 
@@ -104,7 +102,7 @@ public class Child_record extends AppCompatActivity {
                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
-                            String Lastvaccination = documentSnapshot.getString("lastvaccination");
+                            String Lastvaccination = documentSnapshot.getString("lastVacc");
 
                             if (Lastvaccination.equals("At Birth")) {
                                 textView_At_Birth.setText(checkedMark);
@@ -169,7 +167,6 @@ public class Child_record extends AppCompatActivity {
                                 textView_Nine_Month.setText(checkedMark);
                                 textView_Twelve_Month.setText("Next vaccination");
 
-
                                 textView_At_Birth.setTextSize(30);
                                 textView_Two_Month.setTextSize(30);
                                 textView_Four_Month.setTextSize(30);
@@ -194,13 +191,13 @@ public class Child_record extends AppCompatActivity {
                                 textView_Twelve_Month.setText(checkedMark);
                                 textViewـEighteen_Month.setText("Next vaccination");
 
-
                                 textView_At_Birth.setTextSize(30);
                                 textView_Two_Month.setTextSize(30);
                                 textView_Four_Month.setTextSize(30);
                                 textView_Six_Month.setTextSize(30);
                                 textView_Nine_Month.setTextSize(30);
                                 textView_Twelve_Month.setTextSize(30);
+
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -227,7 +224,6 @@ public class Child_record extends AppCompatActivity {
                                 textView_Nine_Month.setTextSize(30);
                                 textView_Twelve_Month.setTextSize(30);
                                 textViewـEighteen_Month.setTextSize(30);
-
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -257,7 +253,6 @@ public class Child_record extends AppCompatActivity {
                                 textView_Twelve_Month.setTextSize(30);
                                 textViewـEighteen_Month.setTextSize(30);
                                 textView_Twenty_four_Month.setTextSize(30);
-
 
                                 textView_At_Birth.setTextColor(Color.GREEN);
                                 textView_Two_Month.setTextColor(Color.GREEN);
@@ -301,7 +296,7 @@ public class Child_record extends AppCompatActivity {
                                 textView_First_Primary.setTextColor(Color.GREEN);
 
                             }
-                            String pbirth = documentSnapshot.getString("birth");
+                            String pbirth = documentSnapshot.getString("dateOfBirth");
 
 
                             textView_Dates_At_Birth.setText(pbirth);
@@ -441,7 +436,7 @@ public class Child_record extends AppCompatActivity {
                             }
 
 
-                            calendar6.add(Calendar.DATE, 2520);
+                            calendar6.add(Calendar.DATE, 2160);
                             FirstPrimarysdf = new SimpleDateFormat("dd/MM/yyyy");
                             Date nFirstPrimary = new Date(calendar6.getTimeInMillis());
                             FirstPrimary = FirstPrimarysdf.format(nFirstPrimary);
@@ -450,46 +445,26 @@ public class Child_record extends AppCompatActivity {
 
                         }
                     });
-
-        }
-
-
-
-
-
-
-        }
-
-
-
-    public void button_choose_image(View view) {
-        openFileChooser();
-
-    }
-
-
-    private void openFileChooser() {
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent, GALLERY_INTENT);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == GALLERY_INTENT && resultCode == RESULT_OK && data != null && data.getData()!= null) {
-
-            mUri = data.getData();
-            Picasso.with(this).load(mUri).into(ImageView_choose_image);
-
-
-
-
-
-
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);

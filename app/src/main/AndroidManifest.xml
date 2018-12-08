@@ -40,7 +40,9 @@
         <activity android:name="com.example.abodimazen.ChildCare.HospitalAppointments1F" />
         <activity android:name="com.example.abodimazen.ChildCare.AppointmentDetails1F" />
         <activity android:name=".BookingDates" />
-        <activity android:name="com.example.abodimazen.ChildCare.BookingDates"></activity>
+        <activity android:name="com.example.abodimazen.ChildCare.BookingDates" />
+        <activity android:name="com.example.abodimazen.ChildCare.forgotPassword" />
+        <activity android:name="com.example.abodimazen.ChildCare.childInfo"></activity>
     </application>
 
 </manifest>

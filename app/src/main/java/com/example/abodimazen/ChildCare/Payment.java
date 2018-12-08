@@ -33,9 +33,8 @@ public class Payment extends AppCompatActivity {
 
 
     private Button paypal;
-    private Button inPerson,credit_card;
+    private Button inPerson;
     private TextView ppt;
-
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -59,25 +58,40 @@ public class Payment extends AppCompatActivity {
         m_service.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, m_PayPalConfiguration);
         startService(m_service);
 
+        inPerson = findViewById(R.id.inPerson);
+        ppt =  findViewById(R.id.price);
 
-        inPerson = (Button) findViewById(R.id.inPerson);
-        ppt = (TextView) findViewById(R.id.ppt);
-        credit_card = (Button) findViewById(R.id.credit_card);
+
 
         Intent in = getIntent();
         final Bundle b = in.getExtras();
         if (b != null) {
 
-            String n = (String) b.get("id");
+            final String n = (String) b.get("id");
+
+            inPerson.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Map<String, Object> inP = new HashMap<>();
+
+                    inP.put("status", "In Person");
+                    db.collection("Child").document(n).update(inP);
+
+                    Intent q = new Intent(Payment.this, Child_Profile.class);
+                    q.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(q);
+
+                }
+            });
 
             db.collection("Child").document(n).get()
                     .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
-                            String Pprice = documentSnapshot.getString("typeOfPlan");
+                            String Pprice = documentSnapshot.getString("price");
 
 
-                            ppt.setText(Pprice);
+                            ppt.setText(Pprice + " riyals");
 
                         }
                     });

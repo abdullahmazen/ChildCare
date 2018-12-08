@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,39 +8,65 @@
     tools:context="com.example.abodimazen.ChildCare.Payment">
 
 
-    <TextView
-        android:id="@+id/ppt"
-        android:layout_width="214dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="-300dp"
-        android:gravity="center"
-        android:text="Total Price"
-        android:textColor="@color/colorWhite"
-        android:textSize="40dp" />
-
-
     <Button
-        android:background="@drawable/paypal"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="10dp"
-        android:onClick="paypal"/>
+        android:id="@+id/paypal"
+        android:layout_width="241dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="180dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/paypal1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
 
     <Button
         android:id="@+id/inPerson"
-        android:background="@drawable/payinperson"
-        android:layout_marginTop="280dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="inPerson"/>
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/inperson"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="167dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/paypal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/credit_card"
-        android:layout_width="172dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="160dp"
-        android:background="@drawable/visa" />
-</android.support.design.widget.CoordinatorLayout>
+        android:id="@+id/button2"
+        android:layout_width="246dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/visa1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68" />
+</android.support.constraint.ConstraintLayout>

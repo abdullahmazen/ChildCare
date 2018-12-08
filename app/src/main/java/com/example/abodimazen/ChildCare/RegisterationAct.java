@@ -158,7 +158,8 @@ public class RegisterationAct extends AppCompatActivity implements AdapterView.O
                                     Email,
                                     PhoneNumber,
                                     Address,
-                                    TypeOfUser
+                                    TypeOfUser,
+                                    null
                             );
 
                             FirebaseFirestore.getInstance().collection("Users").document(FirebaseAuth.getInstance().getCurrentUser().getUid()).set(user)

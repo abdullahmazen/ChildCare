@@ -93,15 +93,15 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
     public void add(View v) {
 
         String Name = editTextName.getText().toString();
-        String Birth =  dayFinal + "/" + monthFinal  +"/" +  yearFinal ;
-        String Place_Birth = editTextPlace_Birth.getText().toString();
+        String DateOfBirth =  dayFinal + "/" + monthFinal  +"/" +  yearFinal ;
+        String PlaceOfBirth = editTextPlace_Birth.getText().toString();
         String gender = Sex.Sex[spinner.getSelectedItemPosition()];
-        String Bload = Bloods.Boolds[spinner1.getSelectedItemPosition()];
-        String Lastvaccination = Spinner_Vaccination.getSelectedItem().toString();
+        String BloodType = Bloods.Boolds[spinner1.getSelectedItemPosition()];
+        String lastVacc = Spinner_Vaccination.getSelectedItem().toString();
         String user_id = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        String hospital = "";
-        String TypeOfPlan ="";
-        String appounment = "";
+        String hospitalName = "";
+        String typeOfPlan ="";
+        String date = "";
         String PlanSatus = "";
         String PhotoURL = "";
 
@@ -109,30 +109,52 @@ public class NewChild extends AppCompatActivity  implements DatePickerDialog.OnD
 
 
 
+        if(Name.isEmpty()){
+            editTextName.setError("Name is required!");
+            editTextName.requestFocus();
+            return;
+        }
+        if(BloodType.isEmpty()){
+            TextViewBload.requestFocus();
+            return;
+        }
+        if(DateOfBirth.isEmpty()){
+            TextViewBirth.setError("Date of birth is required!");
+            TextViewBirth.requestFocus();
+            return;
+        }
+        if(gender.isEmpty()){
+            TextViewSex.requestFocus();
+            return;
+        }
+        if(PlaceOfBirth.isEmpty()){
+            editTextPlace_Birth.setError("Place Of Birth is required!");
+            editTextPlace_Birth.requestFocus();
+            return;
+        }
 
 
 
 
 
-
-        addp addd = new addp( Name,  Birth,  gender,  Bload, user_id, hospital, TypeOfPlan,appounment, PlanSatus, Place_Birth, Lastvaccination, PhotoURL);
+        addp addd = new addp( Name,  DateOfBirth,  gender,  BloodType, user_id, hospitalName, typeOfPlan,date, PlanSatus, PlaceOfBirth, lastVacc, PhotoURL);
 
         addd.setName(Name);
-        addd.setBirth(Birth);
+        addd.setDateOfBirth(DateOfBirth);
         addd.setGender(gender);
-        addd.setBload(Bload);
+        addd.setBloodType(BloodType);
         addd.setUser_id(user_id);
-        addd.setHospital(hospital);
-        addd.setTypeOfPlan(TypeOfPlan);
-        addd.setAppounment(appounment);
+        addd.setHospital(hospitalName);
+        addd.setTypeOfPlan(typeOfPlan);
+        addd.setAppounment(date);
         addd.setPlanSatus(PlanSatus);
-        addd.setPlace_Birth(Place_Birth);
-        addd.setLastvaccination(Lastvaccination);
+        addd.setPlace_Birth(PlaceOfBirth);
+        addd.setLastVacc(lastVacc);
         addd.setPhotoURL(PhotoURL);
 
 
 
-        TextViewBirth.setText(Birth);
+        TextViewBirth.setText(DateOfBirth);
 
 
 

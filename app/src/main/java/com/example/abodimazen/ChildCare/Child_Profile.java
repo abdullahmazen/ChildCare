@@ -40,18 +40,13 @@ import java.util.Map;
 
 public class Child_Profile extends AppCompatActivity{
     private TextView name;
-    private TextView gender;
-    private TextView birth;
-    private TextView bload;
-    private TextView Text_Dates;
-    private Button Button_record;
+
+    private Button Button_record,information,bloodResult,upload,make;
     private TextView Text_record;
-    private TextView Text_hospial;
-    private TextView Text_Plan;
-    private TextView Text_Satus;
+    private TextView info,textView5;
+
     private ImageView ImageView_choose_image;
     private  Uri mUri;
-    private Button make,upload;
     private StorageTask mUploadTask;
 
 
@@ -80,20 +75,19 @@ public class Child_Profile extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_child__profile);
         mAuth = FirebaseAuth.getInstance();
-        make =  findViewById(R.id.make);
-        name = findViewById(R.id.text_view_Namee);
-        gender = findViewById(R.id.text_view_Gender);
-        birth = findViewById(R.id.text_view_Birth);
-        bload = findViewById(R.id.text_view_Blood);
-        Text_Dates = findViewById(R.id.Text_Dates);
-        Text_record = findViewById(R.id.Text_record);
-        Text_hospial = findViewById(R.id.Text_hospial);
-        Text_Plan = findViewById(R.id.Text_Plan);
-        Text_Satus = findViewById(R.id.Text_Satus);
-        Button_record = findViewById(R.id.Button_record);
-        ImageView_choose_image = findViewById(R.id.ImageView_choose_image);
+        make =  findViewById(R.id.imageView);
+        name = findViewById(R.id.nameProfile);
+        Text_record = findViewById(R.id.textView6);
+        info = findViewById(R.id.textView4);
+        Button_record = findViewById(R.id.record);
+        ImageView_choose_image = findViewById(R.id.imageView4);
         mStorageRef = FirebaseStorage.getInstance().getReference("Photo");
         upload = findViewById(R.id.buttonUpload);
+        information = findViewById(R.id.info);
+        bloodResult = findViewById(R.id.bloodResults);
+        textView5 = findViewById(R.id.textView5);
+
+
 
 
 
@@ -126,12 +120,10 @@ public class Child_Profile extends AppCompatActivity{
                     @Override
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                         if (i == 0) {
-                            Text_hospial .setText("King Abdullah Hospital");
                             Intent P = getIntent();
                             final Bundle a = P.getExtras();
                             if (a != null) {
                                 String n = (String) a.get("id");
-
 
                                 Map<String, Object> Ahospital = new HashMap<>();
 
@@ -142,16 +134,14 @@ public class Child_Profile extends AppCompatActivity{
 
                         }
                         if (i == 1) {
-                            Text_hospial .setText("Soliman Fakeeh hospital");
-
                             Intent P = getIntent();
                             final Bundle a = P.getExtras();
                             if (a != null) {
                                 String n = (String) a.get("id");
 
-
                                 Map<String, Object> Shospital = new HashMap<>();
-                                Shospital.put("hospitalName", "Soliman Fakeeh hospital");
+
+                                Shospital.put("hospitalName", "Soliman Fakeeh Hospital");
                                 db.collection("Child").document(n).update(Shospital);
                             }
                         }
@@ -225,16 +215,8 @@ public class Child_Profile extends AppCompatActivity{
                         @Override
                         public void onSuccess(DocumentSnapshot documentSnapshot) {
                             String pName = documentSnapshot.getString("name");
-                            String pgender = documentSnapshot.getString("gender");
-                            String pbirth = documentSnapshot.getString("birth");
-                            String pbload = documentSnapshot.getString("bload");
-                            String pDates = documentSnapshot.getString("appounment");
-                            String pHospital = documentSnapshot.getString("hospitalName");
                             String pPlan = documentSnapshot.getString("typeOfPlan");
-                            String pSatus = documentSnapshot.getString("planSatus");
-                            String Lastvaccination = documentSnapshot.getString("lastvaccination");
                             String photo = documentSnapshot.getString("photoURL");
-                            String Appointment = documentSnapshot.getString("date");
 
 
 
@@ -243,24 +225,36 @@ public class Child_Profile extends AppCompatActivity{
                             }
 
                             name.setText(pName);
-                            gender.setText(pgender);
-                            birth.setText(pbirth);
-                            bload.setText(pbload);
-                            Text_Dates.setText(pDates);
-                            Text_hospial.setText(pHospital);
-                            Text_Plan.setText(pPlan);
-                            Text_Satus.setText(pSatus);
-                            Text_record.setText(Lastvaccination);
-                            Text_Dates.setText( "Your Appointment" + "\n" + Appointment);
 
-
-
+                            if(pPlan.equals("Plus")){
+                                bloodResult.setVisibility(View.VISIBLE);
+                                textView5.setVisibility(View.VISIBLE);
+                            }else{
+                                bloodResult.setVisibility(View.GONE);
+                                textView5.setVisibility(View.GONE);
+                            }
                         }
                     });
-
-
-
         }
+        information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent in = getIntent();
+                Bundle b = in.getExtras();
+
+                if(b != null) {
+
+                    String n = (String) b.get("id");
+                    Intent i = new Intent(Child_Profile.this, childInfo.class);
+                    i.putExtra("id", n);
+                    startActivity(i);
+                }
+            }
+        });
+
+
+
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -370,7 +364,7 @@ public class Child_Profile extends AppCompatActivity{
 
     }
     public void setImageUrl(String imageUrl) {
-        ImageView_choose_image = findViewById(R.id.ImageView_choose_image);
+        ImageView_choose_image = findViewById(R.id.imageView4);
 
         Picasso.with(this)
                 .load(imageUrl)

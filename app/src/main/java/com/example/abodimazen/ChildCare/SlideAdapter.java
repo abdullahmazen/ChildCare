@@ -31,9 +31,9 @@ public class SlideAdapter extends PagerAdapter {
 
     public String[] Slide_Tile = {
 
-            "Our Application Care your Child Vaccination" + "\n" +  "and helping you from teh hassle of" + "\n" + "going to hospital to Vaccinate your child" + "\n " +"\n" + " instead we make they  come to you" + "\n" + "with our application you can monitor" + "\n" + "the status of  your Child vaccination",
-            "Sign in With Phone Number",
-            "Sign in With Email"
+            "Our Application Takes Care of your Child Vaccination," + "\n" +  "and helps you from the hassle of" + "\n" + "going to the hospital to Vaccinate your child," + "\n " + " instead we come to your door step." + "\n" + "With our application you can monitor" + "\n" + "the status of your Child's vaccination.",
+            "Sign in with Phone Number",
+            "Sign in with Email"
 
     };
     @Override

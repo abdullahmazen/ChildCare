@@ -161,6 +161,8 @@ public class AppointmentDetails1F extends AppCompatActivity {
                             updates.put("status", FieldValue.delete());
                             updates.put("typeOfPlan", "");
                             updates.put("dateStatus","no");
+                            updates.put("datePriority", 0);
+
 
                             db.collection("Child").document(n).update(updates).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

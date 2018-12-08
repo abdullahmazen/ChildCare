@@ -4,16 +4,16 @@ package com.example.abodimazen.ChildCare;
 public class addp {
 
     private String Name;
-    private String Birth;
+    private String dateOfBirth;
     private String gender;
-    private String Bload;
+    private String bloodType;
     private String user_id;
     private String hospital;
     private String TypeOfPlan;
     private String appounment;
     private String PlanSatus;
     private String Place_Birth;
-    private String Lastvaccination;
+    private String lastVacc;
     private String PhotoURL;
 
 
@@ -22,18 +22,18 @@ public class addp {
 
     }
 
-    public addp(String name, String birth, String gender, String bload, String user_id, String hospital, String TypeOfPlan, String appounment, String PlanSatus, String Place_Birth, String Lastvaccination, String photoURL ) {
+    public addp(String name, String dateOfBirth, String gender, String bloodType, String user_id, String hospital, String TypeOfPlan, String appounment, String PlanSatus, String Place_Birth, String lastVacc, String photoURL ) {
         this.Name = name;
-        this.Birth = birth;
+        this.dateOfBirth = dateOfBirth;
         this.gender = gender;
-        this.Bload = bload;
+        this.bloodType = bloodType;
         this.user_id = user_id;
         this.hospital = hospital;
         this.TypeOfPlan = TypeOfPlan;
         this.appounment = appounment;
         this.PlanSatus = PlanSatus;
         this.Place_Birth = Place_Birth;
-        this.Lastvaccination = Lastvaccination;
+        this.lastVacc = lastVacc;
         this.PhotoURL = photoURL;
 
 
@@ -48,12 +48,20 @@ public class addp {
         Name = name;
     }
 
-    public String getBirth() {
-        return Birth;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setBirth(String birth) {
-        Birth = birth;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getBloodType() {
+        return bloodType;
+    }
+
+    public void setBloodType(String bloodType) {
+        this.bloodType = bloodType;
     }
 
     public String getGender() {
@@ -64,13 +72,6 @@ public class addp {
         this.gender = gender;
     }
 
-    public String getBload() {
-        return Bload;
-    }
-
-    public void setBload(String bload) {
-        Bload = bload;
-    }
 
     public String getUser_id() {
         return user_id;
@@ -121,12 +122,12 @@ public class addp {
         Place_Birth = place_Birth;
     }
 
-    public String getLastvaccination() {
-        return Lastvaccination;
+    public String getLastVacc() {
+        return lastVacc;
     }
 
-    public void setLastvaccination(String lastvaccination) {
-        Lastvaccination = lastvaccination;
+    public void setLastVacc(String lastVacc) {
+        this.lastVacc = lastVacc;
     }
 
     public String getPhotoURL() {

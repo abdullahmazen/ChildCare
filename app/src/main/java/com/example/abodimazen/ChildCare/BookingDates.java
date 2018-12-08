@@ -37,6 +37,7 @@ public class BookingDates extends AppCompatActivity {
         final Button save = findViewById(R.id.saveDate);
 
         final List<String> idlist = new ArrayList<>();
+        final List<Integer> priorityList = new ArrayList<>();
         final List<String> list = new ArrayList<>();
 
         //list.add("Choose a Date");
@@ -48,6 +49,7 @@ public class BookingDates extends AppCompatActivity {
                     for (QueryDocumentSnapshot document : task.getResult()) {
 
                         list.add(document.get("Date").toString());
+                        priorityList.add(document.getLong("priority").intValue());
                         idlist.add(document.getId());
 
 
@@ -66,6 +68,7 @@ public class BookingDates extends AppCompatActivity {
                                 @Override
                                 public void onClick(View view) {
                                     String id = idlist.get(i);
+                                    int priority = priorityList.get(i);
                                     String ddate = list.get(i);
 
                                     Intent b = getIntent();
@@ -76,6 +79,7 @@ public class BookingDates extends AppCompatActivity {
                                     Map<String, Object> date = new HashMap<>();
 
                                     date.put("date", ddate);
+                                    date.put("datePriority", priority);
                                     date.put("dateStatus","yes");
 
                                     db.collection("Child").document(n).update(date);

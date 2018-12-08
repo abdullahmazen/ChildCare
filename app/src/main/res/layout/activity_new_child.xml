@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abodimazen.ChildCare.NewChild"
+    android:background="@mipmap/background"
 
     >
 
@@ -19,6 +20,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/textview"
         android:textAlignment="center"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +39,9 @@
         android:layout_marginTop="8dp"
         android:hint="Place of Birth"
         android:textAlignment="center"
+        android:textColorHint="#ffffff"
+        android:textColor="@color/colorWhite"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -52,6 +57,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:hint="Last Vaccination"
+        android:textColorHint="#ffffff"
+
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +76,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="choose"
+        android:textColor="@color/colorWhite"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.795"
@@ -83,9 +92,11 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:textColor="@color/colorWhite"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Full Name"
+        android:textColorHint="#ffffff"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -104,8 +115,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:textColor="@color/colorWhite"
+
         android:hint="@string/date_of_birth"
         android:textAlignment="center"
+        android:textColorHint="#ffffff"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
@@ -119,18 +134,12 @@
         android:id="@+id/gender"
         android:layout_width="86dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="@string/gender"
+        android:textColor="#ffffff"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/TypeB"
-        app:layout_constraintEnd_toStartOf="@+id/spinnerGender"
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Date"
-        app:layout_constraintVertical_bias="0.771" />
+
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="327dp" />
 
     <Spinner
         android:id="@+id/spinnerGender"
@@ -140,6 +149,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.57"
@@ -156,6 +167,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+
         app:layout_constraintBottom_toTopOf="@+id/add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.246"
@@ -172,6 +185,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/blood_type"
         android:textSize="20sp"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.029"

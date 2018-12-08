@@ -55,7 +55,7 @@ public class padapter extends FirestoreRecyclerAdapter<addp, padapter.profileHol
         public profileHolder(@NonNull View itemView) {
             super(itemView);
 
-            textViewName = itemView.findViewById(R.id.Text_view_name);
+            textViewName = itemView.findViewById(R.id.text_view_name);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
